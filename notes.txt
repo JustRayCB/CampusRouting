@@ -1,4 +1,4 @@
-Name propositions for the project:
+1. Name propositions for the project:
     - Jeff
     - CyclinBrussels
     - BXLShortestCycle
@@ -8,4 +8,5 @@ Name propositions for the project:
     - BikeFlow
     - BikeFlowBrussels
 
-Maybe we'll need to use Poetry to manage the dependencies of the project.
+2. Maybe we'll need to use Poetry to manage the dependencies of the project. ?
+3. Is the range of the project only in the center of Brussels or in the whole Brussels region?
