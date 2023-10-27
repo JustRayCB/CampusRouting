@@ -1,0 +1,9 @@
+Name propositions for the project:
+    - Jeff
+    - CyclinBrussels
+    - BXLShortestCycle
+    - BikeXL
+    - BikeFlowBrussels
+    - Fast and Furious -> Fast And Green
+    - BikeFlow
+    - BikeFlowBrussels
