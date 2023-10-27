@@ -7,3 +7,5 @@ Name propositions for the project:
     - Fast and Furious -> Fast And Green
     - BikeFlow
     - BikeFlowBrussels
+
+Maybe we'll need to use Poetry to manage the dependencies of the project.
