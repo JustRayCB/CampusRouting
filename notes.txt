@@ -13,9 +13,9 @@
 
 
 
-1. Make the map (how to build it ? Negative wheight step 2 (elevation))
+1. Make the map (how to build it ? Negative weight step 2 (elevation))
 2. Then making the algo
-Algo Miller -> - wheight
+Algo Miller -> - weight
 
 PRIOR:
     MAP set (data)
