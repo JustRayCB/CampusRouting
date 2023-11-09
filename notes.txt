@@ -10,3 +10,23 @@
 
 2. Maybe we'll need to use Poetry to manage the dependencies of the project. ?
 3. Is the range of the project only in the center of Brussels or in the whole Brussels region?
+
+
+
+1. Make the map (how to build it ? Negative wheight step 2 (elevation))
+2. Then making the algo
+Algo Miller -> - wheight
+
+PRIOR:
+    MAP set (data)
+    doing algo
+
+https://classic-maps.openrouteservice.org/directions?n1=50.84291&n2=4.373005&n3=13&b=0&c=0&k1=en-US&k2=km
+
+Compare ourself with ggl map and komoot
+
+
+Rapport ?
+    - Summary of what we did
+
+Next -> 21/11/23 12h
