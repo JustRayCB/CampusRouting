@@ -1,2 +1,2 @@
-# Shortest-cycling-paths-Bxl
-The goal of the project is to create an algorithme based on Dijkstra's and other variants to find the shortest cycling path in Brussels.
+# Class Finding project for the campuses of the Free University of Brussels (ULB)
+The goal of the project is to implement a path-finding algorithm to find the shortest path to any class on the different campuses.
