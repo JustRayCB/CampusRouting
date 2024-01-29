@@ -1,0 +1,3355 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d19" for="edge" attr.name="width" attr.type="string" />
+  <key id="d18" for="edge" attr.name="tunnel" attr.type="string" />
+  <key id="d17" for="edge" attr.name="service" attr.type="string" />
+  <key id="d16" for="edge" attr.name="maxspeed" attr.type="string" />
+  <key id="d15" for="edge" attr.name="geometry" attr.type="string" />
+  <key id="d14" for="edge" attr.name="access" attr.type="string" />
+  <key id="d13" for="edge" attr.name="name" attr.type="string" />
+  <key id="d12" for="edge" attr.name="length" attr.type="string" />
+  <key id="d11" for="edge" attr.name="reversed" attr.type="string" />
+  <key id="d10" for="edge" attr.name="oneway" attr.type="string" />
+  <key id="d9" for="edge" attr.name="highway" attr.type="string" />
+  <key id="d8" for="edge" attr.name="osmid" attr.type="string" />
+  <key id="d7" for="node" attr.name="highway" attr.type="string" />
+  <key id="d6" for="node" attr.name="street_count" attr.type="string" />
+  <key id="d5" for="node" attr.name="x" attr.type="string" />
+  <key id="d4" for="node" attr.name="y" attr.type="string" />
+  <key id="d3" for="graph" attr.name="simplified" attr.type="string" />
+  <key id="d2" for="graph" attr.name="crs" attr.type="string" />
+  <key id="d1" for="graph" attr.name="created_with" attr.type="string" />
+  <key id="d0" for="graph" attr.name="created_date" attr.type="string" />
+  <graph edgedefault="directed">
+    <node id="349319841">
+      <data key="d4">50.8208569</data>
+      <data key="d5">4.3979015</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="349319845">
+      <data key="d4">50.8205719</data>
+      <data key="d5">4.3977753</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="349319878">
+      <data key="d4">50.8190709</data>
+      <data key="d5">4.3957719</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="349319881">
+      <data key="d4">50.8182768</data>
+      <data key="d5">4.3962558</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="349319892">
+      <data key="d4">50.8205615</data>
+      <data key="d5">4.3979699</data>
+      <data key="d6">4</data>
+    </node>
+    <node id="349319894">
+      <data key="d4">50.8206143</data>
+      <data key="d5">4.3974816</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="349319901">
+      <data key="d4">50.8214418</data>
+      <data key="d5">4.3985505</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="349330212">
+      <data key="d4">50.8182062</data>
+      <data key="d5">4.3962164</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="349330218">
+      <data key="d4">50.8178898</data>
+      <data key="d5">4.3975334</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="349330219">
+      <data key="d4">50.8177722</data>
+      <data key="d5">4.3975507</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="349330226">
+      <data key="d4">50.8178396</data>
+      <data key="d5">4.3976182</data>
+      <data key="d6">4</data>
+    </node>
+    <node id="349330229">
+      <data key="d4">50.818047</data>
+      <data key="d5">4.3974652</data>
+      <data key="d7">crossing</data>
+      <data key="d6">4</data>
+    </node>
+    <node id="349330233">
+      <data key="d4">50.8182053</data>
+      <data key="d5">4.3966129</data>
+      <data key="d7">crossing</data>
+      <data key="d6">4</data>
+    </node>
+    <node id="349330241">
+      <data key="d4">50.8182561</data>
+      <data key="d5">4.3982968</data>
+      <data key="d6">4</data>
+    </node>
+    <node id="349330246">
+      <data key="d4">50.8190574</data>
+      <data key="d5">4.3984105</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="349330283">
+      <data key="d4">50.8192731</data>
+      <data key="d5">4.3977865</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="349330286">
+      <data key="d4">50.8199593</data>
+      <data key="d5">4.3977918</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="349330296">
+      <data key="d4">50.8204519</data>
+      <data key="d5">4.3959224</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="382210616">
+      <data key="d4">50.8187052</data>
+      <data key="d5">4.3967838</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="614558898">
+      <data key="d4">50.8202673</data>
+      <data key="d5">4.3977268</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="614575265">
+      <data key="d4">50.8203474</data>
+      <data key="d5">4.3978225</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="614575267">
+      <data key="d4">50.820439</data>
+      <data key="d5">4.3979284</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="623510687">
+      <data key="d4">50.8198932</data>
+      <data key="d5">4.3979376</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="623510700">
+      <data key="d4">50.8194616</data>
+      <data key="d5">4.3981149</data>
+      <data key="d6">4</data>
+    </node>
+    <node id="1037937594">
+      <data key="d4">50.8206174</data>
+      <data key="d5">4.3962347</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="1037948176">
+      <data key="d4">50.8186244</data>
+      <data key="d5">4.3980971</data>
+      <data key="d6">4</data>
+    </node>
+    <node id="1037948177">
+      <data key="d4">50.8195249</data>
+      <data key="d5">4.3971173</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="1037948198">
+      <data key="d4">50.818115</data>
+      <data key="d5">4.3975106</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="1037948202">
+      <data key="d4">50.8188913</data>
+      <data key="d5">4.3971215</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="1037948222">
+      <data key="d4">50.8186114</data>
+      <data key="d5">4.397185</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="1037948225">
+      <data key="d4">50.8185279</data>
+      <data key="d5">4.3969753</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="1779359614">
+      <data key="d4">50.8192104</data>
+      <data key="d5">4.3963902</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="1779359615">
+      <data key="d4">50.818308</data>
+      <data key="d5">4.3959017</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="1779359617">
+      <data key="d4">50.8188478</data>
+      <data key="d5">4.3960674</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="1779359619">
+      <data key="d4">50.8189474</data>
+      <data key="d5">4.3962549</data>
+      <data key="d6">4</data>
+    </node>
+    <node id="1779359620">
+      <data key="d4">50.8191756</data>
+      <data key="d5">4.3959718</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="1779359621">
+      <data key="d4">50.8188271</data>
+      <data key="d5">4.3964049</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="1779359623">
+      <data key="d4">50.8190642</data>
+      <data key="d5">4.3961101</data>
+      <data key="d6">4</data>
+    </node>
+    <node id="1779359654">
+      <data key="d4">50.818927</data>
+      <data key="d5">4.3954806</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="1779359656">
+      <data key="d4">50.8193846</data>
+      <data key="d5">4.3963822</data>
+      <data key="d6">2</data>
+    </node>
+    <node id="1779359659">
+      <data key="d4">50.8190977</data>
+      <data key="d5">4.3965382</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="1779359662">
+      <data key="d4">50.8187353</data>
+      <data key="d5">4.3962164</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="1779359664">
+      <data key="d4">50.8189626</data>
+      <data key="d5">4.3959153</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="1831983874">
+      <data key="d4">50.8189146</data>
+      <data key="d5">4.3952971</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="1839123876">
+      <data key="d4">50.8181606</data>
+      <data key="d5">4.396541</data>
+      <data key="d7">crossing</data>
+      <data key="d6">4</data>
+    </node>
+    <node id="1839123907">
+      <data key="d4">50.8193801</data>
+      <data key="d5">4.3959496</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="1839123912">
+      <data key="d4">50.819347</data>
+      <data key="d5">4.396309</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="2085992518">
+      <data key="d4">50.8198399</data>
+      <data key="d5">4.3991242</data>
+      <data key="d6">4</data>
+    </node>
+    <node id="2085998143">
+      <data key="d4">50.8183979</data>
+      <data key="d5">4.3982108</data>
+      <data key="d6">5</data>
+    </node>
+    <node id="2085998145">
+      <data key="d4">50.8182889</data>
+      <data key="d5">4.398039</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="2085998147">
+      <data key="d4">50.81834</data>
+      <data key="d5">4.3981236</data>
+      <data key="d6">4</data>
+    </node>
+    <node id="2085998148">
+      <data key="d4">50.8186666</data>
+      <data key="d5">4.3979938</data>
+      <data key="d6">4</data>
+    </node>
+    <node id="2086012281">
+      <data key="d4">50.8191724</data>
+      <data key="d5">4.3988699</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="2309911602">
+      <data key="d4">50.8206942</data>
+      <data key="d5">4.3978375</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="2470302281">
+      <data key="d4">50.8179695</data>
+      <data key="d5">4.3967234</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="2580493366">
+      <data key="d4">50.8177324</data>
+      <data key="d5">4.3975976</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="2580493370">
+      <data key="d4">50.8178844</data>
+      <data key="d5">4.397145</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="2580493373">
+      <data key="d4">50.8180244</data>
+      <data key="d5">4.397428</data>
+      <data key="d7">crossing</data>
+      <data key="d6">4</data>
+    </node>
+    <node id="2580493382">
+      <data key="d4">50.8182274</data>
+      <data key="d5">4.3966357</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="2580493494">
+      <data key="d4">50.8203833</data>
+      <data key="d5">4.3980269</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="4209610349">
+      <data key="d4">50.8200186</data>
+      <data key="d5">4.3973032</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="4414454238">
+      <data key="d4">50.8191478</data>
+      <data key="d5">4.39919</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="4415155789">
+      <data key="d4">50.8195383</data>
+      <data key="d5">4.3977367</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="4415155790">
+      <data key="d4">50.8199184</data>
+      <data key="d5">4.3979248</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="4415155804">
+      <data key="d4">50.8206088</data>
+      <data key="d5">4.3979776</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="4415155807">
+      <data key="d4">50.8192252</data>
+      <data key="d5">4.3994158</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="4416901818">
+      <data key="d4">50.8211941</data>
+      <data key="d5">4.398034</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="4416901823">
+      <data key="d4">50.8212935</data>
+      <data key="d5">4.397773</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="4417207065">
+      <data key="d4">50.819001</data>
+      <data key="d5">4.3995119</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="4417207071">
+      <data key="d4">50.8191926</data>
+      <data key="d5">4.3994363</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="4417207074">
+      <data key="d4">50.8193333</data>
+      <data key="d5">4.3985302</data>
+      <data key="d6">4</data>
+    </node>
+    <node id="4417207085">
+      <data key="d4">50.8196892</data>
+      <data key="d5">4.399865</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="4417208600">
+      <data key="d4">50.819748</data>
+      <data key="d5">4.3990164</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="4417208610">
+      <data key="d4">50.819828</data>
+      <data key="d5">4.3994967</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="4417208622">
+      <data key="d4">50.8199368</data>
+      <data key="d5">4.3992564</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="4417208623">
+      <data key="d4">50.8199198</data>
+      <data key="d5">4.3988791</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="4417208624">
+      <data key="d4">50.8199405</data>
+      <data key="d5">4.3989031</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="4417208625">
+      <data key="d4">50.8199507</data>
+      <data key="d5">4.3992733</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="4417311390">
+      <data key="d4">50.8197775</data>
+      <data key="d5">4.3996071</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="5062433358">
+      <data key="d4">50.8181811</data>
+      <data key="d5">4.3971349</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="5124219337">
+      <data key="d4">50.8187667</data>
+      <data key="d5">4.3964271</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="5124219341">
+      <data key="d4">50.8190329</data>
+      <data key="d5">4.3956949</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="5124219342">
+      <data key="d4">50.8191158</data>
+      <data key="d5">4.3955914</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="5144615620">
+      <data key="d4">50.8194124</data>
+      <data key="d5">4.398628</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="5144615821">
+      <data key="d4">50.8194299</data>
+      <data key="d5">4.39859</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="5320091376">
+      <data key="d4">50.8183446</data>
+      <data key="d5">4.3962219</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="5320091380">
+      <data key="d4">50.8182449</data>
+      <data key="d5">4.3959703</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="5698982616">
+      <data key="d4">50.8220724</data>
+      <data key="d5">4.4008768</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="5698982617">
+      <data key="d4">50.8220745</data>
+      <data key="d5">4.4007248</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="5911467810">
+      <data key="d4">50.8196736</data>
+      <data key="d5">4.3999252</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="5926389596">
+      <data key="d4">50.8196248</data>
+      <data key="d5">4.4000465</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="5926556176">
+      <data key="d4">50.8196917</data>
+      <data key="d5">4.3998443</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="5926558788">
+      <data key="d4">50.8197713</data>
+      <data key="d5">4.3999344</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="5926558791">
+      <data key="d4">50.819734</data>
+      <data key="d5">4.3997013</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="5950657133">
+      <data key="d4">50.8185274</data>
+      <data key="d5">4.3963086</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="5950657146">
+      <data key="d4">50.8183265</data>
+      <data key="d5">4.3962365</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="5978419924">
+      <data key="d4">50.819729</data>
+      <data key="d5">4.3997111</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="5978453215">
+      <data key="d4">50.8181623</data>
+      <data key="d5">4.3962182</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="5978453217">
+      <data key="d4">50.8181374</data>
+      <data key="d5">4.3965113</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="6280959700">
+      <data key="d4">50.819632</data>
+      <data key="d5">4.3990573</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="6282888056">
+      <data key="d4">50.81955</data>
+      <data key="d5">4.3987871</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="6282888071">
+      <data key="d4">50.8196163</data>
+      <data key="d5">4.3988003</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="6284097912">
+      <data key="d4">50.8196116</data>
+      <data key="d5">4.3988102</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="6284097913">
+      <data key="d4">50.8197283</data>
+      <data key="d5">4.3989932</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="6288586248">
+      <data key="d4">50.8199158</data>
+      <data key="d5">4.3997278</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="7760933039">
+      <data key="d4">50.8181403</data>
+      <data key="d5">4.3960302</data>
+      <data key="d7">crossing</data>
+      <data key="d6">4</data>
+    </node>
+    <node id="7760933040">
+      <data key="d4">50.8181551</data>
+      <data key="d5">4.3961585</data>
+      <data key="d7">crossing</data>
+      <data key="d6">4</data>
+    </node>
+    <node id="8482347767">
+      <data key="d4">50.8190725</data>
+      <data key="d5">4.3995559</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="9227271697">
+      <data key="d4">50.8202617</data>
+      <data key="d5">4.3953735</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="9245449412">
+      <data key="d4">50.8198106</data>
+      <data key="d5">4.3943272</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="9245449414">
+      <data key="d4">50.8200735</data>
+      <data key="d5">4.3948644</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="9245519817">
+      <data key="d4">50.8204668</data>
+      <data key="d5">4.3957707</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="9245519822">
+      <data key="d4">50.8204777</data>
+      <data key="d5">4.3958204</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="9245519824">
+      <data key="d4">50.8198701</data>
+      <data key="d5">4.3944488</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="9327410143">
+      <data key="d4">50.8191839</data>
+      <data key="d5">4.3983522</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="9863760337">
+      <data key="d4">50.820898</data>
+      <data key="d5">4.3978492</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="10842178036">
+      <data key="d4">50.8190237</data>
+      <data key="d5">4.3994306</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="10842178040">
+      <data key="d4">50.8190655</data>
+      <data key="d5">4.3993275</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="10845934591">
+      <data key="d4">50.8199027</data>
+      <data key="d5">4.3997584</data>
+      <data key="d6">4</data>
+    </node>
+    <node id="10846317145">
+      <data key="d4">50.8197606</data>
+      <data key="d5">4.3993007</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="10846348447">
+      <data key="d4">50.8199344</data>
+      <data key="d5">4.399794</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="10846348456">
+      <data key="d4">50.819366</data>
+      <data key="d5">4.3993381</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="10846348467">
+      <data key="d4">50.8197808</data>
+      <data key="d5">4.3996202</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="10846348470">
+      <data key="d4">50.8194411</data>
+      <data key="d5">4.3992359</data>
+      <data key="d6">4</data>
+    </node>
+    <node id="10846348471">
+      <data key="d4">50.8193415</data>
+      <data key="d5">4.3990889</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="10846348472">
+      <data key="d4">50.8196569</data>
+      <data key="d5">4.3984128</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="10848437311">
+      <data key="d4">50.8199858</data>
+      <data key="d5">4.3980458</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="10848437313">
+      <data key="d4">50.8195742</data>
+      <data key="d5">4.3976129</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="10926171614">
+      <data key="d4">50.8198144</data>
+      <data key="d5">4.3995928</data>
+      <data key="d6">1</data>
+    </node>
+    <node id="10926171616">
+      <data key="d4">50.8197823</data>
+      <data key="d5">4.3995966</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="11012481579">
+      <data key="d4">50.8200553</data>
+      <data key="d5">4.3991311</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="11221891008">
+      <data key="d4">50.8198133</data>
+      <data key="d5">4.3978195</data>
+      <data key="d6">3</data>
+    </node>
+    <node id="11221891009">
+      <data key="d4">50.8198698</data>
+      <data key="d5">4.3977502</data>
+      <data key="d6">3</data>
+    </node>
+    <edge source="349319841" target="9863760337" id="0">
+      <data key="d8">1075514353</data>
+      <data key="d9">path</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">5.864</data>
+    </edge>
+    <edge source="349319845" target="2309911602" id="0">
+      <data key="d8">1010996905</data>
+      <data key="d10">True</data>
+      <data key="d13">Chemin Isabelle Stengers</data>
+      <data key="d9">service</data>
+      <data key="d14">permissive</data>
+      <data key="d11">False</data>
+      <data key="d12">14.284</data>
+    </edge>
+    <edge source="349319845" target="349319892" id="0">
+      <data key="d8">1010996904</data>
+      <data key="d10">True</data>
+      <data key="d13">Chemin Isabelle Stengers</data>
+      <data key="d9">service</data>
+      <data key="d14">permissive</data>
+      <data key="d11">False</data>
+      <data key="d12">13.8</data>
+      <data key="d15">LINESTRING (4.3977753 50.8205719, 4.3979031 50.8205715, 4.3979699 50.8205615)</data>
+    </edge>
+    <edge source="349319878" target="1779359620" id="0">
+      <data key="d8">166493657</data>
+      <data key="d9">service</data>
+      <data key="d16">10</data>
+      <data key="d17">parking_aisle</data>
+      <data key="d14">permissive</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">18.241</data>
+    </edge>
+    <edge source="349319878" target="5124219341" id="0">
+      <data key="d8">166493661</data>
+      <data key="d9">service</data>
+      <data key="d16">10</data>
+      <data key="d17">parking_aisle</data>
+      <data key="d14">permissive</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">6.864</data>
+    </edge>
+    <edge source="349319878" target="1779359664" id="0">
+      <data key="d8">166533762</data>
+      <data key="d10">True</data>
+      <data key="d9">service</data>
+      <data key="d16">10</data>
+      <data key="d17">parking_aisle</data>
+      <data key="d14">permissive</data>
+      <data key="d11">False</data>
+      <data key="d12">15.7</data>
+    </edge>
+    <edge source="349319881" target="5950657146" id="0">
+      <data key="d8">633324887</data>
+      <data key="d10">True</data>
+      <data key="d13">Chemin François Englert</data>
+      <data key="d9">service</data>
+      <data key="d16">10</data>
+      <data key="d14">permissive</data>
+      <data key="d11">False</data>
+      <data key="d12">5.776</data>
+      <data key="d15">LINESTRING (4.3962558 50.8182768, 4.3962525 50.818304, 4.3962365 50.8183265)</data>
+    </edge>
+    <edge source="349319892" target="11012481579" id="0">
+      <data key="d8">31363556</data>
+      <data key="d10">True</data>
+      <data key="d13">Chemin Isabelle Stengers</data>
+      <data key="d9">service</data>
+      <data key="d14">permissive</data>
+      <data key="d11">False</data>
+      <data key="d12">103.942</data>
+      <data key="d15">LINESTRING (4.3979699 50.8205615, 4.3980941 50.8205194, 4.398349 50.8204006, 4.3983806 50.8203778, 4.3984762 50.8203049, 4.3985762 50.8202428, 4.3987388 50.8201542, 4.3989608 50.8200504, 4.3990254 50.8200316, 4.3990945 50.8200313, 4.3991311 50.8200553)</data>
+    </edge>
+    <edge source="349319892" target="4415155804" id="0">
+      <data key="d8">444012311</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">5.334</data>
+      <data key="d15">LINESTRING (4.3979699 50.8205615, 4.3979679 50.8205788, 4.3979776 50.8206088)</data>
+    </edge>
+    <edge source="349319892" target="614575267" id="0">
+      <data key="d8">[444012314, 93855182, 444012311]</data>
+      <data key="d9">['steps', 'footway']</data>
+      <data key="d10">False</data>
+      <data key="d11">[False, True]</data>
+      <data key="d12">14.677</data>
+      <data key="d13">Chemin Ilya Prigogine</data>
+      <data key="d15">LINESTRING (4.3979699 50.8205615, 4.3979873 50.8205316, 4.397945 50.8204563, 4.3979284 50.820439)</data>
+    </edge>
+    <edge source="349319894" target="349319845" id="0">
+      <data key="d8">444242046</data>
+      <data key="d10">True</data>
+      <data key="d13">Chemin Isabelle Stengers</data>
+      <data key="d9">service</data>
+      <data key="d14">permissive</data>
+      <data key="d11">False</data>
+      <data key="d12">24.34</data>
+      <data key="d15">LINESTRING (4.3974816 50.8206143, 4.3975231 50.8205786, 4.3975887 50.8205495, 4.3976497 50.8205454, 4.3977 50.8205504, 4.3977393 50.8205578, 4.397759 50.8205629, 4.3977753 50.8205719)</data>
+    </edge>
+    <edge source="349319901" target="4416901818" id="0">
+      <data key="d8">1010996908</data>
+      <data key="d10">True</data>
+      <data key="d13">Chemin Isabelle Stengers</data>
+      <data key="d9">service</data>
+      <data key="d14">permissive</data>
+      <data key="d11">False</data>
+      <data key="d12">45.839000000000006</data>
+      <data key="d15">LINESTRING (4.3985505 50.8214418, 4.3984576 50.8214148, 4.398344 50.8213678, 4.3981148 50.8212433, 4.398034 50.8211941)</data>
+    </edge>
+    <edge source="349330212" target="1839123876" id="0">
+      <data key="d8">31364700</data>
+      <data key="d10">True</data>
+      <data key="d13">Chemin François Englert</data>
+      <data key="d9">service</data>
+      <data key="d14">permissive</data>
+      <data key="d11">False</data>
+      <data key="d12">23.361</data>
+      <data key="d15">LINESTRING (4.3962164 50.8182062, 4.3963812 50.8181834, 4.396541 50.8181606)</data>
+    </edge>
+    <edge source="349330212" target="349319881" id="0">
+      <data key="d8">633324888</data>
+      <data key="d10">True</data>
+      <data key="d13">Chemin François Englert</data>
+      <data key="d9">service</data>
+      <data key="d16">10</data>
+      <data key="d14">permissive</data>
+      <data key="d11">False</data>
+      <data key="d12">8.343</data>
+      <data key="d15">LINESTRING (4.3962164 50.8182062, 4.3962388 50.8182388, 4.3962558 50.8182768)</data>
+    </edge>
+    <edge source="349330218" target="349330226" id="0">
+      <data key="d8">1010999732</data>
+      <data key="d13">Chemin François Englert</data>
+      <data key="d9">service</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">8.164</data>
+    </edge>
+    <edge source="349330218" target="349330219" id="0">
+      <data key="d8">1010999733</data>
+      <data key="d10">True</data>
+      <data key="d9">service</data>
+      <data key="d14">permissive</data>
+      <data key="d11">False</data>
+      <data key="d12">13.133</data>
+      <data key="d15">LINESTRING (4.3975334 50.8178898, 4.3975436 50.8178204, 4.3975507 50.8177722)</data>
+    </edge>
+    <edge source="349330226" target="349330218" id="0">
+      <data key="d8">1010999732</data>
+      <data key="d13">Chemin François Englert</data>
+      <data key="d9">service</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">8.164</data>
+    </edge>
+    <edge source="349330226" target="349330229" id="0">
+      <data key="d8">34497366</data>
+      <data key="d10">True</data>
+      <data key="d13">Chemin François Englert</data>
+      <data key="d9">service</data>
+      <data key="d14">permissive</data>
+      <data key="d11">False</data>
+      <data key="d12">26.614999999999995</data>
+      <data key="d15">LINESTRING (4.3976182 50.8178396, 4.3976261 50.8178859, 4.397583 50.8179549, 4.3975405 50.8179935, 4.3974652 50.818047)</data>
+    </edge>
+    <edge source="349330229" target="2580493373" id="0">
+      <data key="d8">550852950</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">3.626</data>
+    </edge>
+    <edge source="349330229" target="1037948198" id="0">
+      <data key="d8">550852952</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">8.206</data>
+    </edge>
+    <edge source="349330229" target="5062433358" id="0">
+      <data key="d8">550852951</data>
+      <data key="d10">True</data>
+      <data key="d13">Chemin François Englert</data>
+      <data key="d9">service</data>
+      <data key="d14">permissive</data>
+      <data key="d11">False</data>
+      <data key="d12">27.875</data>
+      <data key="d15">LINESTRING (4.3974652 50.818047, 4.3973986 50.8180896, 4.3972615 50.8181467, 4.3971349 50.8181811)</data>
+    </edge>
+    <edge source="349330233" target="2580493382" id="0">
+      <data key="d8">444012309</data>
+      <data key="d13">Chemin Robert Brout</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">2.933</data>
+    </edge>
+    <edge source="349330233" target="1839123876" id="0">
+      <data key="d8">550852955</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">7.086</data>
+    </edge>
+    <edge source="349330233" target="349319881" id="0">
+      <data key="d8">550852956</data>
+      <data key="d10">True</data>
+      <data key="d13">Chemin François Englert</data>
+      <data key="d9">service</data>
+      <data key="d14">permissive</data>
+      <data key="d11">False</data>
+      <data key="d12">26.317</data>
+      <data key="d15">LINESTRING (4.3966129 50.8182053, 4.3964149 50.818246, 4.3963029 50.8182677, 4.3962558 50.8182768)</data>
+    </edge>
+    <edge source="349330241" target="2085998147" id="0">
+      <data key="d8">31364703</data>
+      <data key="d13">Chemin François Englert</data>
+      <data key="d9">service</data>
+      <data key="d14">permissive</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">15.332</data>
+    </edge>
+    <edge source="349330241" target="2085998143" id="0">
+      <data key="d8">31364703</data>
+      <data key="d13">Chemin François Englert</data>
+      <data key="d9">service</data>
+      <data key="d14">permissive</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">16.885</data>
+    </edge>
+    <edge source="349330241" target="2085998145" id="0">
+      <data key="d8">550852952</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">18.474</data>
+    </edge>
+    <edge source="349330246" target="2085998148" id="0">
+      <data key="d8">31364703</data>
+      <data key="d13">Chemin François Englert</data>
+      <data key="d9">service</data>
+      <data key="d14">permissive</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">52.395</data>
+    </edge>
+    <edge source="349330246" target="1037948176" id="0">
+      <data key="d8">31364703</data>
+      <data key="d13">Chemin François Englert</data>
+      <data key="d9">service</data>
+      <data key="d14">permissive</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">61.474999999999994</data>
+      <data key="d15">LINESTRING (4.3984105 50.8190574, 4.3985199 50.8190099, 4.3980971 50.8186244)</data>
+    </edge>
+    <edge source="349330246" target="9327410143" id="0">
+      <data key="d8">1010999730</data>
+      <data key="d18">building_passage</data>
+      <data key="d13">Chemin François Englert</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">17.730999999999998</data>
+      <data key="d15">LINESTRING (4.3984105 50.8190574, 4.3984505 50.8191308, 4.3984076 50.8191569, 4.3983522 50.8191839)</data>
+    </edge>
+    <edge source="349330283" target="4415155789" id="0">
+      <data key="d8">444012308</data>
+      <data key="d13">Chemin Robert Brout</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">30.525</data>
+      <data key="d15">LINESTRING (4.3977865 50.8192731, 4.3977701 50.8193007, 4.3977113 50.8194362, 4.3977104 50.8194828, 4.3977367 50.8195383)</data>
+    </edge>
+    <edge source="349330283" target="1037948202" id="0">
+      <data key="d8">444012309</data>
+      <data key="d13">Chemin Robert Brout</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">65.594</data>
+      <data key="d15">LINESTRING (4.3977865 50.8192731, 4.3976987 50.8192142, 4.3975715 50.8190605, 4.3974156 50.81897, 4.3972208 50.8189185, 4.3971215 50.8188913)</data>
+    </edge>
+    <edge source="349330283" target="623510700" id="0">
+      <data key="d8">[444012320, 1010995052]</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">31.195</data>
+      <data key="d15">LINESTRING (4.3977865 50.8192731, 4.3978517 50.8193062, 4.3980192 50.8194097, 4.3981149 50.8194616)</data>
+    </edge>
+    <edge source="349330286" target="11221891009" id="0">
+      <data key="d8">198479444</data>
+      <data key="d18">yes</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">10.372</data>
+    </edge>
+    <edge source="349330286" target="4415155790" id="0">
+      <data key="d8">1010995051</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">10.391</data>
+    </edge>
+    <edge source="349330286" target="614558898" id="0">
+      <data key="d8">[1001704852, 93855182, 198479446]</data>
+      <data key="d18">['building_passage', 'yes']</data>
+      <data key="d9">['steps', 'footway']</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">37.127</data>
+      <data key="d15">LINESTRING (4.3977918 50.8199593, 4.3977781 50.8200184, 4.3978132 50.8200216, 4.3977744 50.8201454, 4.3977268 50.8202673)</data>
+    </edge>
+    <edge source="349330296" target="9245519822" id="0">
+      <data key="d8">31364715</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">7.718</data>
+    </edge>
+    <edge source="349330296" target="1037937594" id="0">
+      <data key="d8">31363559</data>
+      <data key="d10">True</data>
+      <data key="d13">Chemin Ilya Prigogine</data>
+      <data key="d9">service</data>
+      <data key="d16">20</data>
+      <data key="d14">permissive</data>
+      <data key="d11">False</data>
+      <data key="d12">28.637999999999998</data>
+      <data key="d15">LINESTRING (4.3959224 50.8204519, 4.3961201 50.8205589, 4.3962347 50.8206174)</data>
+    </edge>
+    <edge source="382210616" target="5124219337" id="0">
+      <data key="d8">33518988</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">25.975</data>
+    </edge>
+    <edge source="382210616" target="2580493382" id="0">
+      <data key="d8">444012309</data>
+      <data key="d13">Chemin Robert Brout</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">55.258</data>
+      <data key="d15">LINESTRING (4.3967838 50.8187052, 4.3967623 50.8186569, 4.3967571 50.8185911, 4.3967279 50.8185366, 4.3966575 50.818449, 4.3966231 50.818374, 4.3966238 50.8182945, 4.3966357 50.8182274)</data>
+    </edge>
+    <edge source="382210616" target="1037948202" id="0">
+      <data key="d8">444012309</data>
+      <data key="d13">Chemin Robert Brout</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">33.587</data>
+      <data key="d15">LINESTRING (4.3967838 50.8187052, 4.3968174 50.8187634, 4.3968621 50.8188112, 4.3969304 50.8188467, 4.3971215 50.8188913)</data>
+    </edge>
+    <edge source="614558898" target="614575265" id="0">
+      <data key="d8">93855182</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">11.159</data>
+    </edge>
+    <edge source="614558898" target="349330286" id="0">
+      <data key="d8">[198479446, 1001704852, 93855182]</data>
+      <data key="d9">['steps', 'footway']</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">37.127</data>
+      <data key="d18">['building_passage', 'yes']</data>
+      <data key="d15">LINESTRING (4.3977268 50.8202673, 4.3977744 50.8201454, 4.3978132 50.8200216, 4.3977781 50.8200184, 4.3977918 50.8199593)</data>
+    </edge>
+    <edge source="614558898" target="4209610349" id="0">
+      <data key="d8">[444012317, 444012318, 444012319]</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">54.71000000000001</data>
+      <data key="d18">building_passage</data>
+      <data key="d15">LINESTRING (4.3977268 50.8202673, 4.3976891 50.820159, 4.3976359 50.8200913, 4.397647 50.8200072, 4.3976034 50.8200059, 4.397528 50.8200032, 4.397377 50.8200274, 4.3973032 50.8200186)</data>
+    </edge>
+    <edge source="614575265" target="2580493494" id="0">
+      <data key="d8">33517241</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">14.903</data>
+    </edge>
+    <edge source="614575265" target="614558898" id="0">
+      <data key="d8">93855182</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">11.159</data>
+    </edge>
+    <edge source="614575265" target="614575267" id="0">
+      <data key="d8">93855182</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">12.784</data>
+      <data key="d15">LINESTRING (4.3978225 50.8203474, 4.3978616 50.8203971, 4.3979284 50.820439)</data>
+    </edge>
+    <edge source="614575267" target="2580493494" id="0">
+      <data key="d8">33517237</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">9.286</data>
+    </edge>
+    <edge source="614575267" target="349319892" id="0">
+      <data key="d8">[444012314, 93855182, 444012311]</data>
+      <data key="d9">['steps', 'footway']</data>
+      <data key="d10">False</data>
+      <data key="d11">[False, True]</data>
+      <data key="d12">14.677</data>
+      <data key="d13">Chemin Ilya Prigogine</data>
+      <data key="d15">LINESTRING (4.3979284 50.820439, 4.397945 50.8204563, 4.3979873 50.8205316, 4.3979699 50.8205615)</data>
+    </edge>
+    <edge source="614575267" target="614575265" id="0">
+      <data key="d8">93855182</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">12.784</data>
+      <data key="d15">LINESTRING (4.3979284 50.820439, 4.3978616 50.8203971, 4.3978225 50.8203474)</data>
+    </edge>
+    <edge source="623510687" target="4415155790" id="0">
+      <data key="d8">1010995051</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">2.943</data>
+    </edge>
+    <edge source="623510687" target="623510700" id="0">
+      <data key="d8">49156026</data>
+      <data key="d13">Chemin Robert Brout</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">56.78699999999999</data>
+      <data key="d15">LINESTRING (4.3979376 50.8198932, 4.3980325 50.8198794, 4.3981312 50.8198149, 4.3981479 50.8197181, 4.3981081 50.8196062, 4.398089 50.8195371, 4.3981149 50.8194616)</data>
+    </edge>
+    <edge source="623510687" target="11221891008" id="0">
+      <data key="d8">444012308</data>
+      <data key="d13">Chemin Robert Brout</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">12.23</data>
+      <data key="d15">LINESTRING (4.3979376 50.8198932, 4.3978407 50.8198351, 4.3978195 50.8198133)</data>
+    </edge>
+    <edge source="623510700" target="623510687" id="0">
+      <data key="d8">49156026</data>
+      <data key="d13">Chemin Robert Brout</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">56.787</data>
+      <data key="d15">LINESTRING (4.3981149 50.8194616, 4.398089 50.8195371, 4.3981081 50.8196062, 4.3981479 50.8197181, 4.3981312 50.8198149, 4.3980325 50.8198794, 4.3979376 50.8198932)</data>
+    </edge>
+    <edge source="623510700" target="4417207074" id="0">
+      <data key="d8">[444012313, 198473810, 198473811]</data>
+      <data key="d13">Chemin Robert Brout</data>
+      <data key="d9">['steps', 'footway']</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">39.585</data>
+      <data key="d15">LINESTRING (4.3981149 50.8194616, 4.398176 50.8194421, 4.3983135 50.8194312, 4.3984199 50.8194474, 4.3984496 50.8194477, 4.3984687 50.8194331, 4.3984641 50.8193949, 4.3984757 50.8193579, 4.3985302 50.8193333)</data>
+    </edge>
+    <edge source="623510700" target="349330283" id="0">
+      <data key="d8">[444012320, 1010995052]</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">31.195</data>
+      <data key="d15">LINESTRING (4.3981149 50.8194616, 4.3980192 50.8194097, 4.3978517 50.8193062, 4.3977865 50.8192731)</data>
+    </edge>
+    <edge source="623510700" target="10846348472" id="0">
+      <data key="d8">[444012320, 1166142278]</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">[False, True]</data>
+      <data key="d12">30.866999999999997</data>
+      <data key="d15">LINESTRING (4.3981149 50.8194616, 4.3982647 50.8195701, 4.3983805 50.8196565, 4.3984128 50.8196569)</data>
+    </edge>
+    <edge source="1037937594" target="349319894" id="0">
+      <data key="d8">31363559</data>
+      <data key="d10">True</data>
+      <data key="d13">Chemin Ilya Prigogine</data>
+      <data key="d9">service</data>
+      <data key="d16">20</data>
+      <data key="d14">permissive</data>
+      <data key="d11">False</data>
+      <data key="d12">109.077</data>
+      <data key="d15">LINESTRING (4.3962347 50.8206174, 4.3963447 50.8206471, 4.3964553 50.8206645, 4.39667 50.8207241, 4.3969161 50.8208554, 4.3969546 50.8208693, 4.3969966 50.8208779, 4.3970455 50.8208825, 4.3971048 50.8208777, 4.3971352 50.8208645, 4.3971734 50.8208413, 4.3971889 50.82083, 4.3972577 50.820781, 4.3974347 50.8206373, 4.3974816 50.8206143)</data>
+    </edge>
+    <edge source="1037948176" target="2085998148" id="0">
+      <data key="d8">198472526</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">8.642</data>
+    </edge>
+    <edge source="1037948176" target="2085998143" id="0">
+      <data key="d8">31364703</data>
+      <data key="d13">Chemin François Englert</data>
+      <data key="d9">service</data>
+      <data key="d14">permissive</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">27.38</data>
+      <data key="d15">LINESTRING (4.3980971 50.8186244, 4.3980999 50.8185751, 4.3981381 50.8184498, 4.3982108 50.8183979)</data>
+    </edge>
+    <edge source="1037948176" target="2085998143" id="1">
+      <data key="d8">198472526</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">37.588</data>
+      <data key="d15">LINESTRING (4.3980971 50.8186244, 4.3983397 50.8185381, 4.3982108 50.8183979)</data>
+    </edge>
+    <edge source="1037948176" target="349330246" id="0">
+      <data key="d8">31364703</data>
+      <data key="d13">Chemin François Englert</data>
+      <data key="d9">service</data>
+      <data key="d14">permissive</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">61.474999999999994</data>
+      <data key="d15">LINESTRING (4.3980971 50.8186244, 4.3985199 50.8190099, 4.3984105 50.8190574)</data>
+    </edge>
+    <edge source="1037948177" target="4209610349" id="0">
+      <data key="d8">31363559</data>
+      <data key="d10">True</data>
+      <data key="d13">Chemin Ilya Prigogine</data>
+      <data key="d9">service</data>
+      <data key="d16">20</data>
+      <data key="d14">permissive</data>
+      <data key="d11">False</data>
+      <data key="d12">57.408</data>
+      <data key="d15">LINESTRING (4.3971173 50.8195249, 4.3971939 50.8196366, 4.3972551 50.8198168, 4.3973148 50.8199295, 4.3973242 50.8199629, 4.3973162 50.819995, 4.3973032 50.8200186)</data>
+    </edge>
+    <edge source="1037948177" target="10848437313" id="0">
+      <data key="d8">[527025236, 198479444, 1001683870, 1001683871]</data>
+      <data key="d9">['path', 'footway']</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">53.653</data>
+      <data key="d18">yes</data>
+      <data key="d15">LINESTRING (4.3971173 50.8195249, 4.3971658 50.8195268, 4.3972583 50.8195067, 4.3973082 50.8194679, 4.3973889 50.819451, 4.3973822 50.8194362, 4.3974555 50.8194232, 4.3974612 50.8194359, 4.3975324 50.819421, 4.3975488 50.8194361, 4.3976129 50.8195742)</data>
+    </edge>
+    <edge source="1037948198" target="349330229" id="0">
+      <data key="d8">550852952</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">8.206</data>
+    </edge>
+    <edge source="1037948198" target="1037948222" id="0">
+      <data key="d8">89530142</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">63.297</data>
+      <data key="d15">LINESTRING (4.3975106 50.818115, 4.3974786 50.8181428, 4.3973834 50.8182374, 4.3973347 50.8185322, 4.397269 50.8185848, 4.397185 50.8186114)</data>
+    </edge>
+    <edge source="1037948198" target="2085998145" id="0">
+      <data key="d8">550852952</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">41.99</data>
+      <data key="d15">LINESTRING (4.3975106 50.818115, 4.3978748 50.8182188, 4.398039 50.8182889)</data>
+    </edge>
+    <edge source="1037948202" target="1037948222" id="0">
+      <data key="d8">[89530144, 633327765, 89530143]</data>
+      <data key="d9">['steps', 'footway']</data>
+      <data key="d10">False</data>
+      <data key="d11">[False, True]</data>
+      <data key="d12">32.245000000000005</data>
+      <data key="d15">LINESTRING (4.3971215 50.8188913, 4.3971943 50.8187747, 4.3971877 50.8187365, 4.3971786 50.8187202, 4.3971825 50.8186933, 4.3971837 50.8186552, 4.397185 50.8186114)</data>
+    </edge>
+    <edge source="1037948202" target="382210616" id="0">
+      <data key="d8">444012309</data>
+      <data key="d13">Chemin Robert Brout</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">33.587</data>
+      <data key="d15">LINESTRING (4.3971215 50.8188913, 4.3969304 50.8188467, 4.3968621 50.8188112, 4.3968174 50.8187634, 4.3967838 50.8187052)</data>
+    </edge>
+    <edge source="1037948202" target="349330283" id="0">
+      <data key="d8">444012309</data>
+      <data key="d13">Chemin Robert Brout</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">65.594</data>
+      <data key="d15">LINESTRING (4.3971215 50.8188913, 4.3972208 50.8189185, 4.3974156 50.81897, 4.3975715 50.8190605, 4.3976987 50.8192142, 4.3977865 50.8192731)</data>
+    </edge>
+    <edge source="1037948222" target="1037948198" id="0">
+      <data key="d8">89530142</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">63.297</data>
+      <data key="d15">LINESTRING (4.397185 50.8186114, 4.397269 50.8185848, 4.3973347 50.8185322, 4.3973834 50.8182374, 4.3974786 50.8181428, 4.3975106 50.818115)</data>
+    </edge>
+    <edge source="1037948222" target="1037948225" id="0">
+      <data key="d8">89530142</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">18.445</data>
+      <data key="d15">LINESTRING (4.397185 50.8186114, 4.3970883 50.8185981, 4.3970159 50.8185711, 4.3969753 50.8185279)</data>
+    </edge>
+    <edge source="1037948222" target="1037948202" id="0">
+      <data key="d8">[89530144, 633327765, 89530143]</data>
+      <data key="d9">['footway', 'steps']</data>
+      <data key="d10">False</data>
+      <data key="d11">[False, True]</data>
+      <data key="d12">32.245000000000005</data>
+      <data key="d15">LINESTRING (4.397185 50.8186114, 4.3971837 50.8186552, 4.3971825 50.8186933, 4.3971786 50.8187202, 4.3971877 50.8187365, 4.3971943 50.8187747, 4.3971215 50.8188913)</data>
+    </edge>
+    <edge source="1037948225" target="1037948222" id="0">
+      <data key="d8">89530142</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">18.445</data>
+      <data key="d15">LINESTRING (4.3969753 50.8185279, 4.3970159 50.8185711, 4.3970883 50.8185981, 4.397185 50.8186114)</data>
+    </edge>
+    <edge source="1037948225" target="5062433358" id="0">
+      <data key="d8">89530142</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">42.705</data>
+      <data key="d15">LINESTRING (4.3969753 50.8185279, 4.3969715 50.8184059, 4.3969701 50.8183203, 4.3969997 50.8182728, 4.3971034 50.8182049, 4.3971349 50.8181811)</data>
+    </edge>
+    <edge source="1037948225" target="2580493382" id="0">
+      <data key="d8">527025235</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">42.672</data>
+      <data key="d15">LINESTRING (4.3969753 50.8185279, 4.3968326 50.8183211, 4.396711 50.8182471, 4.3966357 50.8182274)</data>
+    </edge>
+    <edge source="1779359614" target="1779359623" id="0">
+      <data key="d8">166493663</data>
+      <data key="d9">service</data>
+      <data key="d16">10</data>
+      <data key="d17">parking_aisle</data>
+      <data key="d14">permissive</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">25.524</data>
+    </edge>
+    <edge source="1779359615" target="5320091380" id="0">
+      <data key="d8">633324890</data>
+      <data key="d10">True</data>
+      <data key="d9">service</data>
+      <data key="d16">10</data>
+      <data key="d14">permissive</data>
+      <data key="d11">False</data>
+      <data key="d12">8.512</data>
+    </edge>
+    <edge source="1779359617" target="1779359619" id="0">
+      <data key="d8">166493669</data>
+      <data key="d9">service</data>
+      <data key="d16">10</data>
+      <data key="d17">parking_aisle</data>
+      <data key="d14">permissive</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">17.209</data>
+    </edge>
+    <edge source="1779359617" target="1779359662" id="0">
+      <data key="d8">166533762</data>
+      <data key="d10">True</data>
+      <data key="d9">service</data>
+      <data key="d16">10</data>
+      <data key="d17">parking_aisle</data>
+      <data key="d14">permissive</data>
+      <data key="d11">False</data>
+      <data key="d12">16.311</data>
+    </edge>
+    <edge source="1779359619" target="1779359659" id="0">
+      <data key="d8">166493669</data>
+      <data key="d9">service</data>
+      <data key="d16">10</data>
+      <data key="d17">parking_aisle</data>
+      <data key="d14">permissive</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">25.988</data>
+    </edge>
+    <edge source="1779359619" target="1779359617" id="0">
+      <data key="d8">166493669</data>
+      <data key="d9">service</data>
+      <data key="d16">10</data>
+      <data key="d17">parking_aisle</data>
+      <data key="d14">permissive</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">17.209</data>
+    </edge>
+    <edge source="1779359619" target="1779359623" id="0">
+      <data key="d8">550852946</data>
+      <data key="d10">True</data>
+      <data key="d9">service</data>
+      <data key="d16">10</data>
+      <data key="d17">parking_aisle</data>
+      <data key="d14">permissive</data>
+      <data key="d11">False</data>
+      <data key="d12">16.497</data>
+    </edge>
+    <edge source="1779359620" target="349319878" id="0">
+      <data key="d8">166493657</data>
+      <data key="d9">service</data>
+      <data key="d16">10</data>
+      <data key="d17">parking_aisle</data>
+      <data key="d14">permissive</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">18.241</data>
+    </edge>
+    <edge source="1779359620" target="1839123912" id="0">
+      <data key="d8">166493657</data>
+      <data key="d9">service</data>
+      <data key="d16">10</data>
+      <data key="d17">parking_aisle</data>
+      <data key="d14">permissive</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">30.403</data>
+    </edge>
+    <edge source="1779359621" target="1779359662" id="0">
+      <data key="d8">166493655</data>
+      <data key="d9">service</data>
+      <data key="d16">10</data>
+      <data key="d17">parking_aisle</data>
+      <data key="d14">permissive</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">16.72</data>
+    </edge>
+    <edge source="1779359621" target="1779359619" id="0">
+      <data key="d8">550852946</data>
+      <data key="d10">True</data>
+      <data key="d9">service</data>
+      <data key="d16">10</data>
+      <data key="d17">parking_aisle</data>
+      <data key="d14">permissive</data>
+      <data key="d11">False</data>
+      <data key="d12">17.029</data>
+    </edge>
+    <edge source="1779359623" target="1779359614" id="0">
+      <data key="d8">166493663</data>
+      <data key="d9">service</data>
+      <data key="d16">10</data>
+      <data key="d17">parking_aisle</data>
+      <data key="d14">permissive</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">25.524</data>
+    </edge>
+    <edge source="1779359623" target="1779359664" id="0">
+      <data key="d8">166493663</data>
+      <data key="d9">service</data>
+      <data key="d16">10</data>
+      <data key="d17">parking_aisle</data>
+      <data key="d14">permissive</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">17.745</data>
+    </edge>
+    <edge source="1779359623" target="1779359620" id="0">
+      <data key="d8">550852946</data>
+      <data key="d10">True</data>
+      <data key="d9">service</data>
+      <data key="d16">10</data>
+      <data key="d17">parking_aisle</data>
+      <data key="d14">permissive</data>
+      <data key="d11">False</data>
+      <data key="d12">15.743</data>
+    </edge>
+    <edge source="1779359654" target="5124219341" id="0">
+      <data key="d8">166493661</data>
+      <data key="d9">service</data>
+      <data key="d16">10</data>
+      <data key="d17">parking_aisle</data>
+      <data key="d14">permissive</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">19.113</data>
+    </edge>
+    <edge source="1779359656" target="1839123912" id="0">
+      <data key="d8">166493657</data>
+      <data key="d9">service</data>
+      <data key="d16">10</data>
+      <data key="d17">parking_aisle</data>
+      <data key="d14">permissive</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">6.627</data>
+    </edge>
+    <edge source="1779359656" target="1037948177" id="0">
+      <data key="d8">31363559</data>
+      <data key="d10">True</data>
+      <data key="d13">Chemin Ilya Prigogine</data>
+      <data key="d9">service</data>
+      <data key="d16">20</data>
+      <data key="d14">permissive</data>
+      <data key="d11">False</data>
+      <data key="d12">57.111999999999995</data>
+      <data key="d15">LINESTRING (4.3963822 50.8193846, 4.3964461 50.8194147, 4.3964894 50.8194362, 4.396581 50.8194713, 4.3966711 50.8195041, 4.3967657 50.8195115, 4.3969322 50.8194851, 4.3970222 50.8194903, 4.3971173 50.8195249)</data>
+    </edge>
+    <edge source="1779359659" target="1779359619" id="0">
+      <data key="d8">166493669</data>
+      <data key="d9">service</data>
+      <data key="d16">10</data>
+      <data key="d17">parking_aisle</data>
+      <data key="d14">permissive</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">25.988</data>
+    </edge>
+    <edge source="1779359662" target="1779359621" id="0">
+      <data key="d8">166493655</data>
+      <data key="d9">service</data>
+      <data key="d16">10</data>
+      <data key="d17">parking_aisle</data>
+      <data key="d14">permissive</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">16.72</data>
+    </edge>
+    <edge source="1779359662" target="1779359615" id="0">
+      <data key="d8">[166533762, 1158504163, 550852948]</data>
+      <data key="d10">True</data>
+      <data key="d9">service</data>
+      <data key="d16">10</data>
+      <data key="d17">parking_aisle</data>
+      <data key="d14">permissive</data>
+      <data key="d11">False</data>
+      <data key="d12">59.007000000000005</data>
+      <data key="d15">LINESTRING (4.3962164 50.8187353, 4.3962624 50.818688, 4.3962714 50.8186457, 4.3962628 50.8186109, 4.3962438 50.8185802, 4.3959786 50.8184357, 4.3959161 50.8183851, 4.3958984 50.8183492, 4.3959017 50.818308)</data>
+    </edge>
+    <edge source="1779359664" target="1779359623" id="0">
+      <data key="d8">166493663</data>
+      <data key="d9">service</data>
+      <data key="d16">10</data>
+      <data key="d17">parking_aisle</data>
+      <data key="d14">permissive</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">17.745</data>
+    </edge>
+    <edge source="1779359664" target="1779359617" id="0">
+      <data key="d8">166533762</data>
+      <data key="d10">True</data>
+      <data key="d9">service</data>
+      <data key="d16">10</data>
+      <data key="d17">parking_aisle</data>
+      <data key="d14">permissive</data>
+      <data key="d11">False</data>
+      <data key="d12">16.647</data>
+    </edge>
+    <edge source="1831983874" target="1779359615" id="0">
+      <data key="d8">1098300828</data>
+      <data key="d10">True</data>
+      <data key="d9">service</data>
+      <data key="d16">20</data>
+      <data key="d14">permissive</data>
+      <data key="d11">False</data>
+      <data key="d12">80.71900000000001</data>
+      <data key="d15">LINESTRING (4.3952971 50.8189146, 4.3952988 50.8188564, 4.3957892 50.8184088, 4.3959017 50.818308)</data>
+    </edge>
+    <edge source="1839123876" target="5978453217" id="0">
+      <data key="d8">550852954</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">3.318</data>
+    </edge>
+    <edge source="1839123876" target="349330233" id="0">
+      <data key="d8">550852955</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">7.086</data>
+    </edge>
+    <edge source="1839123876" target="2580493373" id="0">
+      <data key="d8">550852953</data>
+      <data key="d10">True</data>
+      <data key="d13">Chemin François Englert</data>
+      <data key="d9">service</data>
+      <data key="d14">permissive</data>
+      <data key="d11">False</data>
+      <data key="d12">66.863</data>
+      <data key="d15">LINESTRING (4.396541 50.8181606, 4.3967504 50.8181526, 4.3969897 50.8181647, 4.3970782 50.8181561, 4.397201 50.8181268, 4.3973236 50.8180851, 4.397428 50.8180244)</data>
+    </edge>
+    <edge source="1839123907" target="1839123912" id="0">
+      <data key="d8">173086474</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">28.927</data>
+      <data key="d15">LINESTRING (4.3959496 50.8193801, 4.3960157 50.8193696, 4.3961569 50.819411, 4.3962109 50.8194034, 4.396309 50.819347)</data>
+    </edge>
+    <edge source="1839123912" target="1779359620" id="0">
+      <data key="d8">166493657</data>
+      <data key="d9">service</data>
+      <data key="d16">10</data>
+      <data key="d17">parking_aisle</data>
+      <data key="d14">permissive</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">30.403</data>
+    </edge>
+    <edge source="1839123912" target="1779359656" id="0">
+      <data key="d8">166493657</data>
+      <data key="d9">service</data>
+      <data key="d16">10</data>
+      <data key="d17">parking_aisle</data>
+      <data key="d14">permissive</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">6.627</data>
+    </edge>
+    <edge source="1839123912" target="1839123907" id="0">
+      <data key="d8">173086474</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">28.927000000000003</data>
+      <data key="d15">LINESTRING (4.396309 50.819347, 4.3962109 50.8194034, 4.3961569 50.819411, 4.3960157 50.8193696, 4.3959496 50.8193801)</data>
+    </edge>
+    <edge source="2085992518" target="4417208600" id="0">
+      <data key="d8">198471897</data>
+      <data key="d18">yes</data>
+      <data key="d13">Chemin Robert Brout</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">12.719</data>
+    </edge>
+    <edge source="2085992518" target="4417208624" id="0">
+      <data key="d8">444230769</data>
+      <data key="d18">yes</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">19.141</data>
+    </edge>
+    <edge source="2085992518" target="4417208622" id="0">
+      <data key="d8">198471894</data>
+      <data key="d18">yes</data>
+      <data key="d13">Chemin Robert Brout</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">15.484</data>
+      <data key="d15">LINESTRING (4.3991242 50.8198399, 4.3992435 50.8199439, 4.3992564 50.8199368)</data>
+    </edge>
+    <edge source="2085992518" target="10846317145" id="0">
+      <data key="d8">[444230769, 1166144051]</data>
+      <data key="d18">yes</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">15.219999999999999</data>
+      <data key="d15">LINESTRING (4.3991242 50.8198399, 4.3991635 50.8198205, 4.3993007 50.8197606)</data>
+    </edge>
+    <edge source="2085998143" target="349330241" id="0">
+      <data key="d8">31364703</data>
+      <data key="d13">Chemin François Englert</data>
+      <data key="d9">service</data>
+      <data key="d14">permissive</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">16.885</data>
+    </edge>
+    <edge source="2085998143" target="2085998147" id="0">
+      <data key="d8">198472526</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">8.887</data>
+    </edge>
+    <edge source="2085998143" target="1037948176" id="0">
+      <data key="d8">31364703</data>
+      <data key="d13">Chemin François Englert</data>
+      <data key="d9">service</data>
+      <data key="d14">permissive</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">27.38</data>
+      <data key="d15">LINESTRING (4.3982108 50.8183979, 4.3981381 50.8184498, 4.3980999 50.8185751, 4.3980971 50.8186244)</data>
+    </edge>
+    <edge source="2085998143" target="1037948176" id="1">
+      <data key="d8">198472526</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">37.588</data>
+      <data key="d15">LINESTRING (4.3982108 50.8183979, 4.3983397 50.8185381, 4.3980971 50.8186244)</data>
+    </edge>
+    <edge source="2085998145" target="2085998147" id="0">
+      <data key="d8">198472526</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">8.222</data>
+    </edge>
+    <edge source="2085998145" target="349330241" id="0">
+      <data key="d8">550852952</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">18.474</data>
+    </edge>
+    <edge source="2085998145" target="1037948198" id="0">
+      <data key="d8">550852952</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">41.99</data>
+      <data key="d15">LINESTRING (4.398039 50.8182889, 4.3978748 50.8182188, 4.3975106 50.818115)</data>
+    </edge>
+    <edge source="2085998147" target="349330241" id="0">
+      <data key="d8">31364703</data>
+      <data key="d13">Chemin François Englert</data>
+      <data key="d9">service</data>
+      <data key="d14">permissive</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">15.332</data>
+    </edge>
+    <edge source="2085998147" target="2085998143" id="0">
+      <data key="d8">198472526</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">8.887</data>
+    </edge>
+    <edge source="2085998147" target="2085998145" id="0">
+      <data key="d8">198472526</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">8.222</data>
+    </edge>
+    <edge source="2085998147" target="2085998148" id="0">
+      <data key="d8">31364703</data>
+      <data key="d13">Chemin François Englert</data>
+      <data key="d9">service</data>
+      <data key="d14">permissive</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">39.976</data>
+      <data key="d15">LINESTRING (4.3981236 50.81834, 4.3980548 50.8183793, 4.3979914 50.8184507, 4.3979668 50.8185334, 4.3979713 50.8186059, 4.3979938 50.8186666)</data>
+    </edge>
+    <edge source="2085998148" target="349330246" id="0">
+      <data key="d8">31364703</data>
+      <data key="d13">Chemin François Englert</data>
+      <data key="d9">service</data>
+      <data key="d14">permissive</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">52.395</data>
+    </edge>
+    <edge source="2085998148" target="1037948176" id="0">
+      <data key="d8">198472526</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">8.642</data>
+    </edge>
+    <edge source="2085998148" target="2085998147" id="0">
+      <data key="d8">31364703</data>
+      <data key="d13">Chemin François Englert</data>
+      <data key="d9">service</data>
+      <data key="d14">permissive</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">39.976</data>
+      <data key="d15">LINESTRING (4.3979938 50.8186666, 4.3979713 50.8186059, 4.3979668 50.8185334, 4.3979914 50.8184507, 4.3980548 50.8183793, 4.3981236 50.81834)</data>
+    </edge>
+    <edge source="2085998148" target="9327410143" id="0">
+      <data key="d8">[198471893, 198472526]</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">[False, True]</data>
+      <data key="d12">71.565</data>
+      <data key="d18">building_passage</data>
+      <data key="d15">LINESTRING (4.3979938 50.8186666, 4.3978991 50.8187554, 4.3978707 50.8187718, 4.3983522 50.8191839)</data>
+    </edge>
+    <edge source="2086012281" target="4414454238" id="0">
+      <data key="d8">444012315</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">22.653</data>
+    </edge>
+    <edge source="2086012281" target="10846348471" id="0">
+      <data key="d8">[1166142280, 198474194]</data>
+      <data key="d13">Chemin François Englert</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">[False, True]</data>
+      <data key="d12">24.313</data>
+      <data key="d15">LINESTRING (4.3988699 50.8191724, 4.3990267 50.8192993, 4.3990889 50.8193415)</data>
+    </edge>
+    <edge source="2086012281" target="4417207074" id="0">
+      <data key="d8">[1010999729, 198474125]</data>
+      <data key="d13">Chemin François Englert</data>
+      <data key="d9">['steps', 'footway']</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">33.468</data>
+      <data key="d15">LINESTRING (4.3988699 50.8191724, 4.3987707 50.8191565, 4.3986722 50.8192011, 4.3986123 50.8192565, 4.3985302 50.8193333)</data>
+    </edge>
+    <edge source="2309911602" target="349319841" id="0">
+      <data key="d8">1010996905</data>
+      <data key="d10">True</data>
+      <data key="d13">Chemin Isabelle Stengers</data>
+      <data key="d9">service</data>
+      <data key="d14">permissive</data>
+      <data key="d11">False</data>
+      <data key="d12">19.073</data>
+      <data key="d15">LINESTRING (4.3978375 50.8206942, 4.3978437 50.8207712, 4.397863 50.8208195, 4.3979015 50.8208569)</data>
+    </edge>
+    <edge source="2470302281" target="5978453217" id="0">
+      <data key="d8">550852954</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">23.971999999999998</data>
+      <data key="d15">LINESTRING (4.3967234 50.8179695, 4.3966567 50.8180241, 4.3965245 50.818119, 4.3965113 50.8181374)</data>
+    </edge>
+    <edge source="2580493366" target="349330226" id="0">
+      <data key="d8">1010999731</data>
+      <data key="d10">True</data>
+      <data key="d9">service</data>
+      <data key="d14">permissive</data>
+      <data key="d11">False</data>
+      <data key="d12">12.01</data>
+      <data key="d15">LINESTRING (4.3975976 50.8177324, 4.397609 50.8177833, 4.3976182 50.8178396)</data>
+    </edge>
+    <edge source="2580493370" target="2580493373" id="0">
+      <data key="d8">31364707</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">25.251</data>
+    </edge>
+    <edge source="2580493373" target="2580493370" id="0">
+      <data key="d8">31364707</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">25.251</data>
+    </edge>
+    <edge source="2580493373" target="349330229" id="0">
+      <data key="d8">550852950</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">3.626</data>
+    </edge>
+    <edge source="2580493373" target="349330218" id="0">
+      <data key="d8">550852949</data>
+      <data key="d10">True</data>
+      <data key="d13">Chemin François Englert</data>
+      <data key="d9">service</data>
+      <data key="d14">permissive</data>
+      <data key="d11">False</data>
+      <data key="d12">16.811</data>
+      <data key="d15">LINESTRING (4.397428 50.8180244, 4.3975042 50.8179463, 4.3975334 50.8178898)</data>
+    </edge>
+    <edge source="2580493382" target="349330233" id="0">
+      <data key="d8">444012309</data>
+      <data key="d13">Chemin Robert Brout</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">2.933</data>
+    </edge>
+    <edge source="2580493382" target="382210616" id="0">
+      <data key="d8">444012309</data>
+      <data key="d13">Chemin Robert Brout</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">55.257999999999996</data>
+      <data key="d15">LINESTRING (4.3966357 50.8182274, 4.3966238 50.8182945, 4.3966231 50.818374, 4.3966575 50.818449, 4.3967279 50.8185366, 4.3967571 50.8185911, 4.3967623 50.8186569, 4.3967838 50.8187052)</data>
+    </edge>
+    <edge source="2580493382" target="1037948225" id="0">
+      <data key="d8">527025235</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">42.672</data>
+      <data key="d15">LINESTRING (4.3966357 50.8182274, 4.396711 50.8182471, 4.3968326 50.8183211, 4.3969753 50.8185279)</data>
+    </edge>
+    <edge source="2580493494" target="614575267" id="0">
+      <data key="d8">33517237</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">9.286</data>
+    </edge>
+    <edge source="2580493494" target="614575265" id="0">
+      <data key="d8">33517241</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">14.903</data>
+    </edge>
+    <edge source="2580493494" target="4417208624" id="0">
+      <data key="d8">[444230769, 33517237]</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">78.843</data>
+      <data key="d18">yes</data>
+      <data key="d15">LINESTRING (4.3980269 50.8203833, 4.3985361 50.8201169, 4.3987363 50.8200175, 4.3989031 50.8199405)</data>
+    </edge>
+    <edge source="4209610349" target="349330296" id="0">
+      <data key="d8">31363559</data>
+      <data key="d10">True</data>
+      <data key="d13">Chemin Ilya Prigogine</data>
+      <data key="d9">service</data>
+      <data key="d16">20</data>
+      <data key="d14">permissive</data>
+      <data key="d11">False</data>
+      <data key="d12">127.998</data>
+      <data key="d15">LINESTRING (4.3973032 50.8200186, 4.397287 50.8200328, 4.3971821 50.8200812, 4.3969098 50.8202071, 4.3968669 50.8202209, 4.3968105 50.8202325, 4.3965259 50.8202256, 4.3962029 50.8202146, 4.3960824 50.8202111, 4.3960339 50.8202194, 4.3959876 50.8202345, 4.3959593 50.8202511, 4.3959332 50.8202718, 4.3959095 50.8202908, 4.3958881 50.8203152, 4.3958772 50.8203623, 4.3959 50.8204255, 4.3959224 50.8204519)</data>
+    </edge>
+    <edge source="4209610349" target="614558898" id="0">
+      <data key="d8">[444012317, 444012318, 444012319]</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">54.709999999999994</data>
+      <data key="d18">building_passage</data>
+      <data key="d15">LINESTRING (4.3973032 50.8200186, 4.397377 50.8200274, 4.397528 50.8200032, 4.3976034 50.8200059, 4.397647 50.8200072, 4.3976359 50.8200913, 4.3976891 50.820159, 4.3977268 50.8202673)</data>
+    </edge>
+    <edge source="4414454238" target="2086012281" id="0">
+      <data key="d8">444012315</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">22.653</data>
+    </edge>
+    <edge source="4414454238" target="10846348471" id="0">
+      <data key="d8">[1166142281, 443935215]</data>
+      <data key="d13">Chemin François Englert</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">[False, True]</data>
+      <data key="d12">22.77</data>
+      <data key="d15">LINESTRING (4.39919 50.8191478, 4.3991582 50.8191856, 4.3991338 50.8192347, 4.3991248 50.819255, 4.3990889 50.8193415)</data>
+    </edge>
+    <edge source="4414454238" target="10842178040" id="0">
+      <data key="d8">1010999728</data>
+      <data key="d13">Chemin François Englert</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">13.317</data>
+      <data key="d15">LINESTRING (4.39919 50.8191478, 4.3992821 50.8190896, 4.3993275 50.8190655)</data>
+    </edge>
+    <edge source="4415155789" target="10848437313" id="0">
+      <data key="d8">[1166324574, 31364710]</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">9.568999999999999</data>
+      <data key="d18">yes</data>
+      <data key="d15">LINESTRING (4.3977367 50.8195383, 4.3976189 50.8195725, 4.3976129 50.8195742)</data>
+    </edge>
+    <edge source="4415155789" target="349330283" id="0">
+      <data key="d8">444012308</data>
+      <data key="d13">Chemin Robert Brout</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">30.525</data>
+      <data key="d15">LINESTRING (4.3977367 50.8195383, 4.3977104 50.8194828, 4.3977113 50.8194362, 4.3977701 50.8193007, 4.3977865 50.8192731)</data>
+    </edge>
+    <edge source="4415155789" target="11221891008" id="0">
+      <data key="d8">444012308</data>
+      <data key="d13">Chemin Robert Brout</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">32.537</data>
+      <data key="d15">LINESTRING (4.3977367 50.8195383, 4.3978121 50.8196254, 4.3978135 50.8196712, 4.39779 50.8197313, 4.3978014 50.8197945, 4.3978195 50.8198133)</data>
+    </edge>
+    <edge source="4415155790" target="623510687" id="0">
+      <data key="d8">1010995051</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">2.943</data>
+    </edge>
+    <edge source="4415155790" target="349330286" id="0">
+      <data key="d8">1010995051</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">10.391</data>
+    </edge>
+    <edge source="4415155790" target="10848437311" id="0">
+      <data key="d8">444012307</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">13.084000000000001</data>
+      <data key="d15">LINESTRING (4.3979248 50.8199184, 4.3979486 50.8199397, 4.3980042 50.8199522, 4.3980469 50.8199684, 4.3980571 50.8199722, 4.3980458 50.8199858)</data>
+    </edge>
+    <edge source="4415155804" target="2309911602" id="0">
+      <data key="d8">31363556</data>
+      <data key="d10">True</data>
+      <data key="d13">Chemin Isabelle Stengers</data>
+      <data key="d9">service</data>
+      <data key="d14">permissive</data>
+      <data key="d11">False</data>
+      <data key="d12">13.676</data>
+    </edge>
+    <edge source="4415155804" target="349319892" id="0">
+      <data key="d8">444012311</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">5.334</data>
+      <data key="d15">LINESTRING (4.3979776 50.8206088, 4.3979679 50.8205788, 4.3979699 50.8205615)</data>
+    </edge>
+    <edge source="4415155807" target="4417207071" id="0">
+      <data key="d8">444012316</data>
+      <data key="d9">service</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">3.901</data>
+    </edge>
+    <edge source="4416901818" target="4416901823" id="0">
+      <data key="d8">444203384</data>
+      <data key="d9">service</data>
+      <data key="d14">permissive</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">22.684</data>
+      <data key="d15">LINESTRING (4.398034 50.8211941, 4.3979297 50.8211973, 4.397773 50.8212935)</data>
+    </edge>
+    <edge source="4416901818" target="9863760337" id="0">
+      <data key="d8">1010996908</data>
+      <data key="d10">True</data>
+      <data key="d13">Chemin Isabelle Stengers</data>
+      <data key="d9">service</data>
+      <data key="d14">permissive</data>
+      <data key="d11">False</data>
+      <data key="d12">36.778</data>
+      <data key="d15">LINESTRING (4.398034 50.8211941, 4.3980044 50.8210907, 4.3979738 50.8209873, 4.3979286 50.8209409, 4.3978492 50.820898)</data>
+    </edge>
+    <edge source="4416901823" target="4416901818" id="0">
+      <data key="d8">444203384</data>
+      <data key="d9">service</data>
+      <data key="d14">permissive</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">22.684</data>
+      <data key="d15">LINESTRING (4.397773 50.8212935, 4.3979297 50.8211973, 4.398034 50.8211941)</data>
+    </edge>
+    <edge source="4417207065" target="8482347767" id="0">
+      <data key="d8">1028697624</data>
+      <data key="d9">service</data>
+      <data key="d14">no</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">8.53</data>
+    </edge>
+    <edge source="4417207065" target="10842178036" id="0">
+      <data key="d8">1165666913</data>
+      <data key="d13">Chemin François Englert</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">6.244</data>
+    </edge>
+    <edge source="4417207071" target="4415155807" id="0">
+      <data key="d8">444012316</data>
+      <data key="d9">service</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">3.901</data>
+    </edge>
+    <edge source="4417207071" target="8482347767" id="0">
+      <data key="d8">444012316</data>
+      <data key="d9">service</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">16.204</data>
+      <data key="d15">LINESTRING (4.3994363 50.8191926, 4.3994731 50.8191245, 4.3995559 50.8190725)</data>
+    </edge>
+    <edge source="4417207071" target="4417207085" id="0">
+      <data key="d8">444230771</data>
+      <data key="d9">path</data>
+      <data key="d19">0.5</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">68.70500000000001</data>
+      <data key="d15">LINESTRING (4.3994363 50.8191926, 4.3995962 50.8193372, 4.3995882 50.8193763, 4.3995293 50.8194028, 4.399865 50.8196892)</data>
+    </edge>
+    <edge source="4417207074" target="5144615620" id="0">
+      <data key="d8">[198471896, 198471897]</data>
+      <data key="d13">Chemin Robert Brout</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">11.169</data>
+      <data key="d18">yes</data>
+      <data key="d15">LINESTRING (4.3985302 50.8193333, 4.3986111 50.8193963, 4.398628 50.8194124)</data>
+    </edge>
+    <edge source="4417207074" target="623510700" id="0">
+      <data key="d8">[444012313, 198473810, 198473811]</data>
+      <data key="d13">Chemin Robert Brout</data>
+      <data key="d9">['steps', 'footway']</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">39.584999999999994</data>
+      <data key="d15">LINESTRING (4.3985302 50.8193333, 4.3984757 50.8193579, 4.3984641 50.8193949, 4.3984687 50.8194331, 4.3984496 50.8194477, 4.3984199 50.8194474, 4.3983135 50.8194312, 4.398176 50.8194421, 4.3981149 50.8194616)</data>
+    </edge>
+    <edge source="4417207074" target="2086012281" id="0">
+      <data key="d8">[1010999729, 198474125]</data>
+      <data key="d13">Chemin François Englert</data>
+      <data key="d9">['footway', 'steps']</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">33.467999999999996</data>
+      <data key="d15">LINESTRING (4.3985302 50.8193333, 4.3986123 50.8192565, 4.3986722 50.8192011, 4.3987707 50.8191565, 4.3988699 50.8191724)</data>
+    </edge>
+    <edge source="4417207074" target="9327410143" id="0">
+      <data key="d8">[1010999730, 1010995053]</data>
+      <data key="d13">Chemin François Englert</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">20.802</data>
+      <data key="d18">building_passage</data>
+      <data key="d15">LINESTRING (4.3985302 50.8193333, 4.3984722 50.8192889, 4.3983522 50.8191839)</data>
+    </edge>
+    <edge source="4417207085" target="5911467810" id="0">
+      <data key="d8">1011302206</data>
+      <data key="d13">Chemin Robert Brout</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">4.571</data>
+    </edge>
+    <edge source="4417207085" target="5926556176" id="0">
+      <data key="d8">1011302206</data>
+      <data key="d13">Chemin Robert Brout</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">1.48</data>
+    </edge>
+    <edge source="4417207085" target="4417207071" id="0">
+      <data key="d8">444230771</data>
+      <data key="d9">path</data>
+      <data key="d19">0.5</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">68.705</data>
+      <data key="d15">LINESTRING (4.399865 50.8196892, 4.3995293 50.8194028, 4.3995882 50.8193763, 4.3995962 50.8193372, 4.3994363 50.8191926)</data>
+    </edge>
+    <edge source="4417208600" target="6284097913" id="0">
+      <data key="d8">198471897</data>
+      <data key="d18">yes</data>
+      <data key="d13">Chemin Robert Brout</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">2.73</data>
+    </edge>
+    <edge source="4417208600" target="2085992518" id="0">
+      <data key="d8">198471897</data>
+      <data key="d18">yes</data>
+      <data key="d13">Chemin Robert Brout</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">12.719</data>
+    </edge>
+    <edge source="4417208600" target="10846317145" id="0">
+      <data key="d8">[444230768, 444230759]</data>
+      <data key="d18">yes</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">20.823</data>
+      <data key="d15">LINESTRING (4.3990164 50.819748, 4.3990602 50.819731, 4.3993007 50.8197606)</data>
+    </edge>
+    <edge source="4417208610" target="10926171616" id="0">
+      <data key="d8">198471894</data>
+      <data key="d18">yes</data>
+      <data key="d13">Chemin Robert Brout</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">8.664</data>
+    </edge>
+    <edge source="4417208610" target="4417208622" id="0">
+      <data key="d8">198471894</data>
+      <data key="d18">yes</data>
+      <data key="d13">Chemin Robert Brout</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">20.77</data>
+      <data key="d15">LINESTRING (4.3994967 50.819828, 4.399442 50.819853, 4.3992989 50.8199185, 4.3992564 50.8199368)</data>
+    </edge>
+    <edge source="4417208610" target="10846317145" id="0">
+      <data key="d8">[444230768, 444230761]</data>
+      <data key="d18">yes</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">16.793</data>
+      <data key="d15">LINESTRING (4.3994967 50.819828, 4.3994854 50.8198179, 4.399439 50.8197779, 4.3993007 50.8197606)</data>
+    </edge>
+    <edge source="4417208622" target="4417208625" id="0">
+      <data key="d8">444230767</data>
+      <data key="d18">yes</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">1.949</data>
+    </edge>
+    <edge source="4417208622" target="4417208610" id="0">
+      <data key="d8">198471894</data>
+      <data key="d18">yes</data>
+      <data key="d13">Chemin Robert Brout</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">20.770000000000003</data>
+      <data key="d15">LINESTRING (4.3992564 50.8199368, 4.3992989 50.8199185, 4.399442 50.819853, 4.3994967 50.819828)</data>
+    </edge>
+    <edge source="4417208622" target="2085992518" id="0">
+      <data key="d8">198471894</data>
+      <data key="d18">yes</data>
+      <data key="d13">Chemin Robert Brout</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">15.484</data>
+      <data key="d15">LINESTRING (4.3992564 50.8199368, 4.3992435 50.8199439, 4.3991242 50.8198399)</data>
+    </edge>
+    <edge source="4417208623" target="4417208624" id="0">
+      <data key="d8">444230757</data>
+      <data key="d18">yes</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">2.853</data>
+    </edge>
+    <edge source="4417208624" target="4417208623" id="0">
+      <data key="d8">444230757</data>
+      <data key="d18">yes</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">2.853</data>
+    </edge>
+    <edge source="4417208624" target="2085992518" id="0">
+      <data key="d8">444230769</data>
+      <data key="d18">yes</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">19.141</data>
+    </edge>
+    <edge source="4417208624" target="2580493494" id="0">
+      <data key="d8">[444230769, 33517237]</data>
+      <data key="d18">yes</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">78.843</data>
+      <data key="d15">LINESTRING (4.3989031 50.8199405, 4.3987363 50.8200175, 4.3985361 50.8201169, 4.3980269 50.8203833)</data>
+    </edge>
+    <edge source="4417208625" target="4417208622" id="0">
+      <data key="d8">444230767</data>
+      <data key="d18">yes</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">1.949</data>
+    </edge>
+    <edge source="4417311390" target="10926171616" id="0">
+      <data key="d8">198471894</data>
+      <data key="d18">yes</data>
+      <data key="d13">Chemin Robert Brout</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">0.91</data>
+    </edge>
+    <edge source="4417311390" target="5926558791" id="0">
+      <data key="d8">[444230764, 198471894]</data>
+      <data key="d18">yes</data>
+      <data key="d13">Chemin Robert Brout</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">8.197</data>
+      <data key="d15">LINESTRING (4.3996071 50.8197775, 4.399653 50.8197564, 4.3997013 50.819734)</data>
+    </edge>
+    <edge source="4417311390" target="10845934591" id="0">
+      <data key="d8">[629818726, 629818727, 629818487, 1166094746, 444242043]</data>
+      <data key="d18">yes</data>
+      <data key="d9">['corridor', 'steps', 'footway']</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">39.534</data>
+      <data key="d15">LINESTRING (4.3996071 50.8197775, 4.3996663 50.8198252, 4.3997736 50.819922, 4.3998211 50.8199016, 4.3998762 50.8198765, 4.3998665 50.8198681, 4.3998561 50.8198588, 4.3998015 50.8198841, 4.3997584 50.8199027)</data>
+    </edge>
+    <edge source="5062433358" target="1037948225" id="0">
+      <data key="d8">89530142</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">42.705</data>
+      <data key="d15">LINESTRING (4.3971349 50.8181811, 4.3971034 50.8182049, 4.3969997 50.8182728, 4.3969701 50.8183203, 4.3969715 50.8184059, 4.3969753 50.8185279)</data>
+    </edge>
+    <edge source="5062433358" target="349330233" id="0">
+      <data key="d8">550852951</data>
+      <data key="d10">True</data>
+      <data key="d13">Chemin François Englert</data>
+      <data key="d9">service</data>
+      <data key="d14">permissive</data>
+      <data key="d11">False</data>
+      <data key="d12">36.876</data>
+      <data key="d15">LINESTRING (4.3971349 50.8181811, 4.3970088 50.8181967, 4.3968542 50.8181954, 4.3966129 50.8182053)</data>
+    </edge>
+    <edge source="5124219337" target="382210616" id="0">
+      <data key="d8">33518988</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">25.975</data>
+    </edge>
+    <edge source="5124219337" target="1779359621" id="0">
+      <data key="d8">550852946</data>
+      <data key="d10">True</data>
+      <data key="d9">service</data>
+      <data key="d16">10</data>
+      <data key="d17">parking_aisle</data>
+      <data key="d14">permissive</data>
+      <data key="d11">False</data>
+      <data key="d12">7.723000000000001</data>
+      <data key="d15">LINESTRING (4.3964271 50.8187667, 4.3964409 50.8187982, 4.3964049 50.8188271)</data>
+    </edge>
+    <edge source="5124219341" target="1779359654" id="0">
+      <data key="d8">166493661</data>
+      <data key="d9">service</data>
+      <data key="d16">10</data>
+      <data key="d17">parking_aisle</data>
+      <data key="d14">permissive</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">19.113</data>
+    </edge>
+    <edge source="5124219341" target="349319878" id="0">
+      <data key="d8">166493661</data>
+      <data key="d9">service</data>
+      <data key="d16">10</data>
+      <data key="d17">parking_aisle</data>
+      <data key="d14">permissive</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">6.864</data>
+    </edge>
+    <edge source="5124219341" target="5124219342" id="0">
+      <data key="d8">527025238</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">11.74</data>
+    </edge>
+    <edge source="5124219342" target="5124219341" id="0">
+      <data key="d8">527025238</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">11.74</data>
+    </edge>
+    <edge source="5144615620" target="6282888056" id="0">
+      <data key="d8">198471897</data>
+      <data key="d18">yes</data>
+      <data key="d13">Chemin Robert Brout</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">18.948</data>
+    </edge>
+    <edge source="5144615620" target="5144615821" id="0">
+      <data key="d8">529629332</data>
+      <data key="d18">yes</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">3.303</data>
+    </edge>
+    <edge source="5144615620" target="4417207074" id="0">
+      <data key="d8">[198471896, 198471897]</data>
+      <data key="d18">yes</data>
+      <data key="d13">Chemin Robert Brout</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">11.169</data>
+      <data key="d15">LINESTRING (4.398628 50.8194124, 4.3986111 50.8193963, 4.3985302 50.8193333)</data>
+    </edge>
+    <edge source="5144615821" target="5144615620" id="0">
+      <data key="d8">529629332</data>
+      <data key="d18">yes</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">3.303</data>
+    </edge>
+    <edge source="5320091376" target="5950657133" id="0">
+      <data key="d8">[550852946, 630134908]</data>
+      <data key="d10">True</data>
+      <data key="d9">service</data>
+      <data key="d16">10</data>
+      <data key="d14">permissive</data>
+      <data key="d11">False</data>
+      <data key="d12">21.236</data>
+      <data key="d17">parking_aisle</data>
+      <data key="d15">LINESTRING (4.3962219 50.8183446, 4.3962632 50.8184446, 4.3963086 50.8185274)</data>
+    </edge>
+    <edge source="5320091376" target="5320091380" id="0">
+      <data key="d8">633324886</data>
+      <data key="d10">True</data>
+      <data key="d13">Chemin François Englert</data>
+      <data key="d9">service</data>
+      <data key="d16">10</data>
+      <data key="d14">permissive</data>
+      <data key="d11">False</data>
+      <data key="d12">26.761000000000003</data>
+      <data key="d15">LINESTRING (4.3962219 50.8183446, 4.3961785 50.8183554, 4.3961015 50.81836, 4.3960203 50.8183392, 4.3959681 50.8183026, 4.3959703 50.8182449)</data>
+    </edge>
+    <edge source="5320091380" target="7760933039" id="0">
+      <data key="d8">633324889</data>
+      <data key="d10">True</data>
+      <data key="d13">Chemin François Englert</data>
+      <data key="d9">service</data>
+      <data key="d16">10</data>
+      <data key="d14">permissive</data>
+      <data key="d11">False</data>
+      <data key="d12">12.388</data>
+      <data key="d15">LINESTRING (4.3959703 50.8182449, 4.3959995 50.8182028, 4.3960302 50.8181403)</data>
+    </edge>
+    <edge source="5698982616" target="349319901" id="0">
+      <data key="d8">1089069633</data>
+      <data key="d10">True</data>
+      <data key="d13">Chemin Isabelle Stengers</data>
+      <data key="d9">service</data>
+      <data key="d14">permissive</data>
+      <data key="d11">False</data>
+      <data key="d12">182.26600000000002</data>
+      <data key="d15">LINESTRING (4.4008768 50.8220724, 4.4007227 50.8219988, 4.4005749 50.8219189, 4.4002945 50.8217803, 4.4001683 50.8217464, 4.3997859 50.821708, 4.3993461 50.8216641, 4.3992468 50.8216443, 4.3990839 50.8215678, 4.3989182 50.8215051, 4.3985505 50.8214418)</data>
+    </edge>
+    <edge source="5698982616" target="5698982617" id="0">
+      <data key="d8">1089069634</data>
+      <data key="d9">service</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">10.68</data>
+      <data key="d15">LINESTRING (4.4008768 50.8220724, 4.4007908 50.8220734, 4.4007248 50.8220745)</data>
+    </edge>
+    <edge source="5698982617" target="5698982616" id="0">
+      <data key="d8">1089069634</data>
+      <data key="d9">service</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">10.68</data>
+      <data key="d15">LINESTRING (4.4007248 50.8220745, 4.4007908 50.8220734, 4.4008768 50.8220724)</data>
+    </edge>
+    <edge source="5911467810" target="5926389596" id="0">
+      <data key="d8">626162033</data>
+      <data key="d9">steps</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">10.102</data>
+    </edge>
+    <edge source="5911467810" target="5926389596" id="1">
+      <data key="d8">627765989</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">64.443</data>
+      <data key="d15">LINESTRING (4.3999252 50.8196736, 4.3996937 50.8194836, 4.3996892 50.8194615, 4.399705 50.8194422, 4.3997614 50.8194462, 4.3999108 50.8195117, 4.4000072 50.8195676, 4.4000465 50.8196248)</data>
+    </edge>
+    <edge source="5911467810" target="4417207085" id="0">
+      <data key="d8">1011302206</data>
+      <data key="d13">Chemin Robert Brout</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">4.571</data>
+    </edge>
+    <edge source="5926389596" target="5911467810" id="0">
+      <data key="d8">626162033</data>
+      <data key="d9">steps</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">10.102</data>
+    </edge>
+    <edge source="5926389596" target="5911467810" id="1">
+      <data key="d8">627765989</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">64.44300000000001</data>
+      <data key="d15">LINESTRING (4.4000465 50.8196248, 4.4000072 50.8195676, 4.3999108 50.8195117, 4.3997614 50.8194462, 4.399705 50.8194422, 4.3996892 50.8194615, 4.3996937 50.8194836, 4.3999252 50.8196736)</data>
+    </edge>
+    <edge source="5926556176" target="5926558788" id="0">
+      <data key="d8">627783050</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">10.881</data>
+    </edge>
+    <edge source="5926556176" target="4417207085" id="0">
+      <data key="d8">1011302206</data>
+      <data key="d13">Chemin Robert Brout</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">1.48</data>
+    </edge>
+    <edge source="5926556176" target="5978419924" id="0">
+      <data key="d8">[444230764, 1011302206]</data>
+      <data key="d13">Chemin Robert Brout</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">10.370000000000001</data>
+      <data key="d18">yes</data>
+      <data key="d15">LINESTRING (4.3998443 50.8196917, 4.3998337 50.8196933, 4.3997698 50.8197044, 4.3997111 50.819729)</data>
+    </edge>
+    <edge source="5926558788" target="5926556176" id="0">
+      <data key="d8">627783050</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">10.881</data>
+    </edge>
+    <edge source="5926558788" target="5926558791" id="0">
+      <data key="d8">[831184384, 627783051]</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">18.98</data>
+      <data key="d18">yes</data>
+      <data key="d15">LINESTRING (4.3999344 50.8197713, 4.3998276 50.8197791, 4.3997567 50.8197802, 4.3997013 50.819734)</data>
+    </edge>
+    <edge source="5926558791" target="5978419924" id="0">
+      <data key="d8">444230764</data>
+      <data key="d18">yes</data>
+      <data key="d13">Chemin Robert Brout</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">0.885</data>
+    </edge>
+    <edge source="5926558791" target="4417311390" id="0">
+      <data key="d8">[444230764, 198471894]</data>
+      <data key="d18">yes</data>
+      <data key="d13">Chemin Robert Brout</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">8.197</data>
+      <data key="d15">LINESTRING (4.3997013 50.819734, 4.399653 50.8197564, 4.3996071 50.8197775)</data>
+    </edge>
+    <edge source="5926558791" target="5926558788" id="0">
+      <data key="d8">[831184384, 627783051]</data>
+      <data key="d18">yes</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">18.98</data>
+      <data key="d15">LINESTRING (4.3997013 50.819734, 4.3997567 50.8197802, 4.3998276 50.8197791, 4.3999344 50.8197713)</data>
+    </edge>
+    <edge source="5950657133" target="5124219337" id="0">
+      <data key="d8">550852946</data>
+      <data key="d10">True</data>
+      <data key="d9">service</data>
+      <data key="d16">10</data>
+      <data key="d17">parking_aisle</data>
+      <data key="d14">permissive</data>
+      <data key="d11">False</data>
+      <data key="d12">27.886</data>
+      <data key="d15">LINESTRING (4.3963086 50.8185274, 4.3963389 50.8185825, 4.3963642 50.8186317, 4.3964271 50.8187667)</data>
+    </edge>
+    <edge source="5950657133" target="5950657146" id="0">
+      <data key="d8">630134907</data>
+      <data key="d9">cycleway</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">23.476</data>
+      <data key="d15">LINESTRING (4.3963086 50.8185274, 4.3963202 50.8184707, 4.3962663 50.8183642, 4.3962365 50.8183265)</data>
+    </edge>
+    <edge source="5950657146" target="5320091376" id="0">
+      <data key="d8">633324887</data>
+      <data key="d10">True</data>
+      <data key="d13">Chemin François Englert</data>
+      <data key="d9">service</data>
+      <data key="d16">10</data>
+      <data key="d14">permissive</data>
+      <data key="d11">False</data>
+      <data key="d12">2.259</data>
+    </edge>
+    <edge source="5950657146" target="5950657133" id="0">
+      <data key="d8">630134907</data>
+      <data key="d9">cycleway</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">23.476</data>
+      <data key="d15">LINESTRING (4.3962365 50.8183265, 4.3962663 50.8183642, 4.3963202 50.8184707, 4.3963086 50.8185274)</data>
+    </edge>
+    <edge source="5978419924" target="5926558791" id="0">
+      <data key="d8">444230764</data>
+      <data key="d18">yes</data>
+      <data key="d13">Chemin Robert Brout</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">0.885</data>
+    </edge>
+    <edge source="5978419924" target="5926556176" id="0">
+      <data key="d8">[444230764, 1011302206]</data>
+      <data key="d18">yes</data>
+      <data key="d13">Chemin Robert Brout</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">10.37</data>
+      <data key="d15">LINESTRING (4.3997111 50.819729, 4.3997698 50.8197044, 4.3998337 50.8196933, 4.3998443 50.8196917)</data>
+    </edge>
+    <edge source="5978419924" target="6280959700" id="0">
+      <data key="d8">[629836929, 633317898]</data>
+      <data key="d18">yes</data>
+      <data key="d9">['corridor', 'footway']</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">66.527</data>
+      <data key="d15">LINESTRING (4.3997111 50.819729, 4.3996963 50.8197188, 4.3996477 50.819676, 4.3994126 50.8194693, 4.3990889 50.8196162, 4.3990573 50.819632)</data>
+    </edge>
+    <edge source="5978453215" target="7760933040" id="0">
+      <data key="d8">984248953</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">4.27</data>
+    </edge>
+    <edge source="5978453215" target="5978453217" id="0">
+      <data key="d8">633322734</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">21.201999999999998</data>
+      <data key="d15">LINESTRING (4.3962182 50.8181623, 4.3962485 50.8181714, 4.3965113 50.8181374)</data>
+    </edge>
+    <edge source="5978453217" target="1839123876" id="0">
+      <data key="d8">550852954</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">3.318</data>
+    </edge>
+    <edge source="5978453217" target="2470302281" id="0">
+      <data key="d8">550852954</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">23.972</data>
+      <data key="d15">LINESTRING (4.3965113 50.8181374, 4.3965245 50.818119, 4.3966567 50.8180241, 4.3967234 50.8179695)</data>
+    </edge>
+    <edge source="5978453217" target="5978453215" id="0">
+      <data key="d8">633322734</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">21.201999999999998</data>
+      <data key="d15">LINESTRING (4.3965113 50.8181374, 4.3962485 50.8181714, 4.3962182 50.8181623)</data>
+    </edge>
+    <edge source="6280959700" target="5978419924" id="0">
+      <data key="d8">[629836929, 633317898]</data>
+      <data key="d9">['corridor', 'footway']</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">66.527</data>
+      <data key="d18">yes</data>
+      <data key="d15">LINESTRING (4.3990573 50.819632, 4.3990889 50.8196162, 4.3994126 50.8194693, 4.3996477 50.819676, 4.3996963 50.8197188, 4.3997111 50.819729)</data>
+    </edge>
+    <edge source="6282888056" target="5144615620" id="0">
+      <data key="d8">198471897</data>
+      <data key="d18">yes</data>
+      <data key="d13">Chemin Robert Brout</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">18.948</data>
+    </edge>
+    <edge source="6282888056" target="6284097913" id="0">
+      <data key="d8">198471897</data>
+      <data key="d18">yes</data>
+      <data key="d13">Chemin Robert Brout</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">24.55</data>
+      <data key="d15">LINESTRING (4.3987871 50.81955, 4.3989616 50.819701, 4.3989932 50.8197283)</data>
+    </edge>
+    <edge source="6282888056" target="6284097912" id="0">
+      <data key="d8">[670930888, 670930886, 670930887]</data>
+      <data key="d18">yes</data>
+      <data key="d9">['steps', 'footway']</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">9.246</data>
+      <data key="d15">LINESTRING (4.3987871 50.81955, 4.3987554 50.8195646, 4.398774 50.8195807, 4.3987933 50.8195972, 4.3988102 50.8196116)</data>
+    </edge>
+    <edge source="6282888071" target="6284097912" id="0">
+      <data key="d8">670930886</data>
+      <data key="d18">yes</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">0.87</data>
+    </edge>
+    <edge source="6284097912" target="6282888071" id="0">
+      <data key="d8">670930886</data>
+      <data key="d18">yes</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">0.87</data>
+    </edge>
+    <edge source="6284097912" target="6282888056" id="0">
+      <data key="d8">[670930888, 670930886, 670930887]</data>
+      <data key="d18">yes</data>
+      <data key="d9">['steps', 'footway']</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">9.246</data>
+      <data key="d15">LINESTRING (4.3988102 50.8196116, 4.3987933 50.8195972, 4.398774 50.8195807, 4.3987554 50.8195646, 4.3987871 50.81955)</data>
+    </edge>
+    <edge source="6284097912" target="6284097913" id="0">
+      <data key="d8">[671053873, 671053871]</data>
+      <data key="d18">yes</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">[False, True]</data>
+      <data key="d12">20.817</data>
+      <data key="d15">LINESTRING (4.3988102 50.8196116, 4.3989381 50.8197227, 4.3989614 50.8197429, 4.3989932 50.8197283)</data>
+    </edge>
+    <edge source="6284097913" target="4417208600" id="0">
+      <data key="d8">198471897</data>
+      <data key="d18">yes</data>
+      <data key="d13">Chemin Robert Brout</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">2.73</data>
+    </edge>
+    <edge source="6284097913" target="6282888056" id="0">
+      <data key="d8">198471897</data>
+      <data key="d18">yes</data>
+      <data key="d13">Chemin Robert Brout</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">24.55</data>
+      <data key="d15">LINESTRING (4.3989932 50.8197283, 4.3989616 50.819701, 4.3987871 50.81955)</data>
+    </edge>
+    <edge source="6284097913" target="6284097912" id="0">
+      <data key="d8">[671053873, 671053871]</data>
+      <data key="d18">yes</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">[False, True]</data>
+      <data key="d12">20.817</data>
+      <data key="d15">LINESTRING (4.3989932 50.8197283, 4.3989614 50.8197429, 4.3989381 50.8197227, 4.3988102 50.8196116)</data>
+    </edge>
+    <edge source="6288586248" target="10845934591" id="0">
+      <data key="d8">1166094746</data>
+      <data key="d9">corridor</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">2.597</data>
+    </edge>
+    <edge source="7760933039" target="7760933040" id="0">
+      <data key="d8">984248953</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">9.162</data>
+    </edge>
+    <edge source="7760933040" target="7760933039" id="0">
+      <data key="d8">984248953</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">9.162</data>
+    </edge>
+    <edge source="7760933040" target="5978453215" id="0">
+      <data key="d8">984248953</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">4.27</data>
+    </edge>
+    <edge source="7760933040" target="349330212" id="0">
+      <data key="d8">550852947</data>
+      <data key="d10">True</data>
+      <data key="d13">Chemin François Englert</data>
+      <data key="d9">service</data>
+      <data key="d16">10</data>
+      <data key="d14">permissive</data>
+      <data key="d11">False</data>
+      <data key="d12">7.022</data>
+      <data key="d15">LINESTRING (4.3961585 50.8181551, 4.3961793 50.8181788, 4.3962164 50.8182062)</data>
+    </edge>
+    <edge source="8482347767" target="4417207065" id="0">
+      <data key="d8">1028697624</data>
+      <data key="d9">service</data>
+      <data key="d14">no</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">8.53</data>
+    </edge>
+    <edge source="8482347767" target="4417207071" id="0">
+      <data key="d8">444012316</data>
+      <data key="d9">service</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">16.204</data>
+      <data key="d15">LINESTRING (4.3995559 50.8190725, 4.3994731 50.8191245, 4.3994363 50.8191926)</data>
+    </edge>
+    <edge source="9227271697" target="9245519817" id="0">
+      <data key="d8">31364715</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">36.037</data>
+    </edge>
+    <edge source="9227271697" target="9245449414" id="0">
+      <data key="d8">[31364715, 1001683863]</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">44.241</data>
+      <data key="d15">LINESTRING (4.3953735 50.8202617, 4.3952414 50.8201951, 4.3951962 50.8201754, 4.395106 50.8201961, 4.3948644 50.8200735)</data>
+    </edge>
+    <edge source="9245449412" target="9245519824" id="0">
+      <data key="d8">1001683863</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">10.805</data>
+    </edge>
+    <edge source="9245449414" target="9245519824" id="0">
+      <data key="d8">1001683863</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">36.931</data>
+    </edge>
+    <edge source="9245449414" target="9227271697" id="0">
+      <data key="d8">[31364715, 1001683863]</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">44.24099999999999</data>
+      <data key="d15">LINESTRING (4.3948644 50.8200735, 4.395106 50.8201961, 4.3951962 50.8201754, 4.3952414 50.8201951, 4.3953735 50.8202617)</data>
+    </edge>
+    <edge source="9245519817" target="9227271697" id="0">
+      <data key="d8">31364715</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">36.037</data>
+    </edge>
+    <edge source="9245519817" target="9245519822" id="0">
+      <data key="d8">31364715</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">4.226</data>
+      <data key="d15">LINESTRING (4.3957707 50.8204668, 4.3958011 50.8204826, 4.3958204 50.8204777)</data>
+    </edge>
+    <edge source="9245519822" target="349330296" id="0">
+      <data key="d8">31364715</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">7.718</data>
+    </edge>
+    <edge source="9245519822" target="9245519817" id="0">
+      <data key="d8">31364715</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">4.226</data>
+      <data key="d15">LINESTRING (4.3958204 50.8204777, 4.3958011 50.8204826, 4.3957707 50.8204668)</data>
+    </edge>
+    <edge source="9245519824" target="9245449412" id="0">
+      <data key="d8">1001683863</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">10.805</data>
+    </edge>
+    <edge source="9245519824" target="9245449414" id="0">
+      <data key="d8">1001683863</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">36.931</data>
+    </edge>
+    <edge source="9327410143" target="2085998148" id="0">
+      <data key="d8">[198471893, 198472526]</data>
+      <data key="d18">building_passage</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">[False, True]</data>
+      <data key="d12">71.56500000000001</data>
+      <data key="d15">LINESTRING (4.3983522 50.8191839, 4.3978707 50.8187718, 4.3978991 50.8187554, 4.3979938 50.8186666)</data>
+    </edge>
+    <edge source="9327410143" target="349330246" id="0">
+      <data key="d8">1010999730</data>
+      <data key="d18">building_passage</data>
+      <data key="d13">Chemin François Englert</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">17.731</data>
+      <data key="d15">LINESTRING (4.3983522 50.8191839, 4.3984076 50.8191569, 4.3984505 50.8191308, 4.3984105 50.8190574)</data>
+    </edge>
+    <edge source="9327410143" target="4417207074" id="0">
+      <data key="d8">[1010999730, 1010995053]</data>
+      <data key="d18">building_passage</data>
+      <data key="d13">Chemin François Englert</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">20.802</data>
+      <data key="d15">LINESTRING (4.3983522 50.8191839, 4.3984722 50.8192889, 4.3985302 50.8193333)</data>
+    </edge>
+    <edge source="9863760337" target="349319841" id="0">
+      <data key="d8">1075514353</data>
+      <data key="d9">path</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">5.864</data>
+    </edge>
+    <edge source="9863760337" target="349319894" id="0">
+      <data key="d8">[1010996908, 1010996909]</data>
+      <data key="d10">True</data>
+      <data key="d13">Chemin Isabelle Stengers</data>
+      <data key="d9">service</data>
+      <data key="d14">permissive</data>
+      <data key="d11">False</data>
+      <data key="d12">42.486999999999995</data>
+      <data key="d15">LINESTRING (4.3978492 50.820898, 4.3976495 50.8207955, 4.3976018 50.8207699, 4.3975251 50.8207118, 4.3974829 50.8206633, 4.3974816 50.8206143)</data>
+    </edge>
+    <edge source="10842178036" target="4417207065" id="0">
+      <data key="d8">1165666913</data>
+      <data key="d13">Chemin François Englert</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">6.244</data>
+    </edge>
+    <edge source="10842178036" target="10842178040" id="0">
+      <data key="d8">[1010999728, 1165666913, 1165666914]</data>
+      <data key="d13">Chemin François Englert</data>
+      <data key="d9">['steps', 'footway']</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">8.681000000000001</data>
+      <data key="d15">LINESTRING (4.3994306 50.8190237, 4.39942 50.8190267, 4.3993764 50.8190396, 4.3993398 50.819059, 4.3993275 50.8190655)</data>
+    </edge>
+    <edge source="10842178036" target="10842178040" id="1">
+      <data key="d8">1165666915</data>
+      <data key="d9">path</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">9.582</data>
+      <data key="d15">LINESTRING (4.3994306 50.8190237, 4.3994207 50.81902, 4.3993704 50.8190334, 4.3993272 50.8190575, 4.3993275 50.8190655)</data>
+    </edge>
+    <edge source="10842178040" target="10842178036" id="0">
+      <data key="d8">[1010999728, 1165666913, 1165666914]</data>
+      <data key="d13">Chemin François Englert</data>
+      <data key="d9">['steps', 'footway']</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">8.681000000000001</data>
+      <data key="d15">LINESTRING (4.3993275 50.8190655, 4.3993398 50.819059, 4.3993764 50.8190396, 4.39942 50.8190267, 4.3994306 50.8190237)</data>
+    </edge>
+    <edge source="10842178040" target="10842178036" id="1">
+      <data key="d8">1165666915</data>
+      <data key="d9">path</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">9.582</data>
+      <data key="d15">LINESTRING (4.3993275 50.8190655, 4.3993272 50.8190575, 4.3993704 50.8190334, 4.3994207 50.81902, 4.3994306 50.8190237)</data>
+    </edge>
+    <edge source="10842178040" target="4414454238" id="0">
+      <data key="d8">1010999728</data>
+      <data key="d13">Chemin François Englert</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">13.317</data>
+      <data key="d15">LINESTRING (4.3993275 50.8190655, 4.3992821 50.8190896, 4.39919 50.8191478)</data>
+    </edge>
+    <edge source="10845934591" target="6288586248" id="0">
+      <data key="d8">1166094746</data>
+      <data key="d9">corridor</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">2.597</data>
+    </edge>
+    <edge source="10845934591" target="10846348447" id="0">
+      <data key="d8">1166142275</data>
+      <data key="d9">corridor</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">4.322</data>
+    </edge>
+    <edge source="10845934591" target="4417311390" id="0">
+      <data key="d8">[629818726, 629818727, 629818487, 1166094746, 444242043]</data>
+      <data key="d9">['corridor', 'footway', 'steps']</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">39.534</data>
+      <data key="d18">yes</data>
+      <data key="d15">LINESTRING (4.3997584 50.8199027, 4.3998015 50.8198841, 4.3998561 50.8198588, 4.3998665 50.8198681, 4.3998762 50.8198765, 4.3998211 50.8199016, 4.3997736 50.819922, 4.3996663 50.8198252, 4.3996071 50.8197775)</data>
+    </edge>
+    <edge source="10845934591" target="10846348467" id="0">
+      <data key="d8">[1166142280, 1166094747]</data>
+      <data key="d9">['corridor', 'footway']</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">16.673000000000002</data>
+      <data key="d15">LINESTRING (4.3997584 50.8199027, 4.3997449 50.8198903, 4.3996202 50.8197808)</data>
+    </edge>
+    <edge source="10846317145" target="4417208610" id="0">
+      <data key="d8">[444230768, 444230761]</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">16.793</data>
+      <data key="d18">yes</data>
+      <data key="d15">LINESTRING (4.3993007 50.8197606, 4.399439 50.8197779, 4.3994854 50.8198179, 4.3994967 50.819828)</data>
+    </edge>
+    <edge source="10846317145" target="4417208600" id="0">
+      <data key="d8">[444230768, 444230759]</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">20.823</data>
+      <data key="d18">yes</data>
+      <data key="d15">LINESTRING (4.3993007 50.8197606, 4.3990602 50.819731, 4.3990164 50.819748)</data>
+    </edge>
+    <edge source="10846317145" target="2085992518" id="0">
+      <data key="d8">[444230769, 1166144051]</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">15.219999999999999</data>
+      <data key="d18">yes</data>
+      <data key="d15">LINESTRING (4.3993007 50.8197606, 4.3991635 50.8198205, 4.3991242 50.8198399)</data>
+    </edge>
+    <edge source="10846348447" target="10845934591" id="0">
+      <data key="d8">1166142275</data>
+      <data key="d9">corridor</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">4.322</data>
+    </edge>
+    <edge source="10846348456" target="10846348470" id="0">
+      <data key="d8">1166142278</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">11.166</data>
+      <data key="d15">LINESTRING (4.3993381 50.819366, 4.3992726 50.8194015, 4.3992359 50.8194411)</data>
+    </edge>
+    <edge source="10846348467" target="10846348470" id="0">
+      <data key="d8">1166142280</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">49.74100000000001</data>
+      <data key="d15">LINESTRING (4.3996202 50.8197808, 4.3996338 50.8197274, 4.3993385 50.8194606, 4.3992359 50.8194411)</data>
+    </edge>
+    <edge source="10846348467" target="10845934591" id="0">
+      <data key="d8">[1166142280, 1166094747]</data>
+      <data key="d9">['corridor', 'footway']</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">16.673000000000002</data>
+      <data key="d15">LINESTRING (4.3996202 50.8197808, 4.3997449 50.8198903, 4.3997584 50.8199027)</data>
+    </edge>
+    <edge source="10846348467" target="10846348472" id="0">
+      <data key="d8">1166142282</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">98.32000000000001</data>
+      <data key="d15">LINESTRING (4.3996202 50.8197808, 4.3995987 50.8197906, 4.3993259 50.8199146, 4.3992093 50.8199292, 4.3991189 50.8198595, 4.3984128 50.8196569)</data>
+    </edge>
+    <edge source="10846348470" target="10846348471" id="0">
+      <data key="d8">1166142280</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">15.143</data>
+    </edge>
+    <edge source="10846348470" target="10846348456" id="0">
+      <data key="d8">1166142278</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">11.166</data>
+      <data key="d15">LINESTRING (4.3992359 50.8194411, 4.3992726 50.8194015, 4.3993381 50.819366)</data>
+    </edge>
+    <edge source="10846348470" target="10846348472" id="0">
+      <data key="d8">1166142278</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">71.206</data>
+      <data key="d15">LINESTRING (4.3992359 50.8194411, 4.3991117 50.8195999, 4.398977 50.8196643, 4.3984128 50.8196569)</data>
+    </edge>
+    <edge source="10846348470" target="10846348467" id="0">
+      <data key="d8">1166142280</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">49.74100000000001</data>
+      <data key="d15">LINESTRING (4.3992359 50.8194411, 4.3993385 50.8194606, 4.3996338 50.8197274, 4.3996202 50.8197808)</data>
+    </edge>
+    <edge source="10846348471" target="10846348470" id="0">
+      <data key="d8">1166142280</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">15.143</data>
+    </edge>
+    <edge source="10846348471" target="2086012281" id="0">
+      <data key="d8">[1166142280, 198474194]</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">[False, True]</data>
+      <data key="d12">24.313</data>
+      <data key="d13">Chemin François Englert</data>
+      <data key="d15">LINESTRING (4.3990889 50.8193415, 4.3990267 50.8192993, 4.3988699 50.8191724)</data>
+    </edge>
+    <edge source="10846348471" target="4414454238" id="0">
+      <data key="d8">[1166142281, 443935215]</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">[False, True]</data>
+      <data key="d12">22.770000000000003</data>
+      <data key="d13">Chemin François Englert</data>
+      <data key="d15">LINESTRING (4.3990889 50.8193415, 4.3991248 50.819255, 4.3991338 50.8192347, 4.3991582 50.8191856, 4.39919 50.8191478)</data>
+    </edge>
+    <edge source="10846348472" target="10846348470" id="0">
+      <data key="d8">1166142278</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">71.206</data>
+      <data key="d15">LINESTRING (4.3984128 50.8196569, 4.398977 50.8196643, 4.3991117 50.8195999, 4.3992359 50.8194411)</data>
+    </edge>
+    <edge source="10846348472" target="623510700" id="0">
+      <data key="d8">[444012320, 1166142278]</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">[False, True]</data>
+      <data key="d12">30.867</data>
+      <data key="d15">LINESTRING (4.3984128 50.8196569, 4.3983805 50.8196565, 4.3982647 50.8195701, 4.3981149 50.8194616)</data>
+    </edge>
+    <edge source="10846348472" target="10846348467" id="0">
+      <data key="d8">1166142282</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">98.32</data>
+      <data key="d15">LINESTRING (4.3984128 50.8196569, 4.3991189 50.8198595, 4.3992093 50.8199292, 4.3993259 50.8199146, 4.3995987 50.8197906, 4.3996202 50.8197808)</data>
+    </edge>
+    <edge source="10848437311" target="4415155790" id="0">
+      <data key="d8">444012307</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">13.084</data>
+      <data key="d15">LINESTRING (4.3980458 50.8199858, 4.3980571 50.8199722, 4.3980469 50.8199684, 4.3980042 50.8199522, 4.3979486 50.8199397, 4.3979248 50.8199184)</data>
+    </edge>
+    <edge source="10848437313" target="11221891009" id="0">
+      <data key="d8">198479444</data>
+      <data key="d18">yes</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">34.255</data>
+    </edge>
+    <edge source="10848437313" target="1037948177" id="0">
+      <data key="d8">[198479444, 527025236, 1001683870, 1001683871]</data>
+      <data key="d18">yes</data>
+      <data key="d9">['path', 'footway']</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">53.653</data>
+      <data key="d15">LINESTRING (4.3976129 50.8195742, 4.3975488 50.8194361, 4.3975324 50.819421, 4.3974612 50.8194359, 4.3974555 50.8194232, 4.3973822 50.8194362, 4.3973889 50.819451, 4.3973082 50.8194679, 4.3972583 50.8195067, 4.3971658 50.8195268, 4.3971173 50.8195249)</data>
+    </edge>
+    <edge source="10848437313" target="4415155789" id="0">
+      <data key="d8">[31364710, 1166324574]</data>
+      <data key="d18">yes</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">9.568999999999999</data>
+      <data key="d15">LINESTRING (4.3976129 50.8195742, 4.3976189 50.8195725, 4.3977367 50.8195383)</data>
+    </edge>
+    <edge source="10926171614" target="10926171616" id="0">
+      <data key="d8">1175888432</data>
+      <data key="d18">yes</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">3.579</data>
+    </edge>
+    <edge source="10926171616" target="4417311390" id="0">
+      <data key="d8">198471894</data>
+      <data key="d18">yes</data>
+      <data key="d13">Chemin Robert Brout</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">0.91</data>
+    </edge>
+    <edge source="10926171616" target="4417208610" id="0">
+      <data key="d8">198471894</data>
+      <data key="d18">yes</data>
+      <data key="d13">Chemin Robert Brout</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">8.664</data>
+    </edge>
+    <edge source="10926171616" target="10926171614" id="0">
+      <data key="d8">1175888432</data>
+      <data key="d18">yes</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">3.579</data>
+    </edge>
+    <edge source="11012481579" target="4415155804" id="0">
+      <data key="d8">31363556</data>
+      <data key="d10">True</data>
+      <data key="d13">Chemin Isabelle Stengers</data>
+      <data key="d9">service</data>
+      <data key="d14">permissive</data>
+      <data key="d11">False</data>
+      <data key="d12">102.41799999999999</data>
+      <data key="d15">LINESTRING (4.3991311 50.8200553, 4.3991101 50.8200902, 4.3990497 50.8201211, 4.3982163 50.8204992, 4.3979776 50.8206088)</data>
+    </edge>
+    <edge source="11221891008" target="4415155789" id="0">
+      <data key="d8">444012308</data>
+      <data key="d13">Chemin Robert Brout</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">32.537</data>
+      <data key="d15">LINESTRING (4.3978195 50.8198133, 4.3978014 50.8197945, 4.39779 50.8197313, 4.3978135 50.8196712, 4.3978121 50.8196254, 4.3977367 50.8195383)</data>
+    </edge>
+    <edge source="11221891008" target="623510687" id="0">
+      <data key="d8">444012308</data>
+      <data key="d13">Chemin Robert Brout</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">12.23</data>
+      <data key="d15">LINESTRING (4.3978195 50.8198133, 4.3978407 50.8198351, 4.3979376 50.8198932)</data>
+    </edge>
+    <edge source="11221891008" target="11221891009" id="0">
+      <data key="d8">[1211186104, 1211186103]</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">7.948</data>
+      <data key="d18">yes</data>
+      <data key="d15">LINESTRING (4.3978195 50.8198133, 4.3977545 50.8198664, 4.3977502 50.8198698)</data>
+    </edge>
+    <edge source="11221891009" target="349330286" id="0">
+      <data key="d8">198479444</data>
+      <data key="d18">yes</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">False</data>
+      <data key="d12">10.372</data>
+    </edge>
+    <edge source="11221891009" target="10848437313" id="0">
+      <data key="d8">198479444</data>
+      <data key="d18">yes</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">34.255</data>
+    </edge>
+    <edge source="11221891009" target="11221891008" id="0">
+      <data key="d8">[1211186104, 1211186103]</data>
+      <data key="d18">yes</data>
+      <data key="d9">footway</data>
+      <data key="d10">False</data>
+      <data key="d11">True</data>
+      <data key="d12">7.948</data>
+      <data key="d15">LINESTRING (4.3977502 50.8198698, 4.3977545 50.8198664, 4.3978195 50.8198133)</data>
+    </edge>
+    <data key="d0">2023-11-23 19:01:22</data>
+    <data key="d1">OSMnx 1.7.1</data>
+    <data key="d2">epsg:4326</data>
+    <data key="d3">True</data>
+  </graph>
+</graphml>
