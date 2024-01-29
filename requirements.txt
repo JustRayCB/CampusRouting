@@ -1,4 +1,0 @@
-networkx
-pqdict
-matplotlib
-osmnx
