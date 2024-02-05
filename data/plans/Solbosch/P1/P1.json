@@ -1,22 +1,34 @@
 {
-  "First Floor": [
+  "01": [
     {
       "id": "H1",
       "name": "Couloir 1",
       "neighbors": [
         {
           "id": "S1",
-          "direction": { "null": "left", "3": "straight", "H2": "right" },
+          "direction": {
+            "null": "left",
+            "U3": "straight",
+            "H2": "right"
+          },
           "weight": 1
         },
         {
           "id": "H2",
-          "direction": { "null": "straight", "3": "right", "S1": "left" },
+          "direction": {
+            "null": "straight",
+            "U3": "right",
+            "S1": "left"
+          },
           "weight": 1
         },
         {
-          "id": "3",
-          "direction": { "null": "right", "H2": "left", "S1": "straight" },
+          "id": "U3",
+          "direction": {
+            "null": "right",
+            "H2": "left",
+            "S1": "straight"
+          },
           "weight": 1
         }
       ]
@@ -29,14 +41,15 @@
           "id": "H1",
           "direction": "straight",
           "weight": 1
-        },
+        }
+      ]
+    },
+    {
+      "id": "U3",
+      "name": "Salle 3",
+      "neighbors": [
         {
-          "id": "H6",
-          "direction": "straight",
-          "weight": 1
-        },
-        {
-          "id": "H10",
+          "id": "H1",
           "direction": "straight",
           "weight": 1
         }
@@ -50,10 +63,10 @@
           "id": "H1",
           "direction": {
             "H3": "straight",
-            "7": "right",
+            "U7": "right",
             "E110": "right",
             "E203": "left",
-            "9": "left"
+            "U9": "left"
           },
           "weight": 1
         },
@@ -61,21 +74,21 @@
           "id": "H3",
           "direction": {
             "H1": "straight",
-            "7": "left",
+            "U7": "left",
             "E110": "left",
             "E203": "right",
-            "9": "right"
+            "U9": "right"
           },
           "weight": 1
         },
         {
-          "id": "7",
+          "id": "U7",
           "direction": {
             "H1": "left",
             "H3": "right",
             "E110": "right",
             "E203": "straight",
-            "9": "straight"
+            "U9": "straight"
           },
           "weight": 1
         },
@@ -84,9 +97,9 @@
           "direction": {
             "H1": "left",
             "H3": "right",
-            "7": "left",
+            "U7": "left",
             "E203": "straight",
-            "9": "straight"
+            "U9": "straight"
           },
           "weight": 1
         },
@@ -95,18 +108,18 @@
           "direction": {
             "H1": "right",
             "H3": "left",
-            "7": "straight",
+            "U7": "straight",
             "E110": "straight",
-            "9": "left"
+            "U9": "left"
           },
           "weight": 1
         },
         {
-          "id": "9",
+          "id": "U9",
           "direction": {
             "H1": "right",
             "H3": "left",
-            "7": "straight",
+            "U7": "straight",
             "E110": "straight",
             "E203": "right"
           },
@@ -115,7 +128,7 @@
       ]
     },
     {
-      "id": "7",
+      "id": "U7",
       "name": "Salle 7",
       "neighbors": [
         {
@@ -148,7 +161,7 @@
       ]
     },
     {
-      "id": "9",
+      "id": "U9",
       "name": "Salle 9",
       "neighbors": [
         {
@@ -167,7 +180,7 @@
           "direction": {
             "H4": "straight",
             "E207": "left",
-            "10": "left"
+            "U10": "left"
           },
           "weight": 1
         },
@@ -176,7 +189,7 @@
           "direction": {
             "H2": "straight",
             "E207": "right",
-            "10": "right"
+            "U10": "right"
           },
           "weight": 1
         },
@@ -185,12 +198,12 @@
           "direction": {
             "H2": "right",
             "H4": "left",
-            "10": "left"
+            "U10": "left"
           },
           "weight": 1
         },
         {
-          "id": "10",
+          "id": "U10",
           "direction": {
             "H2": "right",
             "H4": "left",
@@ -212,7 +225,7 @@
       ]
     },
     {
-      "id": "10",
+      "id": "U10",
       "name": "Salle 10",
       "neighbors": [
         {
@@ -230,9 +243,9 @@
           "id": "H3",
           "direction": {
             "H5": "straight",
-            "11": "left",
-            "12": "right",
-            "8": "right"
+            "U11": "left",
+            "U12": "right",
+            "U8": "right"
           },
           "weight": 1
         },
@@ -240,47 +253,47 @@
           "id": "H5",
           "direction": {
             "H3": "straight",
-            "11": "right",
-            "12": "left",
-            "8": "left"
+            "U11": "right",
+            "U12": "left",
+            "U8": "left"
           },
           "weight": 1
         },
         {
-          "id": "11",
+          "id": "U11",
           "direction": {
             "H3": "right",
             "H5": "left",
-            "12": "straight",
-            "8": "straight"
+            "U12": "straight",
+            "U8": "straight"
           },
           "weight": 1
         },
         {
-          "id": "12",
+          "id": "U12",
           "direction": {
             "H3": "left",
             "H5": "right",
-            "8": "left",
-            "11": "straight"
+            "U8": "left",
+            "U11": "straight"
           },
           "weight": 1
         },
         {
-          "id": "8",
+          "id": "U8",
           "direction": {
             "H3": "left",
             "H5": "right",
-            "11": "straight",
-            "12": "right"
+            "U11": "straight",
+            "U12": "right"
           },
           "weight": 1
         }
       ]
     },
     {
-      "id": "11"," 
-      "name": "Salle 11", 
+      "id": "U11",
+      "name": "Salle 11",
       "neighbors": [
         {
           "id": "H4",
@@ -290,8 +303,8 @@
       ]
     },
     {
-      "id": "12", 
-      "name": "Salle 12", 
+      "id": "U12",
+      "name": "Salle 12",
       "neighbors": [
         {
           "id": "H4",
@@ -301,8 +314,8 @@
       ]
     },
     {
-      "id": "8", 
-      "name": "Salle 8", 
+      "id": "U8",
+      "name": "Salle 8",
       "neighbors": [
         {
           "id": "H4",
@@ -313,13 +326,13 @@
     },
     {
       "id": "H5",
-      "name": "Couloir 5", 
+      "name": "Couloir 5",
       "neighbors": [
         {
           "id": "H4",
           "direction": {
             "S2": "left",
-            "13": "right"
+            "U13": "right"
           },
           "weight": 1
         },
@@ -327,12 +340,12 @@
           "id": "S2",
           "direction": {
             "H4": "right",
-            "13": "straight"
+            "U13": "straight"
           },
           "weight": 1
         },
         {
-          "id": "13",
+          "id": "U13",
           "direction": {
             "H4": "left",
             "S2": "straight"
@@ -349,21 +362,11 @@
           "id": "H5",
           "direction": "straight",
           "weight": 1
-        },
-        {
-          "id": "H9",
-          "direction": "straight",
-          "weight": 1
-        },
-        {
-          "id": "H13", 
-          "direction": "straight",
-          "weight": 1
         }
       ]
     },
     {
-      "id": "13",
+      "id": "U13",
       "name": "Salle 13",
       "neighbors": [
         {
@@ -374,21 +377,32 @@
       ]
     }
   ],
-  "Second Floor": [
+  "02": [
     {
-      "id": "H6", 
-      "name": "Couloir 6", 
+      "id": "S1",
+      "name": "Escalier 1",
       "neighbors": [
         {
-          "id": "S1", 
+          "id": "H6",
+          "direction": "straight",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "H6",
+      "name": "Couloir 6",
+      "neighbors": [
+        {
+          "id": "S1",
           "direction": {
-            "H7": "right", 
+            "H7": "right",
             "S1": "left"
           },
           "weight": 1
         },
         {
-          "id": "H7", 
+          "id": "H7",
           "direction": {
             "S1": "left"
           },
@@ -397,70 +411,70 @@
       ]
     },
     {
-      "id": "H7", 
-      "name": "Couloir 7", 
+      "id": "H7",
+      "name": "Couloir 7",
       "neighbors": [
         {
-          "id": "H6", 
+          "id": "H6",
           "direction": {
-            "H8": "straight", 
+            "H8": "straight",
             "E204": "left",
             "E205": "left",
             "E103": "right",
             "E106": "right"
-          }, 
+          },
           "weight": 1
         },
         {
-          "id": "H8", 
+          "id": "H8",
           "direction": {
-            "H6": "straight", 
+            "H6": "straight",
             "E204": "right",
-            "E205": "right", 
-            "E103": "left", 
+            "E205": "right",
+            "E103": "left",
             "E106": "left"
-          }, 
+          },
           "weight": 1
         },
         {
-          "id": "E204", 
+          "id": "E204",
           "direction": {
-            "H6": "right", 
-            "H8": "left", 
-            "E205": "left", 
+            "H6": "right",
+            "H8": "left",
+            "E205": "left",
             "E103": "straight",
             "E106": "straight"
           },
           "weight": 1
         },
         {
-          "id": "E205", 
+          "id": "E205",
           "direction": {
-            "H6": "right", 
-            "H8": "left", 
-            "E204": "right", 
+            "H6": "right",
+            "H8": "left",
+            "E204": "right",
             "E103": "straight",
             "E106": "straight"
           },
           "weight": 1
         },
         {
-          "id": "E103", 
+          "id": "E103",
           "direction": {
-            "H6": "left", 
-            "H8": "right", 
-            "E204": "straight", 
+            "H6": "left",
+            "H8": "right",
+            "E204": "straight",
             "E205": "straight",
             "E106": "right"
           },
           "weight": 1
         },
         {
-          "id": "E106", 
+          "id": "E106",
           "direction": {
-            "H6": "left", 
-            "H8": "right", 
-            "E204": "straight", 
+            "H6": "left",
+            "H8": "right",
+            "E204": "straight",
             "E205": "straight",
             "E103": "left"
           },
@@ -469,53 +483,53 @@
       ]
     },
     {
-      "id": "E204", 
-      "name": "Salle E204", 
+      "id": "E204",
+      "name": "Salle E204",
       "neighbors": [
         {
-          "id": "H7", 
-          "direction": "straight", 
+          "id": "H7",
+          "direction": "straight",
           "weight": 1
         }
       ]
     },
     {
       "id": "E205",
-      "name": "Salle E205", 
+      "name": "Salle E205",
       "neighbors": [
         {
-          "id": "H7", 
-          "direction": "straight", 
+          "id": "H7",
+          "direction": "straight",
           "weight": 1
         }
       ]
     },
     {
-      "id": "E103", 
-      "name": "Salle E103", 
+      "id": "E103",
+      "name": "Salle E103",
       "neighbors": [
         {
-          "id": "H7", 
-          "direction": "straight", 
+          "id": "H7",
+          "direction": "straight",
           "weight": 1
         }
       ]
     },
     {
       "id": "E106",
-      "name": "Salle E106", 
+      "name": "Salle E106",
       "neighbors": [
         {
-          "id": "H7", 
-          "direction": "straight", 
+          "id": "H7",
+          "direction": "straight",
           "weight": 1
         }
       ]
     },
     {
-      "id": "H8", 
-      "name": "Couloir 8", 
-      "neighbors":[
+      "id": "H8",
+      "name": "Couloir 8",
+      "neighbors": [
         {
           "id": "H7",
           "direction": {
@@ -528,18 +542,18 @@
           "weight": 1
         },
         {
-          "id": "H9", 
+          "id": "H9",
           "direction": {
             "H7": "straight",
             "E109": "left",
             "E112": "left",
             "E208": "right",
             "E211": "right"
-          }, 
+          },
           "weight": 1
         },
         {
-          "id": "E109", 
+          "id": "E109",
           "direction": {
             "H7": "left",
             "H9": "right",
@@ -550,7 +564,7 @@
           "weight": 1
         },
         {
-          "id": "E112", 
+          "id": "E112",
           "direction": {
             "H7": "left",
             "H9": "right",
@@ -561,7 +575,7 @@
           "weight": 1
         },
         {
-          "id": "E208", 
+          "id": "E208",
           "direction": {
             "H7": "right",
             "H9": "left",
@@ -572,7 +586,7 @@
           "weight": 1
         },
         {
-          "id": "E211", 
+          "id": "E211",
           "direction": {
             "H7": "right",
             "H9": "left",
@@ -585,34 +599,34 @@
       ]
     },
     {
-      "id": "E109", 
-      "name": "Salle E109", 
+      "id": "E109",
+      "name": "Salle E109",
       "neighbors": [
         {
-          "id": "H8", 
-          "direction": "straight", 
+          "id": "H8",
+          "direction": "straight",
           "weight": 1
         }
       ]
     },
     {
-      "id": "E112", 
+      "id": "E112",
       "name": "Salle E112",
       "neighbors": [
         {
-          "id": "H8", 
-          "direction": "straight", 
+          "id": "H8",
+          "direction": "straight",
           "weight": 1
         }
       ]
     },
     {
       "id": "E208",
-      "name": "Salle E208", 
+      "name": "Salle E208",
       "neighbors": [
         {
-          "id": "H8", 
-          "direction": "straight", 
+          "id": "H8",
+          "direction": "straight",
           "weight": 1
         }
       ]
@@ -622,15 +636,15 @@
       "name": "Salle E211",
       "neighbors": [
         {
-          "id": "H8", 
-          "direction": "straight", 
+          "id": "H8",
+          "direction": "straight",
           "weight": 1
         }
       ]
     },
     {
-      "id": "H9", 
-      "name": "Couloir 9", 
+      "id": "H9",
+      "name": "Couloir 9",
       "neighbors": [
         {
           "id": "H8",
@@ -642,12 +656,12 @@
           "weight": 1
         },
         {
-          "id": "S2", 
+          "id": "S2",
           "direction": {
             "H8": "right",
             "E214": "right",
             "E115": "left"
-          }, 
+          },
           "weight": 1
         },
         {
@@ -671,43 +685,65 @@
       ]
     },
     {
-      "id": "E214", 
-      "name": "Salle E214", 
+      "id": "E214",
+      "name": "Salle E214",
       "neighbors": [
         {
-          "id": "H9", 
-          "direction": "straight", 
+          "id": "H9",
+          "direction": "straight",
           "weight": 1
         }
       ]
     },
     {
-      "id": "E115", 
-      "name": "Salle E115", 
+      "id": "E115",
+      "name": "Salle E115",
       "neighbors": [
         {
-          "id": "H9", 
-          "direction": "straight", 
+          "id": "H9",
+          "direction": "straight",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "S2",
+      "name": "Escalier 2",
+      "neighbors": [
+        {
+          "id": "H9",
+          "direction": "straight",
           "weight": 1
         }
       ]
     }
   ],
-  "Third Floor": [
+  "03": [
     {
-      "id": "H10", 
-      "name": "Couloir 10", 
+      "id": "S1",
+      "name": "Escalier 1",
       "neighbors": [
         {
-          "id": "S1", 
+          "id": "H10",
+          "direction": "straight",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "H10",
+      "name": "Couloir 10",
+      "neighbors": [
+        {
+          "id": "S1",
           "direction": {
-            "H11": "right", 
+            "H11": "right",
             "S1": "left"
           },
           "weight": 1
         },
         {
-          "id": "H11", 
+          "id": "H11",
           "direction": {
             "S1": "left"
           },
@@ -716,18 +752,18 @@
       ]
     },
     {
-      "id": "H11", 
-      "name": "Couloir 11", 
+      "id": "H11",
+      "name": "Couloir 11",
       "neighbors": [
         {
-          "id": "H10", 
+          "id": "H10",
           "direction": {
-            "H12": "straight", 
+            "H12": "straight",
             "E106": "right",
-            "14": "right",
-            "15": "right",
+            "U14": "right",
+            "U15": "right",
             "E206": "left"
-          }, 
+          },
           "weight": 1
         },
         {
@@ -735,8 +771,8 @@
           "direction": {
             "H10": "straight",
             "E106": "left",
-            "14": "left",
-            "15": "left",
+            "U14": "left",
+            "U15": "left",
             "E206": "right"
           },
           "weight": 1
@@ -746,30 +782,30 @@
           "direction": {
             "H10": "left",
             "H12": "right",
-            "14": "right",
-            "15": "right",
+            "U14": "right",
+            "U15": "right",
             "E206": "straight"
           },
           "weight": 1
         },
         {
-          "id": "14",
+          "id": "U14",
           "direction": {
             "H10": "left",
             "H12": "right",
             "E106": "left",
-            "15": "right",
+            "U15": "right",
             "E206": "straight"
           },
           "weight": 1
         },
         {
-          "id": "15", 
+          "id": "U15",
           "direction": {
             "H10": "left",
             "H12": "right",
             "E106": "left",
-            "14": "left",
+            "U14": "left",
             "E206": "straight"
           },
           "weight": 1
@@ -780,8 +816,8 @@
             "H10": "right",
             "H12": "left",
             "E106": "straight",
-            "14": "straight",
-            "15": "straight"
+            "U14": "straight",
+            "U15": "straight"
           },
           "weight": 1
         }
@@ -799,7 +835,7 @@
       ]
     },
     {
-      "id": "14",
+      "id": "U14",
       "name": "Salle 14",
       "neighbors": [
         {
@@ -810,7 +846,7 @@
       ]
     },
     {
-      "id": "15",
+      "id": "U15",
       "name": "Salle 15",
       "neighbors": [
         {
@@ -842,7 +878,7 @@
             "E209": "left",
             "E109": "right",
             "E113": "right",
-            "16": "right"
+            "U16": "right"
           },
           "weight": 1
         },
@@ -853,7 +889,7 @@
             "E209": "right",
             "E109": "left",
             "E113": "left",
-            "16": "left"
+            "U16": "left"
           },
           "weight": 1
         },
@@ -864,7 +900,7 @@
             "H13": "left",
             "E109": "straight",
             "E113": "straight",
-            "16": "straight"
+            "U16": "straight"
           },
           "weight": 1
         },
@@ -875,12 +911,12 @@
             "H13": "right",
             "E209": "straight",
             "E113": "right",
-            "16": "right"
+            "U16": "right"
           },
           "weight": 1
         },
         {
-          "id": "16",
+          "id": "U16",
           "direction": {
             "H11": "left",
             "H13": "right",
@@ -897,7 +933,7 @@
             "H13": "right",
             "E209": "straight",
             "E109": "left",
-            "16": "left"
+            "U16": "left"
           },
           "weight": 1
         }
@@ -937,7 +973,7 @@
       ]
     },
     {
-      "id": "16",
+      "id": "U16",
       "name": "Salle 16",
       "neighbors": [
         {
@@ -1003,6 +1039,17 @@
     {
       "id": "E214",
       "name": "Salle E214",
+      "neighbors": [
+        {
+          "id": "H13",
+          "direction": "straight",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "S2",
+      "name": "Escalier 2",
       "neighbors": [
         {
           "id": "H13",
