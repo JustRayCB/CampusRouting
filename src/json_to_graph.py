@@ -94,6 +94,8 @@ def setup_edges(graph: nx.Graph, neighbors: List[Dict], source: str, floor: str)
                     direction[get_name_from_id(predecessor, floor)] = neighbor["direction"][
                         predecessor
                     ]
+        if is_elevator_or_stair(source) and is_elevator_or_stair(target_name):
+            raise ValueError("Elevators and Stairs cannot be connected to each other.")
         edge_attributes["direction"] = direction
         edge = (source, target_name, edge_attributes)
         edges.append(edge)
@@ -164,7 +166,7 @@ if __name__ == "__main__":
             font_color="white",
             node_size=800,
         )
-        g = buildings_graph[building]
+        # check_edges(buildings_graph[building])
 
         # nx.draw(buildings_graph[building], with_labels=True, node_color=colors)
-        # plt.show()
+        plt.show()
