@@ -117,9 +117,9 @@ def setup_node(graph: nx.Graph, data: Dict, floor: str) -> None:
     graph.add_node(node_name, **node_attributes)
 
 
-def build_graph(data: Dict) -> nx.Graph:
+def build_graph(data: Dict) -> nx.DiGraph:
     """Build a graph from the data of a building struture previously retrieved from json file."""
-    graph = nx.Graph()
+    graph = nx.DiGraph()
     floors: List[str] = list(data.keys())
     for current_floor in floors:
         rooms: List[Dict] = data[current_floor]
@@ -133,12 +133,10 @@ if __name__ == "__main__":
     buildings_data: Dict[str, Dict] = {}
     buildings_graph: Dict[str, nx.Graph] = {}
     for building in BUILDINGS:
-        graph = nx.Graph()
         file_path = DATA_DIR + building + "/" + building + ".json"
         data = load_json(file_path)
         buildings_data[building] = data
         buildings_graph[building] = build_graph(data)
-        # colors = list(COLORS.values())
         colors = [
             buildings_graph[building].nodes[node]["color"]
             for node in buildings_graph[building].nodes
