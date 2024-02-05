@@ -94,6 +94,7 @@ def setup_edges(graph: nx.Graph, neighbors: List[Dict], source: str, floor: str)
                     direction[get_name_from_id(predecessor, floor)] = neighbor["direction"][
                         predecessor
                     ]
+        edge_attributes["direction"] = direction
         edge = (source, target_name, edge_attributes)
         edges.append(edge)
     graph.add_edges_from(edges)
@@ -129,6 +130,18 @@ def build_graph(data: Dict) -> nx.DiGraph:
     return graph
 
 
+def check_edges(graph: nx.Graph):
+    edges = graph.edges.data()
+    while True:
+        i = input("Enter the name of the source and destination: ")
+        if i == "exit":
+            break
+        for edge in edges:
+            source, target = i.split()
+            if source in edge and target in edge:
+                print(edge)
+
+
 if __name__ == "__main__":
     buildings_data: Dict[str, Dict] = {}
     buildings_graph: Dict[str, nx.Graph] = {}
@@ -151,5 +164,7 @@ if __name__ == "__main__":
             font_color="white",
             node_size=800,
         )
+        g = buildings_graph[building]
+
         # nx.draw(buildings_graph[building], with_labels=True, node_color=colors)
-        plt.show()
+        # plt.show()
