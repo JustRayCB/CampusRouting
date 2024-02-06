@@ -873,6 +873,21 @@ dev = ["pre-commit", "tox"]
 testing = ["pytest", "pytest-benchmark"]
 
 [[package]]
+name = "pqdict"
+version = "1.3.0"
+description = "A Pythonic indexed priority queue."
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "pqdict-1.3.0-py2.py3-none-any.whl", hash = "sha256:8affcb2e5c76f658df4fa871b2be792fdc878697421f3465fe447fe3a674c619"},
+    {file = "pqdict-1.3.0.tar.gz", hash = "sha256:2c4cadf68200f2608f94980a918b556c234a579e540d1f3b81f88dd2644c2d14"},
+]
+
+[package.extras]
+docs = ["Sphinx (<7.0.0)", "numpydoc", "sphinx-autobuild", "sphinx-rtd-theme"]
+test = ["isort", "mypy", "pytest", "pyupgrade", "ruff"]
+
+[[package]]
 name = "pyparsing"
 version = "3.1.1"
 description = "pyparsing module - Classes and methods to define and execute parsing grammars"
@@ -1120,4 +1135,4 @@ zstd = ["zstandard (>=0.18.0)"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "0f02e4756bc8b60a344188f39e39bf9494406b822bd88ce76993a036fd196303"
+content-hash = "956e90a6be23ef6bc32090850f785d617fcdb2434f49f85c5c9015bb2c40c283"
