@@ -212,17 +212,6 @@ def show_graph(graph: nx.DiGraph, sota: tuple = ()):
         font_color="white",
         node_size=800,
     )
-    if sota != () and len(sota) == 2:
-        shortest_path = nx.shortest_path(graph, sota[0], sota[1])
-        nx.draw_networkx_edges(
-            graph,
-            pos,
-            edgelist=[
-                (shortest_path[i], shortest_path[i + 1]) for i in range(len(shortest_path) - 1)
-            ],
-            edge_color="red",
-            width=2,
-        )
 
     plt.show()
 
@@ -232,23 +221,7 @@ def shortest_path(graph: nx.Graph, source: str, target: str):
     return nx.shortest_path(graph, source, target, weight="weight")
 
 
-def find_path(graph: nx.DiGraph):
-    """Find the shortest path between two nodes in the graph using the Dijkstra algorithm."""
-    while True:
-        i = input(
-            """Please enter the source and target to find the shortest path.\nIf you want to exit, type 'exit'.\nThe format is: source:floor target:floor\n. For example: H1:01 E222:02\n"""
-        )
-        if i == "exit":
-            break
-        source, target = i.split()
-        source, floor_source = source.split(":")
-        target, floor_target = target.split(":")
-        show_graph(
-            graph, (get_name_from_id(source, floor_source), get_name_from_id(target, floor_target))
-        )
-
-
-if __name__ == "__main__":
+def main():
     buildings_data: Dict[str, Dict] = {}
     buildings_graph: Dict[str, nx.DiGraph] = {}
     for building in BUILDINGS:
@@ -256,10 +229,11 @@ if __name__ == "__main__":
         data = load_json(file_path)
         buildings_data[building] = data
         buildings_graph[building] = build_graph(data)
-        colors = [
-            buildings_graph[building].nodes[node]["color"]
-            for node in buildings_graph[building].nodes
-        ]
         # check_edges(buildings_graph[building])
         # show_graph(buildings_graph[building])
         # find_path(buildings_graph[building])
+    return buildings_graph
+
+
+if __name__ == "__main__":
+    main()
