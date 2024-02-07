@@ -37,16 +37,17 @@ def save_as_graphml(graph: nx.Graph, filename: str):
     ox.save_graphml(graph, path)
 
 
-# city_graph: nx.Graph = ox.graph_from_place(
-#     "Brussels-Capital", network_type="bike", simplify=True
-# )
-city_graph: nx.Graph = ox.load_graphml("./data/graphml/bxl_bike.graphml")
+city_graph: nx.Graph = ox.graph_from_place("Solbosch University, Brussels, Belgium", network_type='walk', simplify=True)
 
-i = 0
-for node in city_graph.nodes:
-    if i == 10:
-        break
-    # city_graph.nodes[node]["x"] pour avoir l'attribut x du noeud node
-    i += 1
+ox.plot_graph(city_graph, show=True, save=False, close=False)
+
+# city_graph: nx.Graph = ox.load_graphml("./data/graphml/bxl_bike.graphml")
+
+# i = 0
+# for node in city_graph.nodes:
+#     if i == 10:
+#         break
+#     # city_graph.nodes[node]["x"] pour avoir l'attribut x du noeud node
+#     i += 1
 
 # To find the source node in the graph, we could use geopy ? or sanitize the address and find the closest node ?
