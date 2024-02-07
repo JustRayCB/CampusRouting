@@ -5,6 +5,9 @@
             shortest path between two nodes in a building graph.
 """
 
+from typing import Any, Dict, List
+
+import matplotlib.pyplot as plt
 import networkx as nx
 from pqdict import pqdict
 
@@ -37,17 +40,13 @@ def dijkstra(graph: nx.DiGraph, source: str, target: str):
     :return: The shortest path between the source and the target node.
     """
 
-    dist_to = {node: float("inf") for node in graph.nodes}
-    predecessor = {}
+    dist_to: Dict = {node: float("inf") for node in graph.nodes}
+    predecessor: Dict = {}
     dist_to[source] = 0
     pq = pqdict()  # It use a min heap to store the nodes and their distances to the source node.
     pq.additem(source, 0)
-    # We insert all the nodes in the priority queue.
-    # for node in graph.nodes:
-    #     priority = 0 if node == source else float("inf")
-    #     pq.additem(node, priority)
 
-    for node, distance in pq.popitem():
+    for node, distance in pq.popitems():
         if node == target:
             break  # We stop the algorithm when we reach the target node.
         for neighbor in graph.neighbors(node):
@@ -61,3 +60,31 @@ def dijkstra(graph: nx.DiGraph, source: str, target: str):
                     else pq.additem(neighbor, new_distance_neighbor)
                 )
     return dist_to[target], recover_path(predecessor, source, target)
+
+
+def show_path(graph: nx.DiGraph, path):
+    """
+    Show the graph with its nodes and edges. The path will be highlighted.
+
+    :param graph: The graph to show.
+    :param path: The path to highlight.
+    """
+    colors = [graph.nodes[node]["color"] for node in graph.nodes]
+    pos = nx.spring_layout(graph)
+    nx.draw(
+        graph,
+        pos,
+        with_labels=True,
+        node_color=colors,
+        font_size=8,
+        font_color="white",
+        node_size=800,
+    )
+    nx.draw_networkx_edges(
+        graph,
+        pos,
+        edgelist=[(path[i], path[i + 1]) for i in range(len(path) - 1)],
+        edge_color="red",
+        width=2,
+    )
+    plt.show()
