@@ -19,28 +19,26 @@ def main():
         ask_building = "P1"
         if ask_building == "exit":
             return
-        if ask_building in graphs:
-            graph = graphs[ask_building]
+        assert ask_building in graphs, f"Building {ask_building} not found."
+        graph = graphs[ask_building]
+        while True:
+            # ask_start = input(f"Enter a start node, available nodes are {graph.nodes()}: ")
+            ask_start = "H1_01"
+            if ask_start == "exit":
+                return
+            assert ask_start in graph.nodes(), f"Node {ask_start} not found."
             while True:
-                # ask_start = input(f"Enter a start node, available nodes are {graph.nodes()}: ")
-                ask_start = "H1_01"
-                if ask_start == "exit":
+                # ask_end = input(f"Enter an end node, available nodes are {graph.nodes()}: ")
+                ask_end = "E214_03"
+                if ask_end == "exit":
                     return
-                if ask_start in graph.nodes():
-                    while True:
-                        ask_end = input(f"Enter an end node, available nodes are {graph.nodes()}: ")
-                        if ask_end == "exit":
-                            return
-                        if ask_end in graph.nodes():
-                            our_path = b_dijkstra.dijkstra(graph, ask_start, ask_end)
-                            networkx_path = json_to_graph.shortest_path(graph, ask_start, ask_end)
-                            print(f"Our path: {our_path}")
-                            print(f"NetworkX path: {networkx_path}")
-                            b_dijkstra.show_path(graph, our_path[1])
-                        else:
-                            print(f"Node {ask_end} is not in the graph.")
-                else:
-                    print(f"Node {ask_start} is not in the graph.")
+                assert ask_end in graph.nodes(), f"Node {ask_end} not found."
+                our_path = b_dijkstra.dijkstra(graph, ask_start, ask_end)
+                networkx_path = json_to_graph.shortest_path(graph, ask_start, ask_end)
+                assert our_path[1] == networkx_path, "The paths are different."
+                b_dijkstra.analyse_path(graph, our_path[1])
+                b_dijkstra.show_path(graph, our_path[1])
+                return
 
 
 if __name__ == "__main__":

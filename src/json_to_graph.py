@@ -152,6 +152,7 @@ def setup_node(graph: nx.Graph, data: Dict, floor: str) -> None:
             node_name = get_name_from_id(value, floor)
             node_attributes["type"] = get_type_from_id(value)
             node_attributes["color"] = COLORS[node_attributes["type"]]
+            node_attributes["floor"] = floor
         elif key == "neighbors":
             # Add the attribute to the edges
             setup_edges(graph, value, node_name, floor)

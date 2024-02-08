@@ -5,11 +5,48 @@
             shortest path between two nodes in a building graph.
 """
 
-from typing import Any, Dict, List
+from typing import Dict, List
 
 import matplotlib.pyplot as plt
 import networkx as nx
 from pqdict import pqdict
+
+
+def take_stairs(graph: nx.DiGraph, predecessor: str, from_node: str, to_node: str) -> bool:
+    return graph.nodes[predecessor]["floor"] != graph.nodes[to_node]["floor"]
+
+
+def analyse_path(graph: nx.DiGraph, path: List[str]):
+    """Transform a path into a sequence of instructions.
+
+    :param graph: Building graph.
+    :param path: The path to analyse. A path is a list of nodes.
+    """
+    """
+    Intructions Possibles:
+        - Montez les escaliers jurqu'à l'étage <floor>
+        - Descendez les escaliers jusqu'à l'étage <floor>
+        - Prenez l'ascenseur jusqu'à l'étage <floor>
+        - Allez tout droit jusqu'au bout du couloir
+        - Tournez à droite 
+        - Tournez à gauche
+        - La salle <room> est à votre droite
+        - La salle <room> est à votre gauche
+        - Vous êtes arrivé à la salle <room>
+        - TODO: Ajouter d'autres instuctions
+    """
+    pair_rooms = [[path[i], path[i + 1]] for i in range(len(path) - 1)]
+    predecessor = "null"
+    for pair in pair_rooms:
+        # print(f"From {pair[0]} to {pair[1]}")
+        direction = graph.edges[pair[0], pair[1]]["direction"]
+        d = direction if type(direction) == str else direction[predecessor]
+        if predecessor == "null":
+            pass
+        elif take_stairs(graph, predecessor, pair[0], pair[1]) and predecessor != "null":
+            print(f"From {predecessor} to {pair[1]}: go to the stairs :{pair[0]}")
+        print(f"From {pair[0]} to {pair[1]}: go  {d}")
+        predecessor = pair[0]
 
 
 def recover_path(predecessors, source, target):
