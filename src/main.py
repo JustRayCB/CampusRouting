@@ -6,14 +6,20 @@
 loading the main window.
 """
 
-import b_dijkstra
-import json_to_graph
+from analyse_path import AnalysePath
+from dijkstra import Dijkstra
+from graph import BuildingGraph
+
+DATA_DIR = "data/plans/Solbosch/"
+BUILDINGS = ["P1"]
 
 
 def main():
     """Main function. Entry point of the application."""
 
-    graphs = json_to_graph.main()
+    graphs = {
+        building: BuildingGraph(f"{DATA_DIR}{building}/{building}.json") for building in BUILDINGS
+    }
     while True:
         # ask_building = input(f"Enter a building name, available buildings are {graphs.keys()}: ")
         ask_building = "P1"
@@ -33,11 +39,13 @@ def main():
                 if ask_end == "exit":
                     return
                 assert ask_end in graph.nodes(), f"Node {ask_end} not found."
-                our_path = b_dijkstra.dijkstra(graph, ask_start, ask_end)
-                networkx_path = json_to_graph.shortest_path(graph, ask_start, ask_end)
-                assert our_path[1] == networkx_path, "The paths are different."
-                b_dijkstra.analyse_path(graph, our_path[1])
-                b_dijkstra.show_path(graph, our_path[1])
+                d = Dijkstra(graph, ask_start, ask_end)
+                our_path = d.path
+                networkx_path = graph.default_dijkstra(ask_start, ask_end)
+                assert our_path == networkx_path, "The paths are different."
+                d.show_shortest_path()
+                a = AnalysePath(graph, our_path)
+                a.analyse()
                 return
 
 
