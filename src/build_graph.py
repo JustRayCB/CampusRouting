@@ -39,6 +39,13 @@ def save_as_graphml(graph: nx.Graph, filename: str):
 
 city_graph: nx.Graph = ox.graph_from_place("Solbosch University, Brussels, Belgium", network_type='walk', simplify=True)
 
+
+# Dict that stores the coordinates of each node of the graph
+nodes_coords = dict()
+for node in city_graph.nodes:
+    nodes_coords[node] = {'latitude': city_graph._node[node]['x'], \
+                        'longitude':city_graph._node[node]['y']}
+
 ox.plot_graph(city_graph, show=True, save=False, close=False)
 
 # city_graph: nx.Graph = ox.load_graphml("./data/graphml/bxl_bike.graphml")
