@@ -49,7 +49,7 @@ for node in city_graph.nodes:
     
 # given a user's location, we can find the closest node in the graph
 # and then use the shortest path algorithm (Dijkstra) to find the shortest path to the destination
-position = (51.813747, 3.383744) # user's location will be given by the app [PUB]
+position = (4.383221,50.811969) # user's location will be given by the app [PUB]
 
 closest_node = ox.nearest_nodes(city_graph, position[0], position[1], return_dist=False)
 for node in nodes_coords:
@@ -64,7 +64,14 @@ print("-------------------------------------------------------------")
 closest_node = min(nodes_coords, key=lambda x: haversine(position, (nodes_coords[x]['latitude'], nodes_coords[x]['longitude'])))
 print(f"User's location: {position} and the closest node is: {closest_node}")
 
-ox.plot_graph(city_graph, show=True, save=False, close=False)
+for node in city_graph.nodes:
+    if node == closest_node:
+        city_graph.nodes[node]['color'] = 'red'
+    else:
+        city_graph.nodes[node]['color'] = 'blue'
+
+
+ox.plot_graph(city_graph, show=True, save=False, close=False, node_color=[city_graph.nodes[node]['color'] for node in city_graph.nodes])
 
 # city_graph: nx.Graph = ox.load_graphml("./data/graphml/bxl_bike.graphml")
 
