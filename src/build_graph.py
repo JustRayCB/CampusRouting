@@ -44,12 +44,12 @@ city_graph: nx.Graph = ox.graph_from_place("Solbosch University, Brussels, Belgi
 # Dict that stores the coordinates of each node of the graph
 nodes_coords = dict()
 for node in city_graph.nodes:
-    nodes_coords[node] = {'latitude': city_graph._node[node]['x'], \
-                        'longitude':city_graph._node[node]['y']}
+    nodes_coords[node] = {'longitude': city_graph._node[node]['x'], \
+                        'latitude':city_graph._node[node]['y']}
     
 # given a user's location, we can find the closest node in the graph
 # and then use the shortest path algorithm (Dijkstra) to find the shortest path to the destination
-position = (4.383221,50.811969) # user's location will be given by the app [PUB]
+position = (4.383221,50.811969) # user's location will be given by the app [long, lat]
 
 closest_node = ox.nearest_nodes(city_graph, position[0], position[1], return_dist=False)
 for node in nodes_coords:
