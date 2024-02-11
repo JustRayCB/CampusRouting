@@ -95,3 +95,8 @@ class SolboschGraph(nx.Graph):
         edge_labels = nx.get_edge_attributes(self, "weight")
         nx.draw_networkx_edge_labels(self, pos, edge_labels)
         plt.show()
+
+
+if __name__ == "__main__":
+    g = SolboschGraph()
+    g.show_graph()

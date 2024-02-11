@@ -3,6 +3,7 @@ from osmnx import settings as ox_settings
 import networkx as nx
 import matplotlib.pyplot as plt
 import matplotlib
+from haversine import haversine
 
 
 def save_as_image(graph, filename):
@@ -45,6 +46,23 @@ nodes_coords = dict()
 for node in city_graph.nodes:
     nodes_coords[node] = {'latitude': city_graph._node[node]['x'], \
                         'longitude':city_graph._node[node]['y']}
+    
+# given a user's location, we can find the closest node in the graph
+# and then use the shortest path algorithm (Dijkstra) to find the shortest path to the destination
+position = (51.813747, 3.383744) # user's location will be given by the app [PUB]
+
+closest_node = ox.nearest_nodes(city_graph, position[0], position[1], return_dist=False)
+for node in nodes_coords:
+    print(f"Node: {node}, Latitude: {nodes_coords[node]['latitude']}, Longitude: {nodes_coords[node]['longitude']}")
+print(f"User's location: {position} and the closest node is: {closest_node}")
+print("-------------------------------------------------------------")
+
+
+# Or we compute the distance between the user's location and each node of the graph
+# and then find the node with the smallest distance 
+# credit : https://pypi.org/project/haversine/
+closest_node = min(nodes_coords, key=lambda x: haversine(position, (nodes_coords[x]['latitude'], nodes_coords[x]['longitude'])))
+print(f"User's location: {position} and the closest node is: {closest_node}")
 
 ox.plot_graph(city_graph, show=True, save=False, close=False)
 
