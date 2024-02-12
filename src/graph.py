@@ -32,7 +32,6 @@ class Graph(nx.DiGraph):
         super(Graph, self).__init__()
         self.COLORS: Dict[str, str] = {}
         self.PREFIXES: Dict[str, str] = {}
-        # self.n_floors = -1
         self.load_graph(path) if path else None
 
     def get_type_from_id(self, id: str) -> str:
