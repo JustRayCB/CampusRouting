@@ -8,7 +8,7 @@ Instructions can be traducted into images.
 
 from typing import Tuple
 
-from graph import BuildingGraph
+from b_graph import BuildingGraph
 
 
 class AnalysePath:

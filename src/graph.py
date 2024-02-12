@@ -1,57 +1,39 @@
-"""Graph representation of the building.
+"""Graph class 
 
-:Author: Rayan Contuliano Bravo 
-:Date: 02/08/2024
-:Description: This class is used to represent a building as a graph using the networkx library.
+:Autor: Rayan Contuliano Bravo
+:Date: 02/12/2024
+:Description: This class is used to easily represent a graph.
 """
 
-import json
-from enum import Enum
-from typing import Any, Dict, List
+# import json
+from abc import abstractmethod
+from typing import Dict, List
 
 import matplotlib.pyplot as plt
 import networkx as nx
 
 
-class NodeAttributes(Enum):
+class NodeAttributes:
     """Attributes of a node."""
 
     NAME = "name"
     COLOR = "color"
     TYPE = "type"
-    FLOOR = "floor"
 
 
-class EdgeAttributes(Enum):
+class EdgeAttributes:
     """Attributes of an edge."""
 
     WEIGHT = "weight"
-    DIRECTION = "direction"
 
 
-class BuildingGraph(nx.DiGraph):
-    """Represents a building as a graph."""
-
-    def __init__(self, path=None):
-        super(BuildingGraph, self).__init__()
-        self.COLORS = {
-            "hallway": "#21243D",
-            "class": "#88E1F2",
-            "toilet": "#FFD082",
-            "unknown": "#FF7C7C",
-            "stair": "#CCCCFF",
-            "lift": "#AF7AC5",
-        }
-        self.PREFIXES = {
-            "H": "hallway",
-            "E": "class",
-            "T": "toilet",
-            "U": "unknown",
-            "S": "stair",
-            "L": "lift",
-        }
-        self.n_floors = -1
-        self.load_building(path) if path else None
+class Graph(nx.DiGraph):
+    def init(self, path=None):
+        super(Graph, self).__init__()
+        self.COLORS: Dict[str, str] = {}
+        self.PREFIXES: Dict[str, str] = {}
+        # self.n_floors = -1
+        self.load_graph(path) if path else None
 
     def get_type_from_id(self, id: str) -> str:
         """Get the type of a node from its id.
@@ -62,29 +44,7 @@ class BuildingGraph(nx.DiGraph):
         for prefix, room_type in self.PREFIXES.items():
             if id.startswith(prefix):
                 return room_type
-        raise ValueError(f"Invalid id: {id} for a room.")
-
-    def get_name_from_id(self, id: str, floor: str) -> str:
-        """Get the name of a node from its id.
-
-        :param id: The id of the node.
-        :param floor: The floor of the node.
-        :returns: The name of the node.
-        """
-        if self.is_elevator_or_stair(id):
-            # Elevators and Stairs do not have a floor cause they are the same on all floors
-            return id
-        return f"{id}_{floor}"
-
-    def is_elevator_or_stair(self, id: str) -> bool:
-        """
-        Check if the room is an elevator or a stair.
-
-        :param id: The id of the room.
-        :returns: True if the room is an elevator or a stair, False otherwise.
-        """
-        node_type: str = self.get_type_from_id(id)
-        return node_type == self.PREFIXES["S"] or node_type == self.PREFIXES["L"]
+        raise ValueError(f"Invalid id: {id} for node in", self.__class__.__name__)
 
     def get_color_from_type(self, node_type: str) -> str:
         """Get the color of a node from its type.
@@ -94,82 +54,32 @@ class BuildingGraph(nx.DiGraph):
         """
         return self.COLORS[node_type]
 
-    def add_room(self, data: Dict, floor: str) -> None:
+    @abstractmethod
+    def get_graph_name(self, path: str) -> str:
+        raise NotImplementedError("This method should be implemented in ", self.__class__.__name__)
+
+    @abstractmethod
+    def load_graph(self, path: str) -> None:
+        raise NotImplementedError("This method should be implemented in ", self.__class__.__name__)
+
+    @abstractmethod
+    def add_node_(self, node_data: dict) -> None:
         """
         Setup a node with its attributes and edges (attributes included) in the graph.
 
-        :param graph: The graph in which the node will be added.
-        :param data: The data of the node taken from the json file.
-        :param floor: The floor of the node.
-        :returns: The name of the node.
+        :param node_data: The data of the node taken from the json file.
         """
-        node_attributes: Dict[str, str] = {}
-        node_name = ""
-        a_type, a_color, a_floor = (
-            NodeAttributes.TYPE.value,
-            NodeAttributes.COLOR.value,
-            NodeAttributes.FLOOR.value,
-        )
-        for key, value in data.items():
-            if key == "id":
-                node_name = self.get_name_from_id(value, floor)
-                node_attributes[a_type] = self.get_type_from_id(value)
-                node_attributes[a_color] = self.get_color_from_type(node_attributes[a_type])
-                node_attributes[a_floor] = floor
-            elif key == "neighbors":
-                # Add the attribute to the edges
-                self.add_neighbors(value, node_name, floor)
-            else:
-                # Add the others attributes to the node
-                node_attributes[key] = value
-        self.add_node(node_name, **node_attributes)
+        raise NotImplementedError("This method should be implemented in ", self.__class__.__name__)
 
-    def add_neighbors(self, neighbors: Dict, source: str, floor: str) -> None:
+    @abstractmethod
+    def add_neighbors(self, neighbors: Dict, source: str) -> None:
         """
         Setup edges with its attributes in the graph according to the neighbors of the source node.
 
-        :param graph: The graph in which the edges will be added.
         :param neighbors: The neighbors of the source node.
         :param source: The source node.
-        :param floor: The floor of the source node and its neighbors.
         """
-        edges = []  # List of all the edges that start from the source node
-        weight, direction = EdgeAttributes.WEIGHT.value, EdgeAttributes.DIRECTION.value
-        for neighbor in neighbors:
-            edge_attributes: Dict[str, Any] = {}
-            target_name = self.get_name_from_id(neighbor["id"], floor)
-            edge_attributes[weight] = neighbor[weight]
-            directions = {}
-            data_direction = neighbor[direction]
-            if type(data_direction) is str:
-                directions = data_direction  # If there is only one direction (not the boys band 😆)
-            else:
-                for predecessor in data_direction:
-                    if predecessor == "null" or predecessor is None:
-                        # There can be no predecessor e.g First node of a building, or we come from a cul-de-sac
-                        directions[predecessor] = data_direction[predecessor]
-                    else:
-                        # keep in mind that the predecessor is the predecessor of the source before reaching target
-                        # The direction we need to take depends of the predecessor
-                        directions[self.get_name_from_id(predecessor, floor)] = neighbor[direction][
-                            predecessor
-                        ]
-            if self.is_elevator_or_stair(source) and self.is_elevator_or_stair(target_name):
-                raise ValueError("Elevators and Stairs cannot be connected to each other.")
-            edge_attributes[direction] = directions
-            edge = (source, target_name, edge_attributes)
-            edges.append(edge)
-        self.add_edges_from(edges)
-
-    def load_building(self, path: str):
-        self.name = path.split("/")[-1].split(".")[0]
-        print(self.name)
-        building_data = json.load(open(path))
-        floors: List[str] = list(building_data.keys())
-        for current_floor in floors:
-            rooms: List[Dict] = building_data[current_floor]
-            for room in rooms:
-                self.add_room(room, current_floor)
+        raise NotImplementedError("This method should be implemented in", self.__class__.__name__)
 
     def show_graph(self, show: bool = True):
         """
@@ -191,7 +101,11 @@ class BuildingGraph(nx.DiGraph):
         else:
             return pos
 
-    def show_path(self, path: List[str]):
+    def show_path(self, path: List[str]) -> None:
+        """Show the path on the graph.
+
+        :param path: Sequence of nodes id that represent the path.
+        """
         pos = self.show_graph(False)
         nx.draw_networkx_edges(
             self,
@@ -202,5 +116,5 @@ class BuildingGraph(nx.DiGraph):
         )
         plt.show()
 
-    def default_dijkstra(self, source: str, target: str):
+    def default_dijkstra(self, source: str, target: str) -> List:
         return nx.shortest_path(self, source, target, weight="weight")

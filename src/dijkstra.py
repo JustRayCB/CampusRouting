@@ -9,7 +9,7 @@ from typing import Dict
 
 from pqdict import pqdict
 
-from graph import BuildingGraph
+from b_graph import BuildingGraph
 
 
 class Dijkstra:
