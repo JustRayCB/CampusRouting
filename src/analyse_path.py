@@ -6,6 +6,8 @@
 Instructions can be traducted into images.
 """
 
+from typing import Tuple
+
 from graph import BuildingGraph
 
 
@@ -43,20 +45,50 @@ class AnalysePath:
         """
         pair_rooms = [[self.path[i], self.path[i + 1]] for i in range(len(self.path) - 1)]
         predecessor = "null"
-        for pair in pair_rooms:
-            direction = self.graph.edges[pair[0], pair[1]]["direction"]
+        for from_node, to_node in pair_rooms:
+            direction = self.graph.edges[from_node, to_node]["direction"]
             d = direction if type(direction) == str else direction[predecessor]
-            if predecessor == "null":
-                pass
-            elif self.take_stairs(predecessor, pair[0], pair[1]) and predecessor != "null":
-                print(f"From {predecessor} to {pair[1]}: go to the stairs :{pair[0]}")
-            print(f"From {pair[0]} to {pair[1]}: by {d}")
-            predecessor = pair[0]
+            take_stairs, up = (
+                self.take_stairs(predecessor, from_node, to_node)
+                if predecessor != "null"
+                else (False, False)
+            )
+            if take_stairs:
+                assert predecessor != "null"
+                type_ = self.graph.get_type_from_id(from_node)
+                go_up = "Montez les escaliers" if type_ == "stair" else "Prenez l'ascenseur"
+                go_down = "Descendez les escaliers" if type_ == "stair" else "Prenez l'ascenseur"
+                if up:
+                    self.instructions.append(
+                        f"{go_up} jusqu'à l'étage {self.graph.nodes[to_node]['floor']}"
+                    )
+                else:
+                    self.instructions.append(
+                        f"{go_down} jusqu'à l'étage {self.graph.nodes[to_node]['floor']}"
+                    )
+            elif d == "straight":
+                self.instructions.append("Allez tout droit")
+            else:
+                # d is left or right
+                assert d in ["left", "right"]
+                direction = "droite" if d == "right" else "gauche"
+                if [from_node, to_node] == pair_rooms[-1]:
+                    self.instructions.append(f"La salle {to_node} est sur votre {direction}")
+                    self.instructions.append(f"Vous êtes arrivé à la salle {to_node}")
+                else:
+                    self.instructions.append(f"Tournez à {direction}")
 
-    def take_stairs(self, predecessor: str, from_node: str, to_node: str) -> bool:
+            predecessor = from_node
+        print(self.instructions)
+
+    def take_stairs(self, predecessor: str, from_node: str, to_node: str) -> Tuple[bool, bool]:
         ret = self.graph.nodes[predecessor]["floor"] != self.graph.nodes[to_node]["floor"]
         assert self.graph.is_elevator_or_stair(from_node) if ret else True
-        return ret
+        if ret:
+            return ret, int(self.graph.nodes[predecessor]["floor"]) < int(
+                self.graph.nodes[to_node]["floor"]
+            )
+        return ret, False
 
     def get_instructions(self):
         """Get the instructions."""
