@@ -60,24 +60,29 @@ class Graph(nx.DiGraph):
 
     @abstractmethod
     def load_graph(self, path: str) -> None:
+        """Load a graph data from a json file or similar.
+
+        :param path: Path of the file containing the graph data.
+        :raises NotImplementedError: This method should be implemented in the subclass.
+        """
         raise NotImplementedError("This method should be implemented in ", self.__class__.__name__)
 
     @abstractmethod
     def add_node_(self, node_data: dict) -> None:
-        """
-        Setup a node with its attributes and edges (attributes included) in the graph.
+        """Setup a node with its attributes and edges (attributes included) in the graph.
 
         :param node_data: The data of the node taken from the json file.
+        :raises NotImplementedError: This method should be implemented in the subclass.
         """
         raise NotImplementedError("This method should be implemented in ", self.__class__.__name__)
 
     @abstractmethod
     def add_neighbors(self, neighbors: Dict, source: str) -> None:
-        """
-        Setup edges with its attributes in the graph according to the neighbors of the source node.
+        """Setup edges with its attributes in the graph according to the neighbors of the source node.
 
         :param neighbors: The neighbors of the source node.
         :param source: The source node.
+        :raises NotImplementedError: This method should be implemented in the subclass.
         """
         raise NotImplementedError("This method should be implemented in", self.__class__.__name__)
 
@@ -117,4 +122,4 @@ class Graph(nx.DiGraph):
         plt.show()
 
     def default_dijkstra(self, source: str, target: str) -> List:
-        return nx.shortest_path(self, source, target, weight="weight")
+        return nx.shortest_path(self, source, target, weight=EdgeAttributes.WEIGHT)
