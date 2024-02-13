@@ -6,7 +6,7 @@
 loading the main window.
 """
 
-from analyse_path import AnalysePath
+from b_analyse import BAnalysePath
 from b_graph import BuildingGraph
 from dijkstra import Dijkstra
 
@@ -44,7 +44,7 @@ def main():
                 networkx_path = graph.default_dijkstra(ask_start, ask_end)
                 assert our_path == networkx_path, "The paths are different."
                 d.show_shortest_path()
-                a = AnalysePath(graph, our_path)
+                a = BAnalysePath(graph, our_path)
                 a.analyse()
                 return
 

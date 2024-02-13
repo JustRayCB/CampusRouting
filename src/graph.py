@@ -34,6 +34,25 @@ class Graph(nx.DiGraph):
         self.PREFIXES: Dict[str, str] = {}
         self.load_graph(path) if path else None
 
+    def find_node(self, name: str) -> str:
+        """Find a node by its name.
+
+        :param name: The name of the node.
+        :returns: The node of the graph.
+        """
+        for node in self.nodes:
+            if self.nodes[node][NodeAttributes.NAME] == name:
+                return node
+        raise ValueError(f"Invalid name: {name} for node in", self.__class__.__name__)
+
+    def is_in_graph(self, node: str) -> bool:
+        """Check if a node is in the graph.
+
+        :param node: The node to check.
+        :returns: True if the node is in the graph, False otherwise.
+        """
+        return node in self.nodes
+
     def get_type_from_id(self, id: str) -> str:
         """Get the type of a node from its id.
 

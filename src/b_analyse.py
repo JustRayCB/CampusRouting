@@ -11,7 +11,7 @@ from typing import Tuple
 from b_graph import BuildingGraph
 
 
-class AnalysePath:
+class BAnalysePath:
     """Class to analyse the path of in the graph."""
 
     def __init__(self, graph: BuildingGraph, path: list = []):
