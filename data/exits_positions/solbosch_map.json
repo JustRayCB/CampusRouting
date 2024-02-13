@@ -1434,6 +1434,840 @@
           "weight": 1
         }
       ]
+    },
+    {
+      "id": "81",
+      "latitude": 50.81374,
+      "longitude": 4.38247,
+      "neighbors": [
+        {
+          "id": "79",
+          "weight": 1
+        },
+        {
+          "id": "82",
+          "weight": 1
+        },
+        {
+          "id": "135",
+          "weight": 1
+        },
+        {
+          "id": "136",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "82",
+      "latitude": 50.81383,
+      "longitude": 4.38198,
+      "neighbors": [
+        {
+          "id": "76",
+          "weight": 1
+        },
+        {
+          "id": "77",
+          "weight": 1
+        },
+        {
+          "id": "81",
+          "weight": 1
+        },
+        {
+          "id": "85",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "83",
+      "latitude": 50.81432,
+      "longitude": 4.38119,
+      "neighbors": [
+        {
+          "id": "35",
+          "weight": 1
+        },
+        {
+          "id": "84",
+          "weight": 1
+        },
+        {
+          "id": "88",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "84",
+      "latitude": 50.81445,
+      "longitude": 4.38160,
+      "neighbors": [
+        {
+          "id": "83",
+          "weight": 1
+        },
+        {
+          "id": "85",
+          "weight": 1
+        },
+        {
+          "id": "97",
+          "weight": 1
+        },
+        {
+          "id": "142",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "85",
+      "latitude": 50.81418,
+      "longitude": 4.38187,
+      "neighbors": [
+        {
+          "id": "82",
+          "weight": 1
+        },
+        {
+          "id": "84",
+          "weight": 1
+        },
+        {
+          "id": "86",
+          "weight": 1
+        },
+        {
+          "id": "88",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "86",
+      "latitude": 50.81422,
+      "longitude": 4.38197,
+      "neighbors": [
+        {
+          "id": "85",
+          "weight": 1
+        },
+        {
+          "id": "87",
+          "weight": 1
+        },
+        {
+          "id": "142",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "87",
+      "latitude": 50.81423,
+      "longitude": 4.38203,
+      "neighbors": [
+        {
+          "id": "86",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "88",
+      "latitude": 50.81400,
+      "longitude": 4.38141,
+      "neighbors": [
+        {
+          "id": "55",
+          "weight": 1
+        },
+        {
+          "id": "76",
+          "weight": 1
+        },
+        {
+          "id": "83",
+          "weight": 1
+        },
+        {
+          "id": "85",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "89",
+      "latitude": 50.81408,
+      "longitude": 4.37878,
+      "neighbors": [
+        {
+          "id": "45",
+          "weight": 1
+        },
+        {
+          "id": "46",
+          "weight": 1
+        },
+        {
+          "id": "90",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "90",
+      "latitude": 50.81432,
+      "longitude": 4.37915,
+      "neighbors": [
+        {
+          "id": "89",
+          "weight": 1
+        },
+        {
+          "id": "91",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "91",
+      "latitude": 50.81469,
+      "longitude": 4.37973,
+      "neighbors": [
+        {
+          "id": "90",
+          "weight": 1
+        },
+        {
+          "id": "92",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "92",
+      "latitude": 50.81480,
+      "longitude": 4.38002,
+      "neighbors": [
+        {
+          "id": "91",
+          "weight": 1
+        },
+        {
+          "id": "93",
+          "weight": 1
+        },
+        {
+          "id": "94",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "93",
+      "latitude": 50.81465,
+      "longitude": 4.38037,
+      "neighbors": [
+        {
+          "id": "92",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "94",
+      "latitude": 50.81505,
+      "longitude": 4.38041,
+      "neighbors": [
+        {
+          "id": "92",
+          "weight": 1
+        },
+        {
+          "id": "95",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "95",
+      "latitude": 50.81504,
+      "longitude": 4.38074,
+      "neighbors": [
+        {
+          "id": "94",
+          "weight": 1
+        },
+        {
+          "id": "96",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "96",
+      "latitude": 50.81499,
+      "longitude": 4.38138,
+      "neighbors": [
+        {
+          "id": "97",
+          "weight": 1
+        },
+        {
+          "id": "137",
+          "weight": 1
+        },
+        {
+          "id": "139",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "97",
+      "latitude": 50.81482,
+      "longitude": 4.38133,
+      "neighbors": [
+        {
+          "id": "84",
+          "weight": 1
+        },
+        {
+          "id": "96",
+          "weight": 1
+        },
+        {
+          "id": "137",
+          "weight": 1
+        },
+        {
+          "id": "143",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "98",
+      "latitude": 50.81347,
+      "longitude": 4.38314,
+      "neighbors": [
+        {
+          "id": "58",
+          "weight": 1
+        },
+        {
+          "id": "111",
+          "weight": 1
+        },
+        {
+          "id": "135",
+          "weight": 1
+        },
+        {
+          "id": "144",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "99",
+      "latitude": 50.81247,
+      "longitude": 4.38215,
+      "neighbors": [
+        {
+          "id": "106",
+          "weight": 1
+        },
+        {
+          "id": "107",
+          "weight": 1
+        },
+        {
+          "id": "108",
+          "weight": 1
+        },
+        {
+          "id": "109",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "100",
+      "latitude": 50.81268,
+      "longitude": 4.38284,
+      "neighbors": [
+        {
+          "id": "59",
+          "weight": 1
+        },
+        {
+          "id": "108",
+          "weight": 1
+        },
+        {
+          "id": "101",
+          "weight": 1
+        },
+        {
+          "id": "109",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "101",
+      "latitude": 50.81200,
+      "longitude": 4.38335,
+      "neighbors": [
+        {
+          "id": "100",
+          "weight": 1
+        },
+        {
+          "id": "104",
+          "weight": 1
+        },
+        {
+          "id": "109",
+          "weight": 1
+        },
+        {
+          "id": "147",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "102",
+      "latitude": 50.81178,
+      "longitude": 4.38264,
+      "neighbors": [
+        {
+          "id": "103",
+          "weight": 1
+        },
+        {
+          "id": "104",
+          "weight": 1
+        },
+        {
+          "id": "109",
+          "weight": 1
+        },
+        {
+          "id": "146",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "103",
+      "latitude": 50.81178,
+      "longitude": 4.38255,
+      "neighbors": [
+        {
+          "id": "102",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "104",
+      "latitude": 50.81184,
+      "longitude": 4.38297,
+      "neighbors": [
+        {
+          "id": "101",
+          "weight": 1
+        },
+        {
+          "id": "102",
+          "weight": 1
+        },
+        {
+          "id": "109",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "105", 
+      "latitude": 50.81214,
+      "longitude": 4.38227,
+      "neighbors": [
+        {
+          "id": "146",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "106",
+      "latitude": 50.81230,
+      "longitude": 4.38215,
+      "neighbors": [
+        {
+          "id": "99",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "106",
+      "latitude": 50.81242,
+      "longitude": 4.38206,
+      "neighbors": [
+        {
+          "id": "99",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "108",
+      "latitude": 50.81259,
+      "longitude": 4.38242,
+      "neighbors": [
+        {
+          "id": "99",
+          "weight": 1
+        },
+        {
+          "id": "100",
+          "weight": 1
+        },
+        {
+          "id": "109",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "109",
+      "latitude": 50.81220,
+      "longitude": 4.38271,
+      "neighbors": [
+        {
+          "id": "99",
+          "weight": 1
+        },
+        {
+          "id": "100",
+          "weight": 1
+        },
+        {
+          "id": "101",
+          "weight": 1
+        },
+        {
+          "id": "102",
+          "weight": 1
+        },
+        {
+          "id": "104",
+          "weight": 1
+        },
+        {
+          "id": "108",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "110",
+      "latitude": 50.81290,
+      "longitude": 4.38354,
+      "neighbors": [
+        {
+          "id": "59",
+          "weight": 1
+        },
+        {
+          "id": "111",
+          "weight": 1
+        },
+        {
+          "id": "147",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "111",
+      "latitude": 50.81322,
+      "longitude": 4.38331,
+      "neighbors": [
+        {
+          "id": "98",
+          "weight": 1
+        },
+        {
+          "id": "110",
+          "weight": 1
+        },
+        {
+          "id": "112",
+          "weight": 1
+        },
+        {
+          "id": "113",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "112",
+      "latitude": 50.81320,
+      "longitude": 4.38322,
+      "neighbors": [
+        {
+          "id": "111",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "113",
+      "latitude": 50.81325,
+      "longitude": 4.38339,
+      "neighbors": [
+        {
+          "id": "111",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "114",
+      "latitude": 50.81232,
+      "longitude": 4.38182,
+      "neighbors": [
+        {
+          "id": "69",
+          "weight": 1
+        },
+        {
+          "id": "115",
+          "weight": 1
+        },
+        {
+          "id": "116",
+          "weight": 1
+        },
+        {
+          "id": "129",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "115",
+      "latitude": 50.81234,
+      "longitude": 4.38188,
+      "neighbors": [
+        {
+          "id": "114",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "116",
+      "latitude": 50.81173,
+      "longitude": 4.38228,
+      "neighbors": [
+        {
+          "id": "114",
+          "weight": 1
+        },
+        {
+          "id": "117",
+          "weight": 1
+        },
+        {
+          "id": "133",
+          "weight": 1
+        },
+        {
+          "id": "148",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "117",
+      "latitude": 50.81174,
+      "longitude": 4.38234,
+      "neighbors": [
+        {
+          "id": "116",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "118",
+      "latitude": 50.81245,
+      "longitude": 4.38095,
+      "neighbors": [
+        {
+          "id": "71",
+          "weight": 1
+        },
+        {
+          "id": "73",
+          "weight": 1
+        },
+        {
+          "id": "127",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "119",
+      "latitude": 50.81210,
+      "longitude": 4.38048,
+      "neighbors": [
+        {
+          "id": "73",
+          "weight": 1
+        },
+        {
+          "id": "120",
+          "weight": 1
+        },
+        {
+          "id": "121",
+          "weight": 1
+        },
+        {
+          "id": "123",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "120",
+      "latitude": 50.81212,
+      "longitude": 4.38051,
+      "neighbors": [
+        {
+          "id": "119",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "121",
+      "latitude": 50.81194,
+      "longitude": 4.37992,
+      "neighbors": [
+        {
+          "id": "1",
+          "weight": 1
+        },
+        {
+          "id": "119",
+          "weight": 1
+        },
+        {
+          "id": "122",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "122",
+      "latitude": 50.81170,
+      "longitude": 4.38029,
+      "neighbors": [
+        {
+          "id": "121",
+          "weight": 1
+        },
+        {
+          "id": "123",
+          "weight": 1
+        },
+        {
+          "id": "124",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "123",
+      "latitude": 50.81180,
+      "longitude": 4.38059,
+      "neighbors": [
+        {
+          "id": "119",
+          "weight": 1
+        },
+        {
+          "id": "122",
+          "weight": 1
+        },
+        {
+          "id": "125",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "124",
+      "latitude": 50.81150,
+      "longitude": 4.38093,
+      "neighbors": [
+        {
+          "id": "122",
+          "weight": 1
+        },
+        {
+          "id": "125",
+          "weight": 1
+        },
+        {
+          "id": "151",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "125",
+      "latitude": 50.81165,
+      "longitude": 4.38084,
+      "neighbors": [
+        {
+          "id": "123",
+          "weight": 1
+        },
+        {
+          "id": "124",
+          "weight": 1
+        },
+        {
+          "id": "126",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "126",
+      "latitude": 50.81170,
+      "longitude": 4.38099,
+      "neighbors": [
+        {
+          "id": "125",
+          "weight": 1
+        }
+      ]
     }
   ]
 }
