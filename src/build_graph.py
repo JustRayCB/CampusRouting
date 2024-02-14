@@ -37,10 +37,10 @@ def save_as_graphml(graph: nx.Graph, filename: str):
     path = "./data/graphml/" + filename + ".graphml"
     ox.save_graphml(graph, path)
 
-
+# Get graph from solbosch // Not necessary if we use our own solbosch graph
 city_graph: nx.Graph = ox.graph_from_place("Solbosch University, Brussels, Belgium", network_type='walk', simplify=True)
 
-
+s
 # Dict that stores the coordinates of each node of the graph
 nodes_coords = dict()
 for node in city_graph.nodes:
