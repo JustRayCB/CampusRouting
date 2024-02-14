@@ -1,0 +1,62 @@
+<!-- FILEPATH: /Users/ziyad/Documents/pa3/CampusRouting/webpage/localisation.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map ULB</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="https://unpkg.com/leaflet-routing-machine@3.3.4/dist/leaflet-routing-machine.js"></script>
+    <style>
+        body {
+            background: linear-gradient(to right, rgb(182, 244, 146), rgb(51, 139, 147));
+        }
+        #map {
+            height: 800px; /* Adjust the height as needed */
+            width: 80%; /* Adjust the width as needed */
+            margin: 20px auto; /* Center the map on the page */
+            border: 2px solid #ccc; /* Add a border to the map */
+            border-radius: 10px; /* Optional: Add border radius for a rounded look */
+        }
+        h1 {
+            text-align: center; /* Center the heading */
+            color: #333; /* Change the text color */
+            background-color: #f8f8f8; /* Add a background color to the heading */
+            padding: 10px; /* Add padding to the heading */
+            border-bottom: 2px solid #ccc; /* Add a border to the bottom of the heading */
+        }
+        form {
+            text-align: center; /* Center the form */
+            max-width: 200px; /* Set a maximum width for the form */
+            margin: 10px auto; /* Center the form on the page */
+            padding: 10px; /* Add some padding to the form */
+            background-color: #f8f8f8; /* Add a background color to the form */
+            border-radius: 10px; /* Optional: Add border radius for a rounded look */
+        }
+        input[type="submit"] {
+            width: 100%; /* Make the submit button full-width */
+            margin: 10px auto; /* Center the form on the page */
+            padding: 10px; /* Add some padding to the submit button */
+            background-color: #333; /* Set the background color of the submit button */
+            color: #fff; /* Set the text color of the submit button */
+            border: none; /* Remove the border of the submit button */
+            border-radius: 5px; /* Optional: Add border radius for a rounded look */
+            cursor: pointer; /* Add a pointer cursor to the submit button */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Map</h1>
+    <div id="map"></div>
+    <form action="welcome.html">
+        <input type="submit" value="Try a new class">
+    </form>
+    <script src="main.js"></script>
+</body>
+
+</html>
