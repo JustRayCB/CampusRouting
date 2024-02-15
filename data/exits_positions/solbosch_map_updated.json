@@ -2,27 +2,27 @@
   "Solbosch": [
     {
       "id": "c1",
-      "latitude": 50.81234, 
-      "longitude": 4.37940, 
+      "latitude": 50.81234,
+      "longitude": 4.3794,
       "neighbors": [
         {
           "id": "c2",
-          "weight": 1
+          "weight": 11
         }
       ]
     },
     {
       "id": "c2",
-      "latitude": 50.81243, 
-      "longitude": 4.37934, 
+      "latitude": 50.81243,
+      "longitude": 4.37934,
       "neighbors": [
         {
           "id": "c1",
-          "weight": 1
+          "weight": 11
         },
         {
           "id": "c3",
-          "weight": 1
+          "weight": 14
         }
       ]
     },
@@ -33,42 +33,42 @@
       "neighbors": [
         {
           "id": "c2",
-          "weight": 1
+          "weight": 14
         },
         {
           "id": "c4",
-          "weight": 1
+          "weight": 40
         },
         {
           "id": "eH_1",
-          "weight": 1
+          "weight": 66
         },
         {
           "id": "c72",
-          "weight": 1
+          "weight": 48
         }
       ]
     },
     {
       "id": "c4",
       "latitude": 50.81278,
-      "longitude": 4.37930,
+      "longitude": 4.3793,
       "neighbors": [
         {
           "id": "c3",
-          "weight": 1
+          "weight": 40
         },
         {
           "id": "c5",
-          "weight": 1
+          "weight": 15
         },
         {
           "id": "c6",
-          "weight": 1
+          "weight": 18
         },
         {
           "id": "c7",
-          "weight": 1
+          "weight": 15
         }
       ]
     },
@@ -79,15 +79,15 @@
       "neighbors": [
         {
           "id": "c4",
-          "weight": 1
+          "weight": 15
         },
         {
           "id": "c6",
-          "weight": 1
+          "weight": 19
         },
         {
           "id": "c13",
-          "weight": 1
+          "weight": 25
         }
       ]
     },
@@ -98,11 +98,11 @@
       "neighbors": [
         {
           "id": "c4",
-          "weight": 1
+          "weight": 18
         },
         {
           "id": "c5",
-          "weight": 1
+          "weight": 19
         }
       ]
     },
@@ -113,26 +113,26 @@
       "neighbors": [
         {
           "id": "c4",
-          "weight": 1
+          "weight": 15
         },
         {
           "id": "c8",
-          "weight": 1
+          "weight": 16
         }
       ]
     },
     {
       "id": "c8",
-      "latitude": 50.81290,
+      "latitude": 50.8129,
       "longitude": 4.37969,
       "neighbors": [
         {
           "id": "c7",
-          "weight": 1
+          "weight": 16
         },
         {
           "id": "c9",
-          "weight": 1
+          "weight": 7
         }
       ]
     },
@@ -143,30 +143,30 @@
       "neighbors": [
         {
           "id": "c8",
-          "weight": 1
+          "weight": 7
         },
         {
           "id": "c10",
-          "weight": 1
+          "weight": 12
         }
       ]
     },
     {
       "id": "c10",
-      "latitude": 50.81300,
+      "latitude": 50.813,
       "longitude": 4.37982,
       "neighbors": [
         {
           "id": "c9",
-          "weight": 1
+          "weight": 12
         },
         {
           "id": "eJ_1",
-          "weight": 1
+          "weight": 11
         },
         {
           "id": "c15",
-          "weight": 1
+          "weight": 11
         }
       ]
     },
@@ -177,60 +177,60 @@
       "neighbors": [
         {
           "id": "c10",
-          "weight": 1
+          "weight": 11
         }
       ]
     },
     {
       "id": "eH_1",
-      "latitude": 50.81270,
+      "latitude": 50.8127,
       "longitude": 4.38039,
       "neighbors": [
         {
           "id": "c3",
-          "weight": 1
+          "weight": 66
         },
         {
           "id": "c17",
-          "weight": 1
+          "weight": 20
         },
         {
           "id": "c27",
-          "weight": 1
+          "weight": 58
         },
         {
           "id": "c72",
-          "weight": 1
+          "weight": 20
         },
         {
           "id": "c75",
-          "weight": 1
+          "weight": 56
         }
       ]
     },
     {
       "id": "c13",
       "latitude": 50.81307,
-      "longitude": 4.37900,
+      "longitude": 4.379,
       "neighbors": [
         {
           "id": "c28",
-          "weight": 1
+          "weight": 45
         },
         {
           "id": "eJ_2",
-          "weight": 1
+          "weight": 10
         }
       ]
     },
     {
       "id": "eJ_2",
-      "latitude": 50.81310,
+      "latitude": 50.8131,
       "longitude": 4.37913,
       "neighbors": [
         {
           "id": "c13",
-          "weight": 1
+          "weight": 10
         }
       ]
     },
@@ -241,11 +241,11 @@
       "neighbors": [
         {
           "id": "c10",
-          "weight": 1
+          "weight": 11
         },
         {
           "id": "c16",
-          "weight": 1
+          "weight": 15
         }
       ]
     },
@@ -256,15 +256,15 @@
       "neighbors": [
         {
           "id": "c15",
-          "weight": 1
+          "weight": 15
         },
         {
           "id": "c17",
-          "weight": 1
+          "weight": 25
         },
         {
           "id": "c18",
-          "weight": 1
+          "weight": 24
         }
       ]
     },
@@ -275,11 +275,11 @@
       "neighbors": [
         {
           "id": "eH_1",
-          "weight": 1
+          "weight": 20
         },
         {
           "id": "c16",
-          "weight": 1
+          "weight": 25
         }
       ]
     },
@@ -290,15 +290,15 @@
       "neighbors": [
         {
           "id": "c16",
-          "weight": 1
+          "weight": 24
         },
         {
           "id": "c19",
-          "weight": 1
+          "weight": 7
         },
         {
           "id": "c20",
-          "weight": 1
+          "weight": 11
         }
       ]
     },
@@ -309,57 +309,57 @@
       "neighbors": [
         {
           "id": "c18",
-          "weight": 1
+          "weight": 7
         },
         {
           "id": "c20",
-          "weight": 1
+          "weight": 11
         },
         {
           "id": "c21",
-          "weight": 1
+          "weight": 12
         }
       ]
     },
     {
       "id": "c20",
       "latitude": 50.81332,
-      "longitude": 4.38050,
+      "longitude": 4.3805,
       "neighbors": [
         {
           "id": "c18",
-          "weight": 1
+          "weight": 11
         },
         {
           "id": "c19",
-          "weight": 1
+          "weight": 11
         },
         {
           "id": "c29",
-          "weight": 1
+          "weight": 10
         },
         {
           "id": "c51",
-          "weight": 1
+          "weight": 26
         },
         {
           "id": "c53",
-          "weight": 1
+          "weight": 24
         }
       ]
     },
     {
       "id": "c21",
       "latitude": 50.81323,
-      "longitude": 4.38020,
+      "longitude": 4.3802,
       "neighbors": [
         {
           "id": "c19",
-          "weight": 1
+          "weight": 12
         },
         {
           "id": "c23",
-          "weight": 1
+          "weight": 9
         }
       ]
     },
@@ -370,26 +370,26 @@
       "neighbors": [
         {
           "id": "c23",
-          "weight": 1
+          "weight": 13
         }
       ]
     },
     {
       "id": "c23",
-      "latitude": 50.81330,
+      "latitude": 50.8133,
       "longitude": 4.38015,
       "neighbors": [
         {
           "id": "c21",
-          "weight": 1
+          "weight": 9
         },
         {
           "id": "eJ_3",
-          "weight": 1
+          "weight": 13
         },
         {
           "id": "c24",
-          "weight": 1
+          "weight": 21
         }
       ]
     },
@@ -400,16 +400,16 @@
       "neighbors": [
         {
           "id": "c23",
-          "weight": 1
+          "weight": 21
         },
         {
           "id": "eJ_4",
-          "weight": 1
+          "weight": 10
         },
         {
           "id": "c26",
-          "weight": 1
-        } 
+          "weight": 11
+        }
       ]
     },
     {
@@ -419,7 +419,7 @@
       "neighbors": [
         {
           "id": "c24",
-          "weight": 1
+          "weight": 10
         }
       ]
     },
@@ -430,19 +430,19 @@
       "neighbors": [
         {
           "id": "c24",
-          "weight": 1
+          "weight": 11
         },
         {
           "id": "c42",
-          "weight": 1
+          "weight": 23
         },
         {
           "id": "c49",
-          "weight": 1
+          "weight": 19
         },
         {
           "id": "c55",
-          "weight": 1
+          "weight": 22
         }
       ]
     },
@@ -453,19 +453,19 @@
       "neighbors": [
         {
           "id": "eNB_1",
-          "weight": 1
+          "weight": 9
         },
         {
           "id": "c69",
-          "weight": 1
+          "weight": 16
         },
         {
           "id": "c74",
-          "weight": 1
+          "weight": 48
         },
         {
           "id": "c75",
-          "weight": 1
+          "weight": 9
         }
       ]
     },
@@ -476,30 +476,30 @@
       "neighbors": [
         {
           "id": "c13",
-          "weight": 1
+          "weight": 45
         },
         {
           "id": "c47",
-          "weight": 1
+          "weight": 25
         }
       ]
     },
     {
       "id": "c29",
-      "latitude": 50.81340,
+      "latitude": 50.8134,
       "longitude": 4.38043,
       "neighbors": [
         {
           "id": "c20",
-          "weight": 1
+          "weight": 10
         },
         {
           "id": "c30",
-          "weight": 1
+          "weight": 15
         },
         {
           "id": "c55",
-          "weight": 1
+          "weight": 30
         }
       ]
     },
@@ -510,19 +510,19 @@
       "neighbors": [
         {
           "id": "c29",
-          "weight": 1
+          "weight": 15
         },
         {
           "id": "c31",
-          "weight": 1
+          "weight": 17
         },
         {
           "id": "c39",
-          "weight": 1
+          "weight": 60
         },
         {
           "id": "c51",
-          "weight": 1
+          "weight": 15
         }
       ]
     },
@@ -533,19 +533,19 @@
       "neighbors": [
         {
           "id": "c30",
-          "weight": 1
+          "weight": 17
         },
         {
           "id": "c32",
-          "weight": 1
+          "weight": 16
         },
         {
           "id": "c38",
-          "weight": 1
+          "weight": 61
         },
         {
           "id": "c51",
-          "weight": 1
+          "weight": 11
         }
       ]
     },
@@ -556,15 +556,15 @@
       "neighbors": [
         {
           "id": "c31",
-          "weight": 1
+          "weight": 16
         },
         {
           "id": "c33",
-          "weight": 1
+          "weight": 16
         },
         {
           "id": "c37",
-          "weight": 1
+          "weight": 60
         }
       ]
     },
@@ -575,15 +575,15 @@
       "neighbors": [
         {
           "id": "c32",
-          "weight": 1
+          "weight": 16
         },
         {
           "id": "c34",
-          "weight": 1
+          "weight": 17
         },
         {
           "id": "c36",
-          "weight": 1
+          "weight": 60
         }
       ]
     },
@@ -594,53 +594,53 @@
       "neighbors": [
         {
           "id": "c33",
-          "weight": 1
+          "weight": 17
         },
         {
           "id": "c35",
-          "weight": 1
+          "weight": 60
         },
         {
           "id": "c76",
-          "weight": 1
+          "weight": 11
         }
       ]
     },
     {
       "id": "c35",
-      "latitude": 50.81420,
+      "latitude": 50.8142,
       "longitude": 4.38108,
       "neighbors": [
         {
           "id": "c34",
-          "weight": 1
+          "weight": 60
         },
         {
           "id": "c36",
-          "weight": 1
+          "weight": 14
         },
         {
           "id": "c83",
-          "weight": 1
+          "weight": 15
         }
       ]
     },
     {
       "id": "c36",
       "latitude": 50.81415,
-      "longitude": 4.38090,
+      "longitude": 4.3809,
       "neighbors": [
         {
           "id": "c33",
-          "weight": 1
+          "weight": 60
         },
         {
           "id": "c35",
-          "weight": 1
+          "weight": 14
         },
         {
           "id": "c37",
-          "weight": 1
+          "weight": 17
         }
       ]
     },
@@ -651,15 +651,15 @@
       "neighbors": [
         {
           "id": "c32",
-          "weight": 1
+          "weight": 60
         },
         {
           "id": "c36",
-          "weight": 1
+          "weight": 17
         },
         {
           "id": "c38",
-          "weight": 1
+          "weight": 16
         }
       ]
     },
@@ -670,15 +670,15 @@
       "neighbors": [
         {
           "id": "c31",
-          "weight": 1
+          "weight": 61
         },
         {
           "id": "c37",
-          "weight": 1
+          "weight": 16
         },
         {
           "id": "c39",
-          "weight": 1
+          "weight": 17
         }
       ]
     },
@@ -689,38 +689,38 @@
       "neighbors": [
         {
           "id": "c30",
-          "weight": 1
+          "weight": 60
         },
         {
           "id": "c38",
-          "weight": 1
+          "weight": 17
         },
         {
           "id": "c40",
-          "weight": 1
+          "weight": 16
         }
       ]
     },
     {
       "id": "c40",
-      "latitude": 50.81390,
+      "latitude": 50.8139,
       "longitude": 4.38005,
       "neighbors": [
         {
           "id": "c39",
-          "weight": 1
+          "weight": 16
         },
         {
           "id": "eR_1",
-          "weight": 1
+          "weight": 16
         },
         {
           "id": "c43",
-          "weight": 1
+          "weight": 27
         },
         {
           "id": "c55",
-          "weight": 1
+          "weight": 32
         }
       ]
     },
@@ -731,11 +731,11 @@
       "neighbors": [
         {
           "id": "c40",
-          "weight": 1
+          "weight": 16
         },
         {
           "id": "c42",
-          "weight": 1
+          "weight": 13
         }
       ]
     },
@@ -746,19 +746,19 @@
       "neighbors": [
         {
           "id": "c26",
-          "weight": 1
+          "weight": 23
         },
         {
           "id": "eR_1",
-          "weight": 1
+          "weight": 13
         },
         {
           "id": "c48",
-          "weight": 1
+          "weight": 45
         },
         {
           "id": "c49",
-          "weight": 1
+          "weight": 18
         }
       ]
     },
@@ -769,11 +769,11 @@
       "neighbors": [
         {
           "id": "c40",
-          "weight": 1
+          "weight": 27
         },
         {
           "id": "c44",
-          "weight": 1
+          "weight": 27
         }
       ]
     },
@@ -784,11 +784,11 @@
       "neighbors": [
         {
           "id": "c43",
-          "weight": 1
+          "weight": 27
         },
         {
           "id": "c45",
-          "weight": 1
+          "weight": 46
         }
       ]
     },
@@ -799,15 +799,15 @@
       "neighbors": [
         {
           "id": "c44",
-          "weight": 1
+          "weight": 46
         },
         {
           "id": "c46",
-          "weight": 1
+          "weight": 30
         },
         {
           "id": "c89",
-          "weight": 1
+          "weight": 14
         }
       ]
     },
@@ -818,34 +818,34 @@
       "neighbors": [
         {
           "id": "c45",
-          "weight": 1
+          "weight": 30
         },
         {
           "id": "c47",
-          "weight": 1
+          "weight": 48
         },
         {
           "id": "eR_2",
-          "weight": 1
+          "weight": 10
         }
       ]
     },
     {
       "id": "c47",
       "latitude": 50.81343,
-      "longitude": 4.37880,
+      "longitude": 4.3788,
       "neighbors": [
         {
           "id": "c28",
-          "weight": 1
+          "weight": 25
         },
         {
           "id": "c46",
-          "weight": 1
+          "weight": 48
         },
         {
           "id": "c48",
-          "weight": 1
+          "weight": 34
         }
       ]
     },
@@ -856,34 +856,34 @@
       "neighbors": [
         {
           "id": "c42",
-          "weight": 1
+          "weight": 45
         },
         {
           "id": "c47",
-          "weight": 1
+          "weight": 34
         },
         {
           "id": "c49",
-          "weight": 1
+          "weight": 33
         }
       ]
     },
     {
       "id": "c49",
       "latitude": 50.81359,
-      "longitude": 4.37970,
+      "longitude": 4.3797,
       "neighbors": [
         {
           "id": "c26",
-          "weight": 1
+          "weight": 19
         },
         {
           "id": "c42",
-          "weight": 1
+          "weight": 18
         },
         {
           "id": "c48",
-          "weight": 1
+          "weight": 33
         }
       ]
     },
@@ -894,7 +894,7 @@
       "neighbors": [
         {
           "id": "c46",
-          "weight": 1
+          "weight": 10
         }
       ]
     },
@@ -905,23 +905,23 @@
       "neighbors": [
         {
           "id": "c20",
-          "weight": 1
+          "weight": 26
         },
         {
           "id": "c30",
-          "weight": 1
+          "weight": 15
         },
         {
           "id": "c31",
-          "weight": 1
+          "weight": 11
         },
         {
           "id": "c52",
-          "weight": 1
+          "weight": 9
         },
         {
           "id": "c77",
-          "weight": 1
+          "weight": 66
         }
       ]
     },
@@ -932,19 +932,19 @@
       "neighbors": [
         {
           "id": "c51",
-          "weight": 1
+          "weight": 9
         },
         {
           "id": "c53",
-          "weight": 1
+          "weight": 10
         },
         {
           "id": "c54",
-          "weight": 1
+          "weight": 26
         },
         {
           "id": "c78",
-          "weight": 1
+          "weight": 67
         }
       ]
     },
@@ -955,15 +955,15 @@
       "neighbors": [
         {
           "id": "c20",
-          "weight": 1
+          "weight": 24
         },
         {
           "id": "c52",
-          "weight": 1
+          "weight": 10
         },
         {
           "id": "c54",
-          "weight": 1
+          "weight": 20
         }
       ]
     },
@@ -974,15 +974,15 @@
       "neighbors": [
         {
           "id": "c52",
-          "weight": 1
+          "weight": 26
         },
         {
           "id": "c53",
-          "weight": 1
+          "weight": 20
         },
         {
           "id": "c75",
-          "weight": 1
+          "weight": 25
         }
       ]
     },
@@ -993,19 +993,19 @@
       "neighbors": [
         {
           "id": "c26",
-          "weight": 1
+          "weight": 22
         },
         {
           "id": "c29",
-          "weight": 1
+          "weight": 30
         },
         {
           "id": "c40",
-          "weight": 1
+          "weight": 32
         },
         {
           "id": "c88",
-          "weight": 1
+          "weight": 92
         }
       ]
     },
@@ -1016,19 +1016,19 @@
       "neighbors": [
         {
           "id": "c69",
-          "weight": 1
+          "weight": 27
         },
         {
           "id": "eF1_1",
-          "weight": 1
+          "weight": 12
         },
         {
           "id": "c57",
-          "weight": 1
+          "weight": 28
         },
         {
           "id": "eU_2",
-          "weight": 1
+          "weight": 23
         }
       ]
     },
@@ -1039,42 +1039,42 @@
       "neighbors": [
         {
           "id": "c56",
-          "weight": 1
+          "weight": 28
         },
         {
           "id": "eU_1",
-          "weight": 1
+          "weight": 20
         },
         {
           "id": "eF1_2",
-          "weight": 1
+          "weight": 17
         },
         {
           "id": "c58",
-          "weight": 1
+          "weight": 43
         }
       ]
     },
     {
       "id": "c58",
       "latitude": 50.81329,
-      "longitude": 4.38260,
+      "longitude": 4.3826,
       "neighbors": [
         {
           "id": "c57",
-          "weight": 1
+          "weight": 43
         },
         {
           "id": "eF1_3",
-          "weight": 1
+          "weight": 17
         },
         {
           "id": "c64",
-          "weight": 1
+          "weight": 28
         },
         {
           "id": "c98",
-          "weight": 1
+          "weight": 43
         }
       ]
     },
@@ -1085,19 +1085,19 @@
       "neighbors": [
         {
           "id": "c65",
-          "weight": 1
+          "weight": 12
         },
         {
           "id": "c100",
-          "weight": 1
+          "weight": 13
         },
         {
           "id": "c110",
-          "weight": 1
+          "weight": 43
         },
         {
           "id": "eL_1",
-          "weight": 1
+          "weight": 16
         }
       ]
     },
@@ -1108,7 +1108,7 @@
       "neighbors": [
         {
           "id": "c57",
-          "weight": 1
+          "weight": 20
         }
       ]
     },
@@ -1119,18 +1119,18 @@
       "neighbors": [
         {
           "id": "c57",
-          "weight": 1
+          "weight": 17
         }
       ]
     },
     {
       "id": "eF1_1",
       "latitude": 50.81312,
-      "longitude": 4.38160,
+      "longitude": 4.3816,
       "neighbors": [
         {
           "id": "c56",
-          "weight": 1
+          "weight": 12
         }
       ]
     },
@@ -1141,7 +1141,7 @@
       "neighbors": [
         {
           "id": "c58",
-          "weight": 1
+          "weight": 17
         }
       ]
     },
@@ -1152,15 +1152,15 @@
       "neighbors": [
         {
           "id": "c58",
-          "weight": 1
+          "weight": 28
         },
         {
           "id": "c65",
-          "weight": 1
+          "weight": 27
         },
         {
           "id": "eP1_2",
-          "weight": 1
+          "weight": 3
         }
       ]
     },
@@ -1171,26 +1171,26 @@
       "neighbors": [
         {
           "id": "c59",
-          "weight": 1
+          "weight": 12
         },
         {
           "id": "c64",
-          "weight": 1
+          "weight": 27
         },
         {
           "id": "eP2_1",
-          "weight": 1
+          "weight": 3
         }
       ]
     },
     {
       "id": "eP1_2",
       "latitude": 50.81308,
-      "longitude": 4.38280,
+      "longitude": 4.3828,
       "neighbors": [
         {
           "id": "c64",
-          "weight": 1
+          "weight": 3
         }
       ]
     },
@@ -1201,7 +1201,7 @@
       "neighbors": [
         {
           "id": "c65",
-          "weight": 1
+          "weight": 3
         }
       ]
     },
@@ -1212,34 +1212,34 @@
       "neighbors": [
         {
           "id": "c27",
-          "weight": 1
+          "weight": 9
         },
         {
           "id": "c69",
-          "weight": 1
+          "weight": 9
         }
       ]
     },
     {
       "id": "c69",
       "latitude": 50.81286,
-      "longitude": 4.38140,
+      "longitude": 4.3814,
       "neighbors": [
         {
           "id": "c27",
-          "weight": 1
+          "weight": 16
         },
         {
           "id": "c56",
-          "weight": 1
+          "weight": 27
         },
         {
           "id": "eNB_1",
-          "weight": 1
+          "weight": 9
         },
         {
           "id": "c114",
-          "weight": 1
+          "weight": 67
         }
       ]
     },
@@ -1250,7 +1250,7 @@
       "neighbors": [
         {
           "id": "c56",
-          "weight": 1
+          "weight": 23
         }
       ]
     },
@@ -1261,53 +1261,53 @@
       "neighbors": [
         {
           "id": "c74",
-          "weight": 1
+          "weight": 18
         },
         {
           "id": "c118",
-          "weight": 1
+          "weight": 21
         }
       ]
     },
     {
       "id": "c72",
       "latitude": 50.81257,
-      "longitude": 4.38020,
+      "longitude": 4.3802,
       "neighbors": [
         {
           "id": "c3",
-          "weight": 1
+          "weight": 48
         },
         {
           "id": "eH_1",
-          "weight": 1
+          "weight": 20
         },
         {
           "id": "c73",
-          "weight": 1
+          "weight": 33
         },
         {
           "id": "c74",
-          "weight": 1
+          "weight": 28
         }
       ]
     },
     {
       "id": "c73",
-      "latitude": 50.81230,
+      "latitude": 50.8123,
       "longitude": 4.38041,
       "neighbors": [
         {
           "id": "c72",
-          "weight": 1
+          "weight": 33
         },
         {
           "id": "c118",
-          "weight": 1
+          "weight": 42
         },
         {
           "id": "c119",
-          "weight": 1
+          "weight": 23
         }
       ]
     },
@@ -1318,61 +1318,61 @@
       "neighbors": [
         {
           "id": "eH_1",
-          "weight": 1
+          "weight": 13
         },
         {
           "id": "c27",
-          "weight": 1
+          "weight": 48
         },
         {
           "id": "c71",
-          "weight": 1
+          "weight": 18
         },
         {
           "id": "c71",
-          "weight": 1
+          "weight": 18
         }
       ]
     },
     {
       "id": "c75",
       "latitude": 50.81292,
-      "longitude": 4.38110,
+      "longitude": 4.3811,
       "neighbors": [
         {
           "id": "eH_1",
-          "weight": 1
+          "weight": 56
         },
         {
           "id": "c27",
-          "weight": 1
+          "weight": 9
         },
         {
           "id": "c54",
-          "weight": 1
+          "weight": 25
         }
       ]
     },
     {
       "id": "c76",
       "latitude": 50.81377,
-      "longitude": 4.38160,
+      "longitude": 4.3816,
       "neighbors": [
         {
           "id": "c34",
-          "weight": 1
+          "weight": 11
         },
         {
           "id": "c77",
-          "weight": 1
+          "weight": 11
         },
         {
           "id": "c82",
-          "weight": 1
+          "weight": 28
         },
         {
           "id": "c88",
-          "weight": 1
+          "weight": 29
         }
       ]
     },
@@ -1383,15 +1383,15 @@
       "neighbors": [
         {
           "id": "c76",
-          "weight": 1
+          "weight": 11
         },
         {
           "id": "c78",
-          "weight": 1
+          "weight": 9
         },
         {
           "id": "c82",
-          "weight": 1
+          "weight": 27
         }
       ]
     },
@@ -1402,34 +1402,34 @@
       "neighbors": [
         {
           "id": "c52",
-          "weight": 1
+          "weight": 67
         },
         {
           "id": "c77",
-          "weight": 1
+          "weight": 9
         },
         {
           "id": "c79",
-          "weight": 1
+          "weight": 10
         }
       ]
     },
     {
       "id": "c79",
       "latitude": 50.81353,
-      "longitude": 4.38180,
+      "longitude": 4.3818,
       "neighbors": [
         {
           "id": "c78",
-          "weight": 1
+          "weight": 10
         },
         {
           "id": "eF1_4",
-          "weight": 1
+          "weight": 9
         },
         {
           "id": "c81",
-          "weight": 1
+          "weight": 53
         }
       ]
     },
@@ -1440,7 +1440,7 @@
       "neighbors": [
         {
           "id": "c79",
-          "weight": 1
+          "weight": 9
         }
       ]
     },
@@ -1451,19 +1451,19 @@
       "neighbors": [
         {
           "id": "c79",
-          "weight": 1
+          "weight": 53
         },
         {
           "id": "c82",
-          "weight": 1
+          "weight": 36
         },
         {
           "id": "c135",
-          "weight": 1
+          "weight": 29
         },
         {
           "id": "eM_1",
-          "weight": 1
+          "weight": 20
         }
       ]
     },
@@ -1474,19 +1474,19 @@
       "neighbors": [
         {
           "id": "c76",
-          "weight": 1
+          "weight": 28
         },
         {
           "id": "c77",
-          "weight": 1
+          "weight": 27
         },
         {
           "id": "c81",
-          "weight": 1
+          "weight": 36
         },
         {
           "id": "c85",
-          "weight": 1
+          "weight": 40
         }
       ]
     },
@@ -1497,38 +1497,38 @@
       "neighbors": [
         {
           "id": "c35",
-          "weight": 1
+          "weight": 15
         },
         {
           "id": "c84",
-          "weight": 1
+          "weight": 32
         },
         {
           "id": "c88",
-          "weight": 1
+          "weight": 39
         }
       ]
     },
     {
       "id": "c84",
       "latitude": 50.81445,
-      "longitude": 4.38160,
+      "longitude": 4.3816,
       "neighbors": [
         {
           "id": "c83",
-          "weight": 1
+          "weight": 32
         },
         {
           "id": "c85",
-          "weight": 1
+          "weight": 36
         },
         {
           "id": "c97",
-          "weight": 1
+          "weight": 45
         },
         {
           "id": "c142",
-          "weight": 1
+          "weight": 40
         }
       ]
     },
@@ -1539,19 +1539,19 @@
       "neighbors": [
         {
           "id": "c82",
-          "weight": 1
+          "weight": 40
         },
         {
           "id": "c84",
-          "weight": 1
+          "weight": 36
         },
         {
           "id": "c86",
-          "weight": 1
+          "weight": 8
         },
         {
           "id": "c88",
-          "weight": 1
+          "weight": 38
         }
       ]
     },
@@ -1562,15 +1562,15 @@
       "neighbors": [
         {
           "id": "c85",
-          "weight": 1
+          "weight": 8
         },
         {
           "id": "eB_1",
-          "weight": 1
+          "weight": 4
         },
         {
           "id": "c142",
-          "weight": 1
+          "weight": 29
         }
       ]
     },
@@ -1581,30 +1581,30 @@
       "neighbors": [
         {
           "id": "c86",
-          "weight": 1
+          "weight": 4
         }
       ]
     },
     {
       "id": "c88",
-      "latitude": 50.81400,
+      "latitude": 50.814,
       "longitude": 4.38141,
       "neighbors": [
         {
           "id": "c55",
-          "weight": 1
+          "weight": 92
         },
         {
           "id": "c76",
-          "weight": 1
+          "weight": 29
         },
         {
           "id": "c83",
-          "weight": 1
+          "weight": 39
         },
         {
           "id": "c85",
-          "weight": 1
+          "weight": 38
         }
       ]
     },
@@ -1615,15 +1615,15 @@
       "neighbors": [
         {
           "id": "c45",
-          "weight": 1
+          "weight": 14
         },
         {
           "id": "c46",
-          "weight": 1
+          "weight": 29
         },
         {
           "id": "c90",
-          "weight": 1
+          "weight": 37
         }
       ]
     },
@@ -1634,11 +1634,11 @@
       "neighbors": [
         {
           "id": "c89",
-          "weight": 1
+          "weight": 37
         },
         {
           "id": "c91",
-          "weight": 1
+          "weight": 58
         }
       ]
     },
@@ -1649,30 +1649,30 @@
       "neighbors": [
         {
           "id": "c90",
-          "weight": 1
+          "weight": 58
         },
         {
           "id": "c92",
-          "weight": 1
+          "weight": 24
         }
       ]
     },
     {
       "id": "c92",
-      "latitude": 50.81480,
+      "latitude": 50.8148,
       "longitude": 4.38002,
       "neighbors": [
         {
           "id": "c91",
-          "weight": 1
+          "weight": 24
         },
         {
           "id": "eS_1",
-          "weight": 1
+          "weight": 30
         },
         {
           "id": "c94",
-          "weight": 1
+          "weight": 39
         }
       ]
     },
@@ -1683,7 +1683,7 @@
       "neighbors": [
         {
           "id": "c92",
-          "weight": 1
+          "weight": 30
         }
       ]
     },
@@ -1694,11 +1694,11 @@
       "neighbors": [
         {
           "id": "c92",
-          "weight": 1
+          "weight": 39
         },
         {
           "id": "c95",
-          "weight": 1
+          "weight": 23
         }
       ]
     },
@@ -1709,11 +1709,11 @@
       "neighbors": [
         {
           "id": "c94",
-          "weight": 1
+          "weight": 23
         },
         {
           "id": "c96",
-          "weight": 1
+          "weight": 45
         }
       ]
     },
@@ -1724,15 +1724,15 @@
       "neighbors": [
         {
           "id": "c97",
-          "weight": 1
+          "weight": 19
         },
         {
           "id": "eK_1",
-          "weight": 1
+          "weight": 13
         },
         {
           "id": "c139",
-          "weight": 1
+          "weight": 41
         }
       ]
     },
@@ -1743,19 +1743,19 @@
       "neighbors": [
         {
           "id": "c84",
-          "weight": 1
+          "weight": 45
         },
         {
           "id": "c96",
-          "weight": 1
+          "weight": 19
         },
         {
           "id": "eK_1",
-          "weight": 1
+          "weight": 10
         },
         {
           "id": "eSI_1",
-          "weight": 1
+          "weight": 18
         }
       ]
     },
@@ -1766,19 +1766,19 @@
       "neighbors": [
         {
           "id": "c58",
-          "weight": 1
+          "weight": 43
         },
         {
           "id": "c111",
-          "weight": 1
+          "weight": 30
         },
         {
           "id": "c135",
-          "weight": 1
+          "weight": 48
         },
         {
           "id": "c144",
-          "weight": 1
+          "weight": 42
         }
       ]
     },
@@ -1789,19 +1789,19 @@
       "neighbors": [
         {
           "id": "eU_6",
-          "weight": 1
+          "weight": 19
         },
         {
           "id": "eU_4",
-          "weight": 1
+          "weight": 8
         },
         {
           "id": "eU_3",
-          "weight": 1
+          "weight": 23
         },
         {
           "id": "c109",
-          "weight": 1
+          "weight": 50
         }
       ]
     },
@@ -1812,42 +1812,42 @@
       "neighbors": [
         {
           "id": "c59",
-          "weight": 1
+          "weight": 13
         },
         {
           "id": "eU_3",
-          "weight": 1
+          "weight": 31
         },
         {
           "id": "c101",
-          "weight": 1
+          "weight": 84
         },
         {
           "id": "c109",
-          "weight": 1
+          "weight": 54
         }
       ]
     },
     {
       "id": "c101",
-      "latitude": 50.81200,
+      "latitude": 50.812,
       "longitude": 4.38335,
       "neighbors": [
         {
           "id": "c100",
-          "weight": 1
+          "weight": 84
         },
         {
           "id": "eU_10",
-          "weight": 1
+          "weight": 32
         },
         {
           "id": "c109",
-          "weight": 1
+          "weight": 50
         },
         {
           "id": "c147",
-          "weight": 1
+          "weight": 54
         }
       ]
     },
@@ -1858,19 +1858,19 @@
       "neighbors": [
         {
           "id": "eU_8",
-          "weight": 1
+          "weight": 6
         },
         {
           "id": "eU_10",
-          "weight": 1
+          "weight": 24
         },
         {
           "id": "c109",
-          "weight": 1
+          "weight": 47
         },
         {
           "id": "c146",
-          "weight": 1
+          "weight": 47
         }
       ]
     },
@@ -1881,7 +1881,7 @@
       "neighbors": [
         {
           "id": "c102",
-          "weight": 1
+          "weight": 6
         }
       ]
     },
@@ -1892,37 +1892,37 @@
       "neighbors": [
         {
           "id": "c101",
-          "weight": 1
+          "weight": 32
         },
         {
           "id": "c102",
-          "weight": 1
+          "weight": 24
         },
         {
           "id": "c109",
-          "weight": 1
+          "weight": 44
         }
       ]
     },
     {
-      "id": "eU_7", 
+      "id": "eU_7",
       "latitude": 50.81214,
       "longitude": 4.38227,
       "neighbors": [
         {
           "id": "c146",
-          "weight": 1
+          "weight": 4
         }
       ]
     },
     {
       "id": "eU_6",
-      "latitude": 50.81230,
+      "latitude": 50.8123,
       "longitude": 4.38215,
       "neighbors": [
         {
           "id": "c99",
-          "weight": 1
+          "weight": 19
         }
       ]
     },
@@ -1933,7 +1933,7 @@
       "neighbors": [
         {
           "id": "c99",
-          "weight": 1
+          "weight": 8
         }
       ]
     },
@@ -1944,69 +1944,69 @@
       "neighbors": [
         {
           "id": "c99",
-          "weight": 1
+          "weight": 23
         },
         {
           "id": "c100",
-          "weight": 1
+          "weight": 31
         },
         {
           "id": "c109",
-          "weight": 1
+          "weight": 48
         }
       ]
     },
     {
       "id": "c109",
-      "latitude": 50.81220,
+      "latitude": 50.8122,
       "longitude": 4.38271,
       "neighbors": [
         {
           "id": "c99",
-          "weight": 1
+          "weight": 50
         },
         {
           "id": "c100",
-          "weight": 1
+          "weight": 54
         },
         {
           "id": "c101",
-          "weight": 1
+          "weight": 50
         },
         {
           "id": "c102",
-          "weight": 1
+          "weight": 47
         },
         {
           "id": "eU_10",
-          "weight": 1
+          "weight": 44
         },
         {
           "id": "eU_3",
-          "weight": 1
+          "weight": 48
         }
       ]
     },
     {
       "id": "c110",
-      "latitude": 50.81290,
+      "latitude": 50.8129,
       "longitude": 4.38354,
       "neighbors": [
         {
           "id": "c59",
-          "weight": 1
+          "weight": 43
         },
         {
           "id": "c111",
-          "weight": 1
+          "weight": 39
         },
         {
           "id": "c147",
-          "weight": 1
+          "weight": 83
         },
         {
           "id": "eP4_1",
-          "weight": 1
+          "weight": 16
         }
       ]
     },
@@ -2017,30 +2017,30 @@
       "neighbors": [
         {
           "id": "c98",
-          "weight": 1
+          "weight": 30
         },
         {
           "id": "c110",
-          "weight": 1
+          "weight": 39
         },
         {
           "id": "eP1_1",
-          "weight": 1
+          "weight": 7
         },
         {
           "id": "eP3_1",
-          "weight": 1
+          "weight": 7
         }
       ]
     },
     {
       "id": "eP1_1",
-      "latitude": 50.81320,
+      "latitude": 50.8132,
       "longitude": 4.38322,
       "neighbors": [
         {
           "id": "c111",
-          "weight": 1
+          "weight": 7
         }
       ]
     },
@@ -2051,7 +2051,7 @@
       "neighbors": [
         {
           "id": "c111",
-          "weight": 1
+          "weight": 7
         }
       ]
     },
@@ -2062,19 +2062,19 @@
       "neighbors": [
         {
           "id": "c69",
-          "weight": 1
+          "weight": 67
         },
         {
           "id": "eU_5",
-          "weight": 1
+          "weight": 5
         },
         {
           "id": "c116",
-          "weight": 1
+          "weight": 73
         },
         {
           "id": "c129",
-          "weight": 1
+          "weight": 34
         }
       ]
     },
@@ -2085,7 +2085,7 @@
       "neighbors": [
         {
           "id": "c114",
-          "weight": 1
+          "weight": 5
         }
       ]
     },
@@ -2096,19 +2096,19 @@
       "neighbors": [
         {
           "id": "c114",
-          "weight": 1
+          "weight": 73
         },
         {
           "id": "eU_9",
-          "weight": 1
+          "weight": 4
         },
         {
           "id": "c133",
-          "weight": 1
+          "weight": 36
         },
         {
           "id": "c148",
-          "weight": 1
+          "weight": 35
         }
       ]
     },
@@ -2119,7 +2119,7 @@
       "neighbors": [
         {
           "id": "c116",
-          "weight": 1
+          "weight": 4
         }
       ]
     },
@@ -2130,38 +2130,38 @@
       "neighbors": [
         {
           "id": "c71",
-          "weight": 1
+          "weight": 21
         },
         {
           "id": "c73",
-          "weight": 1
+          "weight": 42
         },
         {
           "id": "c127",
-          "weight": 1
+          "weight": 39
         }
       ]
     },
     {
       "id": "c119",
-      "latitude": 50.81210,
+      "latitude": 50.8121,
       "longitude": 4.38048,
       "neighbors": [
         {
           "id": "c73",
-          "weight": 1
+          "weight": 23
         },
         {
           "id": "eA_1",
-          "weight": 1
+          "weight": 3
         },
         {
           "id": "c121",
-          "weight": 1
+          "weight": 43
         },
         {
           "id": "c123",
-          "weight": 1
+          "weight": 34
         }
       ]
     },
@@ -2172,7 +2172,7 @@
       "neighbors": [
         {
           "id": "c119",
-          "weight": 1
+          "weight": 3
         }
       ]
     },
@@ -2183,72 +2183,72 @@
       "neighbors": [
         {
           "id": "c1",
-          "weight": 1
+          "weight": 58
         },
         {
           "id": "c119",
-          "weight": 1
+          "weight": 43
         },
         {
           "id": "c122",
-          "weight": 1
+          "weight": 37
         }
       ]
     },
     {
       "id": "c122",
-      "latitude": 50.81170,
+      "latitude": 50.8117,
       "longitude": 4.38029,
       "neighbors": [
         {
           "id": "c121",
-          "weight": 1
+          "weight": 37
         },
         {
           "id": "c123",
-          "weight": 1
+          "weight": 24
         },
         {
           "id": "c124",
-          "weight": 1
+          "weight": 50
         }
       ]
     },
     {
       "id": "c123",
-      "latitude": 50.81180,
+      "latitude": 50.8118,
       "longitude": 4.38059,
       "neighbors": [
         {
           "id": "c119",
-          "weight": 1
+          "weight": 34
         },
         {
           "id": "c122",
-          "weight": 1
+          "weight": 24
         },
         {
           "id": "c125",
-          "weight": 1
+          "weight": 24
         }
       ]
     },
     {
       "id": "c124",
-      "latitude": 50.81150,
+      "latitude": 50.8115,
       "longitude": 4.38093,
       "neighbors": [
         {
           "id": "c122",
-          "weight": 1
+          "weight": 50
         },
         {
           "id": "c125",
-          "weight": 1
+          "weight": 18
         },
         {
           "id": "c151",
-          "weight": 1
+          "weight": 40
         }
       ]
     },
@@ -2259,26 +2259,26 @@
       "neighbors": [
         {
           "id": "c123",
-          "weight": 1
+          "weight": 24
         },
         {
           "id": "c124",
-          "weight": 1
+          "weight": 18
         },
         {
           "id": "eA_4",
-          "weight": 1
+          "weight": 12
         }
       ]
     },
     {
       "id": "eA_4",
-      "latitude": 50.81170,
+      "latitude": 50.8117,
       "longitude": 4.38099,
       "neighbors": [
         {
           "id": "c125",
-          "weight": 1
+          "weight": 12
         }
       ]
     },
@@ -2289,15 +2289,15 @@
       "neighbors": [
         {
           "id": "c118",
-          "weight": 1
+          "weight": 39
         },
         {
           "id": "eA_2",
-          "weight": 1
+          "weight": 17
         },
         {
           "id": "c129",
-          "weight": 1
+          "weight": 16
         }
       ]
     },
@@ -2308,7 +2308,7 @@
       "neighbors": [
         {
           "id": "c127",
-          "weight": 1
+          "weight": 17
         }
       ]
     },
@@ -2319,19 +2319,19 @@
       "neighbors": [
         {
           "id": "c114",
-          "weight": 1
+          "weight": 34
         },
         {
           "id": "c127",
-          "weight": 1
+          "weight": 16
         },
         {
           "id": "eNA_1",
-          "weight": 1
+          "weight": 3
         },
         {
           "id": "c131",
-          "weight": 1
+          "weight": 37
         }
       ]
     },
@@ -2342,7 +2342,7 @@
       "neighbors": [
         {
           "id": "c129",
-          "weight": 1
+          "weight": 3
         }
       ]
     },
@@ -2353,11 +2353,11 @@
       "neighbors": [
         {
           "id": "c129",
-          "weight": 1
+          "weight": 37
         },
         {
           "id": "c133",
-          "weight": 1
+          "weight": 37
         }
       ]
     },
@@ -2368,7 +2368,7 @@
       "neighbors": [
         {
           "id": "c131",
-          "weight": 1
+          "weight": 6
         }
       ]
     },
@@ -2379,15 +2379,15 @@
       "neighbors": [
         {
           "id": "c116",
-          "weight": 1
+          "weight": 36
         },
         {
           "id": "c131",
-          "weight": 1
+          "weight": 37
         },
         {
           "id": "eA_5",
-          "weight": 1
+          "weight": 11
         }
       ]
     },
@@ -2398,9 +2398,9 @@
       "neighbors": [
         {
           "id": "c133",
-          "weight": 1
+          "weight": 11
         }
-      ] 
+      ]
     },
     {
       "id": "c135",
@@ -2409,19 +2409,19 @@
       "neighbors": [
         {
           "id": "c81",
-          "weight": 1
+          "weight": 29
         },
         {
           "id": "c98",
-          "weight": 1
+          "weight": 48
         },
         {
           "id": "c145",
-          "weight": 1
+          "weight": 42
         },
         {
           "id": "c154",
-          "weight": 1
+          "weight": 54
         }
       ]
     },
@@ -2432,7 +2432,7 @@
       "neighbors": [
         {
           "id": "c81",
-          "weight": 1
+          "weight": 20
         }
       ]
     },
@@ -2443,15 +2443,15 @@
       "neighbors": [
         {
           "id": "c96",
-          "weight": 1
+          "weight": 13
         },
         {
           "id": "c97",
-          "weight": 1
+          "weight": 10
         },
         {
           "id": "eK_2",
-          "weight": 1
+          "weight": 33
         }
       ]
     },
@@ -2462,11 +2462,11 @@
       "neighbors": [
         {
           "id": "eK_1",
-          "weight": 1
+          "weight": 33
         },
         {
           "id": "c139",
-          "weight": 1
+          "weight": 10
         }
       ]
     },
@@ -2477,19 +2477,19 @@
       "neighbors": [
         {
           "id": "eK_2",
-          "weight": 1
+          "weight": 10
         },
         {
           "id": "c140",
-          "weight": 1
+          "weight": 63
         },
         {
           "id": "c160",
-          "weight": 1
+          "weight": 59
         },
         {
           "id": "eE_1",
-          "weight": 1
+          "weight": 17
         }
       ]
     },
@@ -2500,15 +2500,15 @@
       "neighbors": [
         {
           "id": "c139",
-          "weight": 1
+          "weight": 63
         },
         {
           "id": "eE_2",
-          "weight": 1
+          "weight": 5
         },
         {
           "id": "c142",
-          "weight": 1
+          "weight": 18
         }
       ]
     },
@@ -2519,7 +2519,7 @@
       "neighbors": [
         {
           "id": "c142",
-          "weight": 1
+          "weight": 8
         }
       ]
     },
@@ -2530,26 +2530,26 @@
       "neighbors": [
         {
           "id": "c86",
-          "weight": 1
+          "weight": 29
         },
         {
           "id": "c140",
-          "weight": 1
+          "weight": 18
         },
         {
           "id": "eK_3",
-          "weight": 1
+          "weight": 8
         }
       ]
     },
     {
       "id": "eSI_1",
-      "latitude": 50.81480,
+      "latitude": 50.8148,
       "longitude": 4.38108,
       "neighbors": [
         {
           "id": "c97",
-          "weight": 1
+          "weight": 18
         }
       ]
     },
@@ -2560,15 +2560,15 @@
       "neighbors": [
         {
           "id": "c98",
-          "weight": 1
+          "weight": 42
         },
         {
           "id": "c145",
-          "weight": 1
+          "weight": 44
         },
         {
           "id": "c158",
-          "weight": 1
+          "weight": 38
         }
       ]
     },
@@ -2579,11 +2579,11 @@
       "neighbors": [
         {
           "id": "c135",
-          "weight": 1
+          "weight": 42
         },
         {
           "id": "c144",
-          "weight": 1
+          "weight": 44
         }
       ]
     },
@@ -2594,11 +2594,11 @@
       "neighbors": [
         {
           "id": "eU_7",
-          "weight": 1
+          "weight": 4
         },
         {
           "id": "eU_6",
-          "weight": 1
+          "weight": 21
         }
       ]
     },
@@ -2609,15 +2609,15 @@
       "neighbors": [
         {
           "id": "c101",
-          "weight": 1
+          "weight": 54
         },
         {
           "id": "c110",
-          "weight": 1
+          "weight": 83
         },
         {
           "id": "c153",
-          "weight": 1
+          "weight": 52
         }
       ]
     },
@@ -2628,19 +2628,19 @@
       "neighbors": [
         {
           "id": "c116",
-          "weight": 1
+          "weight": 35
         },
         {
           "id": "c149",
-          "weight": 1
+          "weight": 23
         },
         {
           "id": "eA_8",
-          "weight": 1
+          "weight": 17
         },
         {
           "id": "eA_6",
-          "weight": 1
+          "weight": 24
         }
       ]
     },
@@ -2651,15 +2651,15 @@
       "neighbors": [
         {
           "id": "c148",
-          "weight": 1
+          "weight": 23
         },
         {
           "id": "c150",
-          "weight": 1
+          "weight": 73
         },
         {
           "id": "c153",
-          "weight": 1
+          "weight": 137
         }
       ]
     },
@@ -2670,11 +2670,11 @@
       "neighbors": [
         {
           "id": "c149",
-          "weight": 1
+          "weight": 73
         },
         {
           "id": "c151",
-          "weight": 1
+          "weight": 39
         }
       ]
     },
@@ -2685,15 +2685,15 @@
       "neighbors": [
         {
           "id": "c124",
-          "weight": 1
+          "weight": 40
         },
         {
           "id": "c150",
-          "weight": 1
+          "weight": 39
         },
         {
           "id": "eA_7",
-          "weight": 1
+          "weight": 36
         }
       ]
     },
@@ -2704,26 +2704,26 @@
       "neighbors": [
         {
           "id": "c151",
-          "weight": 1
+          "weight": 36
         }
       ]
     },
     {
       "id": "c153",
-      "latitude": 50.81180,
+      "latitude": 50.8118,
       "longitude": 4.38436,
       "neighbors": [
         {
           "id": "c149",
-          "weight": 1
+          "weight": 137
         },
         {
           "id": "eD_1",
-          "weight": 1
+          "weight": 11
         },
         {
           "id": "eD_2",
-          "weight": 1
+          "weight": 8
         }
       ]
     },
@@ -2734,11 +2734,11 @@
       "neighbors": [
         {
           "id": "c135",
-          "weight": 1
+          "weight": 54
         },
         {
           "id": "c155",
-          "weight": 1
+          "weight": 53
         }
       ]
     },
@@ -2749,11 +2749,11 @@
       "neighbors": [
         {
           "id": "c154",
-          "weight": 1
+          "weight": 53
         },
         {
           "id": "c156",
-          "weight": 1
+          "weight": 31
         }
       ]
     },
@@ -2764,11 +2764,11 @@
       "neighbors": [
         {
           "id": "c155",
-          "weight": 1
+          "weight": 31
         },
         {
           "id": "c157",
-          "weight": 1
+          "weight": 22
         }
       ]
     },
@@ -2779,15 +2779,15 @@
       "neighbors": [
         {
           "id": "c156",
-          "weight": 1
+          "weight": 22
         },
         {
           "id": "c158",
-          "weight": 1
+          "weight": 150
         },
         {
           "id": "eC_1",
-          "weight": 1
+          "weight": 55
         }
       ]
     },
@@ -2798,11 +2798,11 @@
       "neighbors": [
         {
           "id": "c144",
-          "weight": 1
+          "weight": 38
         },
         {
           "id": "c157",
-          "weight": 1
+          "weight": 150
         }
       ]
     },
@@ -2813,15 +2813,15 @@
       "neighbors": [
         {
           "id": "c157",
-          "weight": 1
+          "weight": 97
         },
         {
           "id": "c160",
-          "weight": 1
+          "weight": 57
         },
         {
           "id": "eC_1",
-          "weight": 1
+          "weight": 44
         }
       ]
     },
@@ -2832,48 +2832,48 @@
       "neighbors": [
         {
           "id": "c139",
-          "weight": 1
+          "weight": 59
         },
         {
           "id": "c159",
-          "weight": 1
+          "weight": 57
         },
         {
           "id": "eC_2",
-          "weight": 1
+          "weight": 24
         }
       ]
     },
     {
       "id": "eE_2",
-      "latitude": 50.81460,
+      "latitude": 50.8146,
       "longitude": 4.38239,
       "neighbors": [
         {
           "id": "c140",
-          "weight": 1
+          "weight": 5
         }
       ]
     },
     {
       "id": "eE_1",
       "latitude": 50.81498,
-      "longitude": 4.38210,
+      "longitude": 4.3821,
       "neighbors": [
         {
           "id": "c139",
-          "weight": 1
+          "weight": 17
         }
       ]
     },
     {
       "id": "eD_1",
       "latitude": 50.81189,
-      "longitude": 4.38430,
+      "longitude": 4.3843,
       "neighbors": [
         {
           "id": "c153",
-          "weight": 1
+          "weight": 11
         }
       ]
     },
@@ -2884,7 +2884,7 @@
       "neighbors": [
         {
           "id": "c153",
-          "weight": 1
+          "weight": 8
         }
       ]
     },
@@ -2895,7 +2895,7 @@
       "neighbors": [
         {
           "id": "c148",
-          "weight": 1
+          "weight": 17
         }
       ]
     },
@@ -2906,7 +2906,7 @@
       "neighbors": [
         {
           "id": "c148",
-          "weight": 1
+          "weight": 24
         }
       ]
     },
@@ -2917,11 +2917,11 @@
       "neighbors": [
         {
           "id": "c157",
-          "weight": 1
+          "weight": 55
         },
         {
           "id": "c159",
-          "weight": 1
+          "weight": 44
         }
       ]
     },
@@ -2932,7 +2932,7 @@
       "neighbors": [
         {
           "id": "c160",
-          "weight": 1
+          "weight": 24
         }
       ]
     },
@@ -2943,7 +2943,7 @@
       "neighbors": [
         {
           "id": "c59",
-          "weight": 1
+          "weight": 16
         }
       ]
     },
@@ -2954,18 +2954,18 @@
       "neighbors": [
         {
           "id": "c110",
-          "weight": 1
+          "weight": 16
         }
       ]
     },
     {
       "id": "eF1_5",
       "latitude": 50.81367,
-      "longitude": 4.38241, 
+      "longitude": 4.38241,
       "neighbors": [
         {
           "id": "c81",
-          "weight": 1
+          "weight": 9
         }
       ]
     }

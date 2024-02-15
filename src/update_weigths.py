@@ -14,8 +14,8 @@ def main():
 
     for node in data['Solbosch']:
         for neighbor in node['neighbors']:
-            neighbor['weight'] = geopy.distance.geodesic((latitudes[node['id']], longitudes[node['id']]),
-                                                         (latitudes[neighbor['id']], longitudes[neighbor['id']])).m
+            neighbor['weight'] = round(geopy.distance.geodesic((latitudes[node['id']], longitudes[node['id']]),
+                                                         (latitudes[neighbor['id']], longitudes[neighbor['id']])).m)
 
     # New json file with updated weights
     with open("data/exits_positions/solbosch_map_updated.json", 'w') as f:
