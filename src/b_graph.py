@@ -13,7 +13,7 @@ import matplotlib.pyplot as plt
 import networkx as nx
 from typing_extensions import override
 
-from graph import EdgeAttributes, Graph, NodeAttributes
+from .graph import EdgeAttributes, Graph, NodeAttributes
 
 
 class BNodeAttributes(NodeAttributes):
