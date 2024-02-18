@@ -9,11 +9,11 @@ from typing import Dict
 
 from pqdict import pqdict
 
-from graph import BuildingGraph
+from graph import Graph
 
 
 class Dijkstra:
-    def __init__(self, graph: BuildingGraph, source: str = "", target: str = "") -> None:
+    def __init__(self, graph: Graph, source: str = "", target: str = "") -> None:
         self.graph = graph
         self.path = [] if "" in [source, target] else self.dijkstra(source, target)[1]
 
@@ -25,7 +25,12 @@ class Dijkstra:
         :param target: The target node's id.
         :return: The shortest path between the source and the target node.
         """
-
+        if not self.graph.is_in_graph(source):
+            # If the source node is not in the graph, we find it by the name.
+            source = self.graph.find_node(source)
+        if not self.graph.is_in_graph(target):
+            # If the target node is not in the graph, we find it by the name.
+            target = self.graph.find_node(target)
         dist_to: Dict = {node: float("inf") for node in self.graph.nodes}
         predecessor: Dict = {}
         dist_to[source] = 0

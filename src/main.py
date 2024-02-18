@@ -6,9 +6,9 @@
 loading the main window.
 """
 
-from analyse_path import AnalysePath
+from b_analyse import BAnalysePath
+from b_graph import BuildingGraph
 from dijkstra import Dijkstra
-from graph import BuildingGraph
 
 DATA_DIR = "data/plans/Solbosch/"
 BUILDINGS = ["P1"]
@@ -29,13 +29,13 @@ def main():
         graph = graphs[ask_building]
         while True:
             # ask_start = input(f"Enter a start node, available nodes are {graph.nodes()}: ")
-            ask_start = "H1_01"
+            ask_start = "H1_1"
             if ask_start == "exit":
                 return
             assert ask_start in graph.nodes(), f"Node {ask_start} not found."
             while True:
                 # ask_end = input(f"Enter an end node, available nodes are {graph.nodes()}: ")
-                ask_end = "E214_03"
+                ask_end = "E214_3"
                 if ask_end == "exit":
                     return
                 assert ask_end in graph.nodes(), f"Node {ask_end} not found."
@@ -44,7 +44,7 @@ def main():
                 networkx_path = graph.default_dijkstra(ask_start, ask_end)
                 assert our_path == networkx_path, "The paths are different."
                 d.show_shortest_path()
-                a = AnalysePath(graph, our_path)
+                a = BAnalysePath(graph, our_path)
                 a.analyse()
                 return
 
