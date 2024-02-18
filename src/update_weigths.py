@@ -1,3 +1,11 @@
+"""
+:Author: Manu Mathey-Prévot 
+:Date: 13/02/2024
+:Decription: Simple script to compile the distance between each node as the crow flies
+by using the gps coordinates.
+"""
+
+
 import json
 import geopy.distance
 
