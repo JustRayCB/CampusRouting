@@ -1,0 +1,36 @@
+<!-- FILEPATH: /Users/ziyad/Documents/pa3/CampusRouting/webpage/localisation.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map ULB</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <link href="./output.css" rel="stylesheet">
+    <style>
+        @import url('https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css');
+    </style>
+
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="https://unpkg.com/leaflet-routing-machine@3.3.4/dist/leaflet-routing-machine.js"></script>
+</head>
+
+<body class="bg-gradient-to-r from-green-300 to-teal-500">
+    <h1 class="text-center text-gray-800 bg-gray-200 py-4 border-b-2">Map</h1>
+    <div id="map" class="h-[800px] w-4/5 m-5 mx-auto border-2 border-gray-300 rounded"></div>
+    <form action="welcome.html" class="text-center max-w-xs mx-auto my-5 p-4 bg-gray-200 rounded">
+        <input type="submit" value="Try a new class" class="w-full my-2 px-4 py-2 bg-gray-800 text-white rounded cursor-pointer">
+    </form>
+    <script src="localisation.js"></script>
+</body>
+
+</html>
+
+        <!-- #map {
+            height: 800px; /* Adjust the height as needed */
+            width: 80%; /* Adjust the width as needed */
+            margin: 20px auto; /* Center the map on the page */
+            border: 2px solid #ccc; /* Add a border to the map */
+            border-radius: 10px; /* Optional: Add border radius for a rounded look */ -->
