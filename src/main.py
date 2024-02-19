@@ -46,6 +46,8 @@ def main():
                 d.show_shortest_path()
                 a = BAnalysePath(graph, our_path)
                 a.analyse()
+                print(a.get_instructions())
+                print(a.get_images())
                 return
 
 

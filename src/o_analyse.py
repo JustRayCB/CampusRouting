@@ -9,7 +9,7 @@ import networkx as nx
 
 
 class OAnalysePath:
-    """Class to analyse the path of in the graph."""
+    """Class to analyse the path of in the outside graph."""
 
     def __init__(self, graph: OutsideGraph, path: list = []):
         """Constructor of the class."""
