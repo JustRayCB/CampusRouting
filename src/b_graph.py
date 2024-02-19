@@ -88,10 +88,6 @@ class BuildingGraph(Graph):
                 self.add_node_(room)
 
     @override
-    def get_graph_name(self, path: str) -> str:
-        return path.split("/")[-1].split(".")[0]
-
-    @override
     def add_node_(self, node_data: Dict[str, Any]) -> None:
         node_attrs: Dict[str, Any] = {}
         node_name: str = ""

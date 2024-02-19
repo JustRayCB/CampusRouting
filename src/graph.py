@@ -72,9 +72,8 @@ class Graph(nx.DiGraph):
         """
         return self.COLORS[node_type]
 
-    @abstractmethod
     def get_graph_name(self, path: str) -> str:
-        raise NotImplementedError("This method should be implemented in ", self.__class__.__name__)
+        return path.split("/")[-1].split(".")[0]
 
     @abstractmethod
     def load_graph(self, path: str) -> None:
