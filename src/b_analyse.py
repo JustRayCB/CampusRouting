@@ -8,7 +8,7 @@ Instructions can be traducted into images.
 
 from typing import Tuple
 
-from b_graph import BuildingGraph
+from Graph import BuildingGraph
 
 
 class Instruction:

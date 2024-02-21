@@ -5,7 +5,7 @@
 :Description: This class is used to analyse the path of the graph by traducting it into coordinates.
 """
 
-import networkx as nx
+from Graph import OutsideGraph
 
 
 class OAnalysePath:

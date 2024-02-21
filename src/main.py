@@ -7,8 +7,8 @@ loading the main window.
 """
 
 from b_analyse import BAnalysePath
-from b_graph import BuildingGraph
 from dijkstra import Dijkstra
+from Graph import BuildingGraph
 
 DATA_DIR = "data/plans/Solbosch/"
 BUILDINGS = ["P1"]
