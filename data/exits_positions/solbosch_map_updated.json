@@ -2724,6 +2724,10 @@
         {
           "id": "eD_2",
           "weight": 8
+        },
+        {
+          "id": "c172",
+          "weight": 69
         }
       ]
     },
@@ -2803,6 +2807,10 @@
         {
           "id": "c157",
           "weight": 150
+        },
+        {
+          "id": "c172",
+          "weight": 200
         }
       ]
     },
@@ -2966,6 +2974,36 @@
         {
           "id": "c81",
           "weight": 9
+        }
+      ]
+    },
+    {
+      "id": "c172",
+      "latitude": 50.8121,
+      "longitude": 4.38522,
+      "neighbors": [
+        {
+          "id": "c153",
+          "weight": 69
+        },
+        {
+          "id": "c158",
+          "weight": 200
+        }
+      ]
+    },
+    {
+      "id": "ePUB_1",
+      "latitude": 50.81375,
+      "longitude": 4.38376,
+      "neighbors": [
+        {
+          "id": "c144",
+          "weight": 16
+        },
+        {
+          "id": "c158",
+          "weight": 28
         }
       ]
     }
