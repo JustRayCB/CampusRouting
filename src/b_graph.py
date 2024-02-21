@@ -62,6 +62,7 @@ class BuildingGraph(Graph):
         node_type: str = self.get_type_from_id(id)
         return node_type == self.PREFIXES["S"] or node_type == self.PREFIXES["L"]
 
+    @override
     def get_name_from_id(self, id: str) -> str:
         """Get the name of a node from its id.
 

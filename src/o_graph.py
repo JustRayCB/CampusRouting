@@ -1,34 +1,30 @@
 import json
+from typing import Any, Dict, List
+
+from typing_extensions import override
 
 from graph import EdgeAttributes, Graph, NodeAttributes
-from typing_extensions import override
-from typing import Any, Dict, List
 
 
 class OutsideGraph(Graph):
     def __init__(self, path=None):
         super(OutsideGraph, self).__init__()
 
-        self.COLORS = {
-            "road": "#84DCC6",
-            "exit": "#FF686B"
-        }
-        self.PREFIXES = {
-            "c": "road",
-            "e": "exit"
-        }
+        self.COLORS = {"road": "#84DCC6", "exit": "#FF686B"}
+        self.PREFIXES = {"c": "road", "e": "exit"}
         self.load_graph(path) if path else None
-    
+
+    @override
     def get_name_from_id(self, id: str) -> str:
         if id[0] == "c":
             return f"Road {id[1:]}"
         elif id[0] == "e":
-            entry_number, building = id.split("_")[1], id[1:id.index('_')]
+            entry_number, building = id.split("_")[1], id[1 : id.index("_")]
             return f"Entry {entry_number} of building {building}"
         else:
             raise ValueError(f"Invalid id: {id}")
-    
-    @override   
+
+    @override
     def load_graph(self, path: str) -> None:
         self.name = self.get_graph_name(path)
         print(self.name)
@@ -64,5 +60,6 @@ class OutsideGraph(Graph):
             edge = (source, target_name, edge_data)
             edges.append(edge)
         self.add_edges_from(edges)
-    
+
+
 graph = OutsideGraph(f"data/exits_positions/solbosch_map_updated.json")

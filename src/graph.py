@@ -76,6 +76,10 @@ class Graph(nx.DiGraph):
         return path.split("/")[-1].split(".")[0]
 
     @abstractmethod
+    def get_name_from_id(self, id: str) -> str:
+        raise NotImplementedError("This method should be implemented in ", self.__class__.__name__)
+
+    @abstractmethod
     def load_graph(self, path: str) -> None:
         """Load a graph data from a json file or similar.
 
