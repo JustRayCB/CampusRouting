@@ -6,7 +6,7 @@
 loading the main window.
 """
 
-from b_analyse import BAnalysePath
+from Analyse import BAnalysePath
 from dijkstra import Dijkstra
 from Graph import BuildingGraph
 
