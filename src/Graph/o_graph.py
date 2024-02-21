@@ -3,7 +3,7 @@ from typing import Any, Dict, List
 
 from typing_extensions import override
 
-from graph import EdgeAttributes, Graph, NodeAttributes
+from .graph import EdgeAttributes, Graph, NodeAttributes
 
 
 class OutsideGraph(Graph):
