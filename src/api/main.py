@@ -1,9 +1,22 @@
 from fastapi import FastAPI, Response, Request
+from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from ..b_graph import BuildingGraph
 from ..dijkstra import Dijkstra
 
+
 app = FastAPI()
+origins = [
+    "http://localhost:63342",
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 buildingGraph = BuildingGraph()
 
 
