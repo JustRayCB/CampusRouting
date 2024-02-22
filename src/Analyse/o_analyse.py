@@ -28,4 +28,4 @@ class OAnalysePath:
     def analyse(self):
         long = [self.graph.nodes[i]["longitude"] for i in self.path]
         lat = [self.graph.nodes[i]["latitude"] for i in self.path]
-        return list(zip(long, lat))
+        return list(zip(lat, long))
