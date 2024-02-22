@@ -50,7 +50,11 @@ def main():
     #             print(a.get_images())
     #             return
     graph = OutsideGraph(f"data/exits_positions/solbosch_map_updated.json")
-    d = Dijkstra(graph, "Entry 2 of building R", "Road 172")
+    position = (50.8344,4.368)
+    n = graph.find_closest_node(position)
+    print(n)
+
+    d = Dijkstra(graph, n, "Road 172")
 
     o = OAnalysePath(graph, d.path)
     print(d.path)
