@@ -25,7 +25,6 @@ app.add_middleware(
 graphs = {
     building: BuildingGraph(f"{DATA_DIR}{building}/{building}.json") for building in BUILDINGS
 }
-print(graphs["P1"].nodes())
 
 
 class PathRequest(BaseModel):
@@ -38,11 +37,12 @@ async def root():
     return {"message": "Hello World"}
 
 
-@app.get("/available_buildings")
+@app.get("/api/available_buildings")
 def get_available_buildings():
     return {"buildings": list(graphs.keys())}
 
-@app.post("/ask")
+
+@app.post("/api/ask")
 def read_item(request: PathRequest,  re: Request):
     print("L'utilisateur veut aller de", request.start, "à", request.arrival)
     start = request.start
