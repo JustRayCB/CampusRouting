@@ -1,8 +1,13 @@
 from fastapi import FastAPI, Response, Request
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
-from ..b_graph import BuildingGraph
+from ..Graph import BuildingGraph
+from ..Analyse import BAnalysePath
 from ..dijkstra import Dijkstra
+
+
+DATA_DIR = "../../data/plans/Solbosch/"
+BUILDINGS = ["P1"]
 
 
 app = FastAPI()
@@ -17,7 +22,10 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-buildingGraph = BuildingGraph()
+graphs = {
+    building: BuildingGraph(f"{DATA_DIR}{building}/{building}.json") for building in BUILDINGS
+}
+print(graphs["P1"].nodes())
 
 
 class PathRequest(BaseModel):
@@ -30,15 +38,25 @@ async def root():
     return {"message": "Hello World"}
 
 
+@app.get("/available_buildings")
+def get_available_buildings():
+    return {"buildings": list(graphs.keys())}
+
 @app.post("/ask")
 def read_item(request: PathRequest,  re: Request):
     print("L'utilisateur veut aller de", request.start, "à", request.arrival)
     start = request.start
     arrival = request.arrival
-    d = Dijkstra(buildingGraph, start, arrival)
-    data = {
+    #graph = graphs[start.split("_")[0]]
+    graph = graphs["P1"]
+    if start not in graph.nodes() or arrival not in graph.nodes():
+        return Response(status_code=404)
+    d = Dijkstra(graph, start, arrival)
+    a = BAnalysePath(graph, d.path)
+    a.analyse()
+    return {
         "start": start,
         "arrival": arrival,
-        "path": d.path
+        "path": d.path,
+        "instructions": a.get_instructions(),
     }
-    return Response(content=data)
