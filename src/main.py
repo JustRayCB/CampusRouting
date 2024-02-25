@@ -6,7 +6,7 @@ from Analyse import BAnalysePath
 from dijkstra import Dijkstra
 from Graph import BuildingGraph
 
-DATA_DIR = "../data/plans/Solbosch/"
+DATA_DIR = "./data/plans/Solbosch/"
 BUILDINGS = ["P1"]
 
 
