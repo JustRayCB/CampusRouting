@@ -12,4 +12,5 @@ Path: src/api/.
 ### **Comment l'utiliser**:
 
 - Commande pour lancer le serveur: `uvicorn  --app-dir ./src/ main:app --reload` à partir du répertoire racine
+  You can also use the commande `Make run` to run the server
 - Dans les fichiers webapp/ask_path.\* , on retrouve comment requêter le serveur pour obtenir un chemin entre deux locaux.
