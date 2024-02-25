@@ -5,7 +5,7 @@
 :Description: This class is used to analyse the path of the graph by traducting it into coordinates.
 """
 
-from ..Graph import OutsideGraph
+from Graph import OutsideGraph
 
 
 class OAnalysePath:
