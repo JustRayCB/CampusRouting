@@ -1,8 +1,8 @@
 import json
 from typing import Any, Dict, List, Tuple
 
-from typing_extensions import override
 import geopy.distance
+from typing_extensions import override
 
 from .graph import EdgeAttributes, Graph, NodeAttributes
 
@@ -67,13 +67,13 @@ class OutsideGraph(Graph):
         Method to find the closest node to a given position
         :param position: tuple (latitude, longitude) representing the position
         """
-        distance_min = float('inf')
-        lat_s = position[0]
-        long_s = position[1]
+        distance_min = float("inf")
+        lat_s, long_s = position[0], position[1]
+        closest_node = None
         for node in self.nodes():
-            #compute the distance between the node and the position
-            #if distance is less than 5m then return the node else return
-            #the closest node
+            # compute the distance between the node and the position
+            # if distance is less than 5m then return the node else return
+            # the closest node
             lat_n = self.nodes[node]["latitude"]
             long_n = self.nodes[node]["longitude"]
             distance = round(geopy.distance.geodesic((lat_s, long_s), (lat_n, long_n)).m)
@@ -83,5 +83,3 @@ class OutsideGraph(Graph):
                 distance_min = distance
                 closest_node = node
         return closest_node
-        
-
