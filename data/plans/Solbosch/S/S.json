@@ -341,7 +341,7 @@
           "direction": {
             "H13": "left",
             "H9": "right",
-            "derrière": "U3"
+            "U3": "straight"
           },
           "weight": 1
         },
@@ -1116,12 +1116,12 @@
         {
           "id": "E014",
           "direction": {
-            "H31": "straight"
+            "H32": "straight"
           },
           "weight": 1
         },
         {
-          "id": "H31",
+          "id": "H32",
           "direction": {
             "E014": "straight"
           },
