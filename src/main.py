@@ -1,12 +1,12 @@
-from fastapi import FastAPI, Response, Request
+from fastapi import FastAPI, Request, Response
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
 from Analyse import BAnalysePath
-from Graph import BuildingGraph, OutsideGraph
 from dijkstra import Dijkstra
+from Graph import BuildingGraph, OutsideGraph
 
-DATA_DIR = "../data"
+DATA_DIR = "data"
 BUILDINGS_DATA_DIR = DATA_DIR + "/plans/Solbosch/"
 OUTSIDE_DATA_DIR = DATA_DIR + "/exits_positions/"
 BUILDINGS = ["P1"]
@@ -24,7 +24,8 @@ app.add_middleware(
     allow_headers=["*"],
 )
 graphs = {
-    building: BuildingGraph(f"{BUILDINGS_DATA_DIR}{building}/{building}.json") for building in BUILDINGS
+    building: BuildingGraph(f"{BUILDINGS_DATA_DIR}{building}/{building}.json")
+    for building in BUILDINGS
 }
 outside_graph = OutsideGraph(f"{OUTSIDE_DATA_DIR}solbosch_map_updated.json")
 
