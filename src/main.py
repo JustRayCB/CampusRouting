@@ -6,9 +6,9 @@ from Analyse import BAnalysePath
 from dijkstra import Dijkstra
 from Graph import BuildingGraph, OutsideGraph
 
-DATA_DIR = "data"
-BUILDINGS_DATA_DIR = DATA_DIR + "/plans/Solbosch/"
-OUTSIDE_DATA_DIR = DATA_DIR + "/exits_positions/"
+DATA_DIR = "data/plans/Solbosch"
+BUILDINGS_DATA_DIR = DATA_DIR + "/buildings/"
+OUTSIDE_DATA_DIR = DATA_DIR + "/general/"
 BUILDINGS = ["P1"]
 
 app = FastAPI()

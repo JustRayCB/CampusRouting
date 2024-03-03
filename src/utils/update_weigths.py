@@ -11,7 +11,7 @@ import geopy.distance
 
 
 def main():
-    with open("data/exits_positions/solbosch_map.json", 'r') as f:
+    with open("data/plans/Solbosch/general/solbosch_map.json", 'r') as f:
         data = json.load(f)
 
     latitudes = {}
