@@ -6,7 +6,7 @@ from Analyse import BAnalysePath
 from Graph import BuildingGraph, OutsideGraph
 from dijkstra import Dijkstra
 
-DATA_DIR = "../../data"
+DATA_DIR = "../data"
 BUILDINGS_DATA_DIR = DATA_DIR + "/plans/Solbosch/"
 OUTSIDE_DATA_DIR = DATA_DIR + "/exits_positions/"
 BUILDINGS = ["P1"]

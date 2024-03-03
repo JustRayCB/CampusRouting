@@ -2,12 +2,13 @@
 
 ## **API**
 
-Path: src/api/.
+Path: src/main.py
 
 ### **Endpoints**:
 
 - **GET** /api/available_buildings (Pour obtenir la liste des batiments que le graphe contient)
-- **POST** /api/ask (Pour demander un chemin entre deux locaux)
+- **POST** /api/ask_inside (Pour demander un chemin entre deux locaux ou zone intérieure d'un même bâtiment)
+- **POST** /api/ask_outside (Pour demander un chemin entre un local et un point extérieur au graphe)
 
 ### **Comment l'utiliser**:
 

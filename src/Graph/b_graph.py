@@ -78,7 +78,7 @@ class BuildingGraph(Graph):
     @override
     def load_graph(self, path: str) -> None:
         self.name = self.get_graph_name(path)
-        print(self.name)
+        print(f"Building graph {self.name} created.")
         building_data = json.load(open(path))
         floors: List[str] = list(building_data.keys())
         self.n_floors = len(floors)

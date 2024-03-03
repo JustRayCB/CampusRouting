@@ -28,7 +28,7 @@ class OutsideGraph(Graph):
     @override
     def load_graph(self, path: str) -> None:
         self.name = self.get_graph_name(path)
-        print(self.name)
+        print(f"Campus graph {self.name} created.")
         campus_data = json.load(open(path))
         campus_name = list(campus_data.keys())[0]
         nodes = list(campus_data[campus_name])
