@@ -39,6 +39,7 @@ class BuildingGraph(Graph):
             "unknown": "#FF7C7C",
             "stair": "#CCCCFF",
             "lift": "#AF7AC5",
+            "entrance": "#FFD700",
         }
         self.PREFIXES = {
             "H": "hallway",
@@ -47,6 +48,7 @@ class BuildingGraph(Graph):
             "U": "unknown",
             "S": "stair",
             "L": "lift",
+            "e": "entrance",
         }
         self.n_floors = -1
         self.current_floor = -1
@@ -62,6 +64,14 @@ class BuildingGraph(Graph):
         node_type: str = self.get_type_from_id(id)
         return node_type == self.PREFIXES["S"] or node_type == self.PREFIXES["L"]
 
+    def is_entrance(self, id: str) -> bool:
+        node_type: str = self.get_type_from_id(id)
+        return node_type == self.PREFIXES["e"]
+
+    def get_entrances(self):
+        """Get all the entrances of the building."""
+        return [node for node in self.nodes if self.is_entrance(node)]
+
     @override
     def get_name_from_id(self, id: str) -> str:
         """Get the name of a node from its id.
@@ -70,7 +80,7 @@ class BuildingGraph(Graph):
         :param floor: The floor of the node.
         :returns: The name of the node.
         """
-        if self.is_elevator_or_stair(id):
+        if self.is_elevator_or_stair(id) or self.is_entrance(id):
             # Elevators and Stairs do not have a floor cause they are the same on all floors
             return id
         return f"{id}_{self.current_floor}"

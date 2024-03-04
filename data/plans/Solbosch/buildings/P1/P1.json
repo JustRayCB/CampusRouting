@@ -1,8 +1,8 @@
 {
   "01": [
     {
-      "id": "H1",
-      "name": "Couloir 1",
+      "id": "eP1_1",
+      "name": "Entré 1 du batiment P1",
       "neighbors": [
         {
           "id": "S1",
@@ -38,7 +38,7 @@
       "name": "Escalier 1",
       "neighbors": [
         {
-          "id": "H1",
+          "id": "eP1_1",
           "direction": "straight",
           "weight": 1
         }
@@ -49,7 +49,7 @@
       "name": "Salle 3",
       "neighbors": [
         {
-          "id": "H1",
+          "id": "eP1_1",
           "direction": "straight",
           "weight": 1
         }
@@ -60,7 +60,7 @@
       "name": "Couloir 2",
       "neighbors": [
         {
-          "id": "H1",
+          "id": "eP1_1",
           "direction": {
             "H3": "straight",
             "U7": "right",
@@ -73,7 +73,7 @@
         {
           "id": "H3",
           "direction": {
-            "H1": "straight",
+            "eP1_1": "straight",
             "U7": "left",
             "E110": "left",
             "E203": "right",
@@ -84,7 +84,7 @@
         {
           "id": "U7",
           "direction": {
-            "H1": "left",
+            "eP1_1": "left",
             "H3": "right",
             "E110": "right",
             "E203": "straight",
@@ -95,7 +95,7 @@
         {
           "id": "E110",
           "direction": {
-            "H1": "left",
+            "eP1_1": "left",
             "H3": "right",
             "U7": "left",
             "E203": "straight",
@@ -106,7 +106,7 @@
         {
           "id": "E203",
           "direction": {
-            "H1": "right",
+            "eP1_1": "right",
             "H3": "left",
             "U7": "straight",
             "E110": "straight",
@@ -117,7 +117,7 @@
         {
           "id": "U9",
           "direction": {
-            "H1": "right",
+            "eP1_1": "right",
             "H3": "left",
             "U7": "straight",
             "E110": "straight",
@@ -242,7 +242,7 @@
         {
           "id": "H3",
           "direction": {
-            "H5": "straight",
+            "eP1_2": "straight",
             "U11": "left",
             "U12": "right",
             "U8": "right"
@@ -250,7 +250,7 @@
           "weight": 1
         },
         {
-          "id": "H5",
+          "id": "eP1_2",
           "direction": {
             "H3": "straight",
             "U11": "right",
@@ -263,7 +263,7 @@
           "id": "U11",
           "direction": {
             "H3": "right",
-            "H5": "left",
+            "eP1_2": "left",
             "U12": "straight",
             "U8": "straight"
           },
@@ -273,7 +273,7 @@
           "id": "U12",
           "direction": {
             "H3": "left",
-            "H5": "right",
+            "eP1_2": "right",
             "U8": "left",
             "U11": "straight"
           },
@@ -283,7 +283,7 @@
           "id": "U8",
           "direction": {
             "H3": "left",
-            "H5": "right",
+            "eP1_2": "right",
             "U11": "straight",
             "U12": "right"
           },
@@ -325,7 +325,7 @@
       ]
     },
     {
-      "id": "H5",
+      "id": "eP1_2",
       "name": "Couloir 5",
       "neighbors": [
         {
@@ -359,7 +359,7 @@
       "name": "Escalier 2",
       "neighbors": [
         {
-          "id": "H5",
+          "id": "eP1_2",
           "direction": "straight",
           "weight": 1
         }
@@ -370,7 +370,7 @@
       "name": "Salle 13",
       "neighbors": [
         {
-          "id": "H5",
+          "id": "eP1_2",
           "direction": "straight",
           "weight": 1
         }
