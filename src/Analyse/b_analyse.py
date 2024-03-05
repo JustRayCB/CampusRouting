@@ -48,6 +48,8 @@ class BAnalysePath:
             "arrived",
         ]
         self.instructions = []
+        if path:
+            self.analyse()
 
     def set_path(self, path):
         """Set the path to analyse."""
@@ -130,7 +132,6 @@ class BAnalysePath:
             )
             self.instructions.append(instruction)
             predecessor = from_node
-        return self.instructions
 
     def take_stairs(self, predecessor: str, from_node: str, to_node: str) -> Tuple[bool, bool]:
         """Check if the path goes through stairs or elevator.
@@ -140,6 +141,8 @@ class BAnalysePath:
         :param to_node: Node we want to go to.
         :return: A tuple with two elements. The first one is a boolean that indicates if we have to take stairs or elevator. The second one is a boolean that indicates if we have to go up or down.
         """
+        if self.graph.is_elevator_or_stair(to_node) or self.graph.is_elevator_or_stair(predecessor):
+            return False, False
         ret = self.graph.nodes[predecessor]["floor"] != self.graph.nodes[to_node]["floor"]
         if ret:
             assert self.graph.is_elevator_or_stair(

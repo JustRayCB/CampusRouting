@@ -16,6 +16,7 @@ import networkx as nx
 class NodeAttributes:
     """Attributes of a node."""
 
+    ID = "id"
     NAME = "name"
     COLOR = "color"
     TYPE = "type"

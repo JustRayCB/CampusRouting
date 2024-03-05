@@ -25,6 +25,10 @@ class Dijkstra:
         :param target: The target node's id.
         :return: The shortest path between the source and the target node.
         """
+        if "" in [source, target]:
+            raise ValueError(
+                f"The source and the target nodes must be specified. src: {source}, trg: {target}"
+            )
         if not self.graph.is_in_graph(source):
             # If the source node is not in the graph, we find it by the name.
             source = self.graph.find_node(source)
