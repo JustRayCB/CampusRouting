@@ -3,12 +3,10 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
 from Analyse import BAnalysePath
-from dijkstra import Dijkstra
 from Graph import BuildingGraph, OutsideGraph
+from dijkstra import Dijkstra
+from utils.constants import BUILDINGS_DATA_DIR, OUTSIDE_DATA_DIR
 
-DATA_DIR = "data/plans/Solbosch"
-BUILDINGS_DATA_DIR = DATA_DIR + "/buildings/"
-OUTSIDE_DATA_DIR = DATA_DIR + "/general/"
 BUILDINGS = ["P1"]
 
 app = FastAPI()
@@ -63,10 +61,9 @@ def read_item(request: PathRequestInside, re: Request):
     a = BAnalysePath(graph, d.path)
     a.analyse()
     return {
-        "start": start,
-        "arrival": arrival,
         "path": d.path,
         "instructions": a.get_instructions(),
+        "images": a.get_images(),
     }
 
 
@@ -81,8 +78,6 @@ def get_path_for_outside(request: PathRequestOutside):
     d = Dijkstra(outside_graph, n, arrival)
     coordonates = [outside_graph.nodes[node]["position"] for node in d.path]
     return {
-        "start": start,
-        "arrival": arrival,
         "path": d.path,
         "coordonates": coordonates,
     }
