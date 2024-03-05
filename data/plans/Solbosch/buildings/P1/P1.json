@@ -448,6 +448,7 @@
           "id": "S1",
           "direction": {
             "H7": "right",
+            "U17": "left",
             "S1": "left"
           },
           "weight": 1
@@ -455,6 +456,7 @@
         {
           "id": "H7",
           "direction": {
+            "U17": "straight",
             "S1": "left"
           },
           "weight": 1
@@ -462,6 +464,7 @@
         {
           "id": "U17",
           "direction": {
+            "S1": "right",
             "H7": "straight"
           },
           "weight": 1
