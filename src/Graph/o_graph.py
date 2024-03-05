@@ -42,7 +42,7 @@ class OutsideGraph(Graph):
         a_type, a_color = NodeAttributes.TYPE, NodeAttributes.COLOR
         for key, value in node_data.items():
             if key == "id":
-                node_name = self.get_name_from_id(value)
+                node_name = value
                 nodes_attrs[a_type] = self.PREFIXES[value[0]]
                 nodes_attrs[a_color] = self.COLORS[self.PREFIXES[value[0]]]
             elif key == "neighbors":
@@ -56,20 +56,20 @@ class OutsideGraph(Graph):
         edges = []
         for neighbor in neighbors:
             edge_data = {}
-            target_name = self.get_name_from_id(neighbor["id"])
+            target_name = neighbor["id"]
             edge_data[EdgeAttributes.WEIGHT] = neighbor[EdgeAttributes.WEIGHT]
             edge = (source, target_name, edge_data)
             edges.append(edge)
         self.add_edges_from(edges)
 
-    def find_closest_node(self, position: Tuple):
+    def find_closest_node(self, position: Tuple) -> str:
         """
         Method to find the closest node to a given position
         :param position: tuple (latitude, longitude) representing the position
         """
         distance_min = float("inf")
         lat_s, long_s = position[0], position[1]
-        closest_node = None
+        closest_node = ""
         for node in self.nodes():
             # compute the distance between the node and the position
             # if distance is less than 5m then return the node else return
