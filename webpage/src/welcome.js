@@ -1,3 +1,5 @@
+const { unregisterCustomQueryHandler } = require("puppeteer");
+
 document.addEventListener("DOMContentLoaded", function () {
     const items = document.querySelectorAll(".clickable-item");
 
@@ -15,6 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
 // Not sure if the code above is even necesarry
 // The code below is for the form toggling
 var currentFormId = null;
+
 
 function toggleForm(formId) {
     var buildingForm = document.getElementById("buildingForm");
@@ -54,6 +57,7 @@ function submitInput(formId) {
     if (formId === "building") {
         // Should also store user actual position from localisation.js somehow
         var input = document.getElementById("building").value;
+        getUserPosition();
         alert(input);
     } else if (formId === "class") {
         var inputSrc = document.getElementById("classSrc").value;
@@ -62,4 +66,16 @@ function submitInput(formId) {
     }
     // var input = document.getElementById(formId).value;
     // alert(input);
+}
+
+function getUserPosition() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(function(position) {
+            let userLat = position.coords.latitude;
+            let userLng = position.coords.longitude;
+            alert("Latitude: " + userLat + " Longitude: " + userLng);
+        });
+    } else {
+        alert("Geolocation is not supported by this browser.");
+    }
 }

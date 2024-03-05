@@ -1,7 +1,7 @@
 if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(function(position) {
-        var userLat = position.coords.latitude;
-        var userLng = position.coords.longitude;
+        let userLat = position.coords.latitude;
+        let userLng = position.coords.longitude;
         var map = L.map('map', {
             dragging: true
         }).setView([50.8133, 4.3804], 17);
@@ -18,15 +18,12 @@ if (navigator.geolocation) {
 
         var testing_latlngs = [
             // [4.2301, 50.4849] // testing if coordinates are inversed or not
-            [50.8136, 4.3836], // 144
-            [50.8133, 4.3830], // 98
-            [50.8130555556, 4.3825], // 58
-            [50.8130555556, 4.3819], // 57
-            [50.8128, 4.3817], // 56
-            [50.8128, 4.3808], // 75
-            [50.8131, 4.3808], // 54
-            [50.8133, 4.3808], // 52 
-            [50.8133, 4.3806]  // 51
+            [50.81362, 4.38368], // 144
+            [50.81347, 4.38314], // 98
+            [50.81329, 4.3826], // 58
+            [50.81302, 4.38168], // 56
+            [50.81286, 4.3814], // 69
+            [50.81232, 4.38182], // 114
         ];
 
         var polyline = L.polyline(testing_latlngs, {color: 'red'}).addTo(map);
@@ -38,7 +35,7 @@ if (navigator.geolocation) {
         // if (campusBounds.contains([userLat, userLng])) {
         //     var marker = L.marker([userLat, userLng]).addTo(map);
         //     marker.bindPopup("<b>You</b>").openPopup();
-        
+
         //     // PATH CREATION 
         //     // create a red polyline from an array of LatLng points // Here we would have the points of the python script
         //     // var latlngs = [

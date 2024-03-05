@@ -17,20 +17,18 @@
     <script src="https://unpkg.com/leaflet-routing-machine@3.3.4/dist/leaflet-routing-machine.js"></script>
 </head>
 
-<body class="bg-gradient-to-r from-green-300 to-teal-500">
-    <h1 class="text-center text-gray-800 bg-gray-200 py-4 border-b-2">Map</h1>
+<body class="bg-black">
+    <h1 class="text-center text-gray-800 bg-green-800 py-4 border-b-2">Map</h1>
     <div id="map" class="h-[800px] w-4/5 m-5 mx-auto border-2 border-gray-300 rounded"></div>
-    <form action="welcome.html" class="text-center max-w-xs mx-auto my-5 p-4 bg-gray-200 rounded">
-        <input type="submit" value="Try a new class" class="w-full my-2 px-4 py-2 bg-gray-800 text-white rounded cursor-pointer">
-    </form>
+    <div class="flex justify-center">
+        <form action="interior.html" class="text-center max-w-xs mx-2 my-2 p-1 bg-black rounded">
+            <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Arrived at the building</button>
+        </form>
+        <form action="welcome.html" class="text-center max-w-xs mx-2 my-2 p-1 bg-black rounded">
+            <button type="submit" class="text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800">Try a new class</button>
+        </form>
+    </div>
     <script src="localisation.js"></script>
 </body>
 
 </html>
-
-        <!-- #map {
-            height: 800px; /* Adjust the height as needed */
-            width: 80%; /* Adjust the width as needed */
-            margin: 20px auto; /* Center the map on the page */
-            border: 2px solid #ccc; /* Add a border to the map */
-            border-radius: 10px; /* Optional: Add border radius for a rounded look */ -->
