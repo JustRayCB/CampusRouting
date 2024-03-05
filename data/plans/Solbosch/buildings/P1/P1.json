@@ -822,6 +822,8 @@
           "id": "S1",
           "direction": {
             "H11": "right",
+            "U20": "left",
+            "U21": "straight",
             "S1": "left"
           },
           "weight": 1
@@ -829,8 +831,50 @@
         {
           "id": "H11",
           "direction": {
+            "U20": "straight",
+            "U21": "right",
             "S1": "left"
           },
+          "weight": 1
+        },
+        {
+          "id": "U20",
+          "direction": {
+            "H11": "straight",
+            "U21": "left",
+            "S1": "right"
+          },
+          "weight": 1
+        },
+        {
+          "id": "U21",
+          "direction": {
+            "H11": "right",
+            "U20": "right",
+            "S1": "straight"
+          },
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "U20",
+      "name": "P1.3.301",
+      "neighbors": [
+        {
+          "id": "H10",
+          "direction": "straight",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "U21",
+      "name": "P1.3.202",
+      "neighbors": [
+        {
+          "id": "H10",
+          "direction": "straight",
           "weight": 1
         }
       ]
@@ -845,7 +889,6 @@
             "H12": "straight",
             "E106": "right",
             "U14": "right",
-            "U15": "right",
             "E206": "left"
           },
           "weight": 1
@@ -856,7 +899,6 @@
             "H10": "straight",
             "E106": "left",
             "U14": "left",
-            "U15": "left",
             "E206": "right"
           },
           "weight": 1
@@ -867,7 +909,6 @@
             "H10": "left",
             "H12": "right",
             "U14": "right",
-            "U15": "right",
             "E206": "straight"
           },
           "weight": 1
@@ -878,18 +919,6 @@
             "H10": "left",
             "H12": "right",
             "E106": "left",
-            "U15": "right",
-            "E206": "straight"
-          },
-          "weight": 1
-        },
-        {
-          "id": "U15",
-          "direction": {
-            "H10": "left",
-            "H12": "right",
-            "E106": "left",
-            "U14": "left",
             "E206": "straight"
           },
           "weight": 1
@@ -900,8 +929,7 @@
             "H10": "right",
             "H12": "left",
             "E106": "straight",
-            "U14": "straight",
-            "U15": "straight"
+            "U14": "straight"
           },
           "weight": 1
         }
@@ -909,7 +937,7 @@
     },
     {
       "id": "E106",
-      "name": "Salle E106",
+      "name": "P1.3.106",
       "neighbors": [
         {
           "id": "H11",
@@ -920,18 +948,7 @@
     },
     {
       "id": "U14",
-      "name": "Salle 14",
-      "neighbors": [
-        {
-          "id": "H11",
-          "direction": "straight",
-          "weight": 1
-        }
-      ]
-    },
-    {
-      "id": "U15",
-      "name": "Salle 15",
+      "name": "P1.3.107",
       "neighbors": [
         {
           "id": "H11",
@@ -942,7 +959,7 @@
     },
     {
       "id": "E206",
-      "name": "Salle E206",
+      "name": "P1.3.206",
       "neighbors": [
         {
           "id": "H11",
@@ -1025,7 +1042,7 @@
     },
     {
       "id": "E209",
-      "name": "Salle E209",
+      "name": "P1.3.209",
       "neighbors": [
         {
           "id": "H12",
@@ -1036,7 +1053,7 @@
     },
     {
       "id": "E109",
-      "name": "Salle E109",
+      "name": "P1.3.109",
       "neighbors": [
         {
           "id": "H12",
@@ -1047,7 +1064,7 @@
     },
     {
       "id": "E113",
-      "name": "Salle E113",
+      "name": "P1.3.113",
       "neighbors": [
         {
           "id": "H12",
@@ -1058,7 +1075,7 @@
     },
     {
       "id": "U16",
-      "name": "Salle 16",
+      "name": "P1.3.112",
       "neighbors": [
         {
           "id": "H12",
@@ -1075,7 +1092,9 @@
           "id": "S2",
           "direction": {
             "H12": "right",
-            "E116": "left",
+            "E116": "straight",
+            "U22": "left",
+            "U23": "left",
             "E214": "right"
           },
           "weight": 1
@@ -1085,6 +1104,8 @@
           "direction": {
             "S2": "left",
             "E116": "right",
+            "U22": "straight",
+            "U23": "left",
             "E214": "left"
           },
           "weight": 1
@@ -1094,6 +1115,8 @@
           "direction": {
             "S2": "right",
             "H12": "left",
+            "U22": "right",
+            "U23": "right",
             "E214": "straight"
           },
           "weight": 1
@@ -1103,7 +1126,31 @@
           "direction": {
             "S2": "left",
             "H12": "right",
+            "U22": "left",
+            "U23": "left",
             "E116": "straight"
+          },
+          "weight": 1
+        },
+        {
+          "id": "U22",
+          "direction": {
+            "S2": "right",
+            "H12": "straight",
+            "E116": "left",
+            "U23": "right",
+            "E214": "right"
+          },
+          "weight": 1
+        },
+        {
+          "id": "U23",
+          "direction": {
+            "S2": "right",
+            "H12": "straight",
+            "E116": "left",
+            "U22": "left",
+            "E214": "right"
           },
           "weight": 1
         }
@@ -1111,7 +1158,7 @@
     },
     {
       "id": "E116",
-      "name": "Salle E116",
+      "name": "P1.3.116",
       "neighbors": [
         {
           "id": "H13",
@@ -1122,7 +1169,7 @@
     },
     {
       "id": "E214",
-      "name": "Salle E214",
+      "name": "P1.3.214",
       "neighbors": [
         {
           "id": "H13",
@@ -1138,6 +1185,28 @@
         {
           "id": "H13",
           "direction": "straight",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "U22",
+      "name": "P1.3.118",
+      "neighbors": [
+        {
+          "id": "H13",
+          "direction": "straight",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "U23",
+      "name": "P1.3.119",
+      "neighbors": [
+        {
+          "id": "H13",
+          "direction": "right",
           "weight": 1
         }
       ]
