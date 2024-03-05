@@ -719,6 +719,7 @@
           "id": "H8",
           "direction": {
             "S2": "straight",
+            "U19": "straight",
             "E214": "left",
             "E115": "right"
           },
@@ -729,6 +730,7 @@
           "direction": {
             "H8": "right",
             "E214": "right",
+            "U19": "left",
             "E115": "left"
           },
           "weight": 1
@@ -738,6 +740,7 @@
           "direction": {
             "H8": "right",
             "S2": "left",
+            "U19": "left",
             "E115": "straight"
           },
           "weight": 1
@@ -747,8 +750,20 @@
           "direction": {
             "H8": "left",
             "S2": "right",
+            "U19": "right",
             "E214": "straight"
           },
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "U19",
+      "name": "P1.2.318",
+      "neighbors": [
+        {
+          "id": "H9",
+          "direction": "straight",
           "weight": 1
         }
       ]
