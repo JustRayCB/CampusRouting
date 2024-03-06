@@ -114,8 +114,9 @@ def get_path_for_outside(request: PathRequestOutside):
         return Response(status_code=404)
     n = outside_graph.find_closest_node(start)
     d = Dijkstra(outside_graph, n, arrival)
-    coordonates = [outside_graph.nodes[node]["position"] for node in d.path]
+    print("The path is : ", d.path)
+    coordinates = [outside_graph.nodes[node]["position"] for node in d.path]
     return {
         "path": d.path,
-        "coordonates": coordonates,
+        "coordinates": coordinates,
     }

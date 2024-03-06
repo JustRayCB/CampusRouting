@@ -1,5 +1,5 @@
 function ask_path(_start, _arrival) {
-    const path = "http://127.0.0.1:8000/api/ask";
+    const path = "http://127.0.0.1:8000/ask";
     const data = {
         start: _start,
         arrival: _arrival

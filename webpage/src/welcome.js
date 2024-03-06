@@ -57,8 +57,9 @@ function submitInput(formId) {
     if (formId === "building") {
         // Should also store user actual position from localisation.js somehow
         var input = document.getElementById("building").value;
-        getUserPosition();
-        alert(input);
+        // getUserPosition();
+        // alert(input);
+        sendBuildingRequest(input);
     } else if (formId === "class") {
         var inputSrc = document.getElementById("classSrc").value;
         var inputDst = document.getElementById("classDst").value;
@@ -69,13 +70,77 @@ function submitInput(formId) {
 }
 
 function getUserPosition() {
-    if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(function(position) {
-            let userLat = position.coords.latitude;
-            let userLng = position.coords.longitude;
-            alert("Latitude: " + userLat + " Longitude: " + userLng);
+    // A Promise is a proxy for a value not necessarily known when the promise is created.
+    return new Promise((resolve, reject) => {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(
+                function(position) {
+                    let userLat = position.coords.latitude;
+                    let userLng = position.coords.longitude;
+                    resolve({lat:userLat, long:userLng});
+                },
+                function(error) {
+                    reject(error);
+                }
+            );
+        } else {
+            reject("Geolocation is not supported by this browser.");
+        }
+    });
+}
+
+
+
+function sendBuildingRequest(input) {
+    getUserPosition()
+        .then(userPosition => {
+            console.log(userPosition);
+            const data = {
+                start: [userPosition.lat, userPosition.long],
+                arrival: input
+            };
+            // console.log("This is the data " + data);
+
+            fetch("http://127.0.0.1:8000/api/ask_outside", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(data),
+            })
+            .then(response => response.json())
+            .then(data => {
+                // Handle the response from the FastAPI server
+                console.log("The data received from the fastapi server " + data);
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        })
+        .catch(error => {
+            console.error(error);
         });
-    } else {
-        alert("Geolocation is not supported by this browser.");
-    }
+}
+
+function sendClassroomRequest(inputSrc, inputDst) {
+    const data = {
+        start: inputSrc,
+        arrival: inputDst
+    };
+
+    fetch("http://127.0.0.1:8000/api/ask_inside", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+    })
+    .then(response => response.json())
+    .then(data => {
+        // Handle the response from the api server
+        console.log(data);
+    })
+    .catch(error => {
+        console.error('Error:', error);
+    });
 }

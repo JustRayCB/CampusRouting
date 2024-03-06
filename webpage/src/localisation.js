@@ -17,26 +17,26 @@ if (navigator.geolocation) {
         ]);
 
         var testing_latlngs = [
-            // [4.2301, 50.4849] // testing if coordinates are inversed or not
-            [50.81362, 4.38368], // 144
-            [50.81347, 4.38314], // 98
-            [50.81329, 4.3826], // 58
-            [50.81302, 4.38168], // 56
-            [50.81286, 4.3814], // 69
-            [50.81232, 4.38182], // 114
+            [50.81377,4.38416], // 158
+            [50.81362,4.38368], // 144
+            [50.81347,4.38314], // 98
+            [50.81329,4.38260], // 58
+            [50.81312,4.38205], // 57
+            [50.81302,4.38168], // 56
+            [50.81286,4.38140], // 69
+            [50.81232,4.38182], // 114
+            [50.81234,4.38188] // eU_5
         ];
-
         var polyline = L.polyline(testing_latlngs, {color: 'red'}).addTo(map);
-        alert("Should have added the polyline to the map.")
-        console.log(map);
 
 
         // // USER POSITION
+        // // Checks if the user is within the bounds of the campus // Call this part of the code peroiodically (?)
         // if (campusBounds.contains([userLat, userLng])) {
         //     var marker = L.marker([userLat, userLng]).addTo(map);
         //     marker.bindPopup("<b>You</b>").openPopup();
 
-        //     // PATH CREATION 
+        //     // PATH CREATION
         //     // create a red polyline from an array of LatLng points // Here we would have the points of the python script
         //     // var latlngs = [
         //     //     [userLat, userLong],
@@ -51,11 +51,3 @@ if (navigator.geolocation) {
 } else {
     alert("Geolocation is not supported by this browser.");
 }
-
-
-// Code function that suppose we receive a vector of coordinates and trace a path for it.
-/**
- * Create a vector of coordinates
- * Iterate over the vector and trace lines between the points
- * enjoy
- */
