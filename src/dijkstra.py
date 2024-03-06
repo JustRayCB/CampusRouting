@@ -40,9 +40,11 @@ class Dijkstra:
         dist_to[source] = 0
         pq = pqdict()  # It use a min heap to store the nodes and their distances to the source node.
         pq.additem(source, 0)
+        found = False
 
         for node, _ in pq.popitems():
             if node == target:
+                found = True
                 break  # We stop the algorithm when we reach the target node.
             for neighbor in self.graph.neighbors(node):
                 new_distance_neighbor = dist_to[node] + self.graph.edges[node, neighbor]["weight"]
@@ -54,7 +56,11 @@ class Dijkstra:
                         if neighbor in pq
                         else pq.additem(neighbor, new_distance_neighbor)
                     )
-        return dist_to[target], self.recover_path(predecessor, source, target)
+        return (
+            (dist_to[target], self.recover_path(predecessor, source, target))
+            if found
+            else (float("inf"), [])
+        )
 
     def recover_path(self, predecessors, source, target):
         """
