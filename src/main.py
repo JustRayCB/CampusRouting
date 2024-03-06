@@ -1,3 +1,5 @@
+from typing import List, Tuple
+
 from fastapi import FastAPI, Request, Response
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
@@ -57,6 +59,9 @@ def get_building_name(room: str) -> str:
     return room.split(".")[0]
 
 
+# TODO: Ask from inside
+
+
 @app.post("/api/ask")
 def ask(request: PathRequest):
     lat, long = int(request.start[0]), int(request.start[1])
@@ -65,22 +70,33 @@ def ask(request: PathRequest):
     building_graph = graphs[building]
     entrances = building_graph.get_entrances()  # exits/entrances
     node = outside_graph.find_closest_node((lat, long))  # find the closest node to the user
-    outside_paths, inside_paths = [], []
+    outside_paths: List[Tuple[int, List]] = []
+    inside_paths: List[Tuple[int, List]] = []
     for entrance in entrances:  # compute the path from the user to each building entrance
         d = Dijkstra(outside_graph)
         outside_paths.append(d.dijkstra(node, entrance))
     for entrance in entrances:  # compute the path from each entrance to the room
         d = Dijkstra(building_graph)
         inside_paths.append(d.dijkstra(entrance, room))
-    # choose the shortest path from the user to the building
-    idx_min_outside = min(range(len(outside_paths)), key=lambda i: outside_paths[i][0])
-    # choose the shortest path from the entrance to the room
-    idx_min_inside = min(range(len(inside_paths)), key=lambda i: inside_paths[i][0])
-    analyse_in = BAnalysePath(building_graph, inside_paths[idx_min_inside][1])
-    analyse_out = OAnalysePath(outside_graph, outside_paths[idx_min_outside][1])
+    total_paths = []
+    # Compute the total distance from the user to the room and choose the shortest path
+    if len(outside_paths) != len(inside_paths):
+        raise ValueError("The number of entrances and inside paths should be the same")
+    for idx in range(len(outside_paths)):
+        total_paths.append(
+            (
+                outside_paths[idx][0] + inside_paths[idx][0],
+                outside_paths[idx][1],
+                inside_paths[idx][1],
+            )
+        )
+    idx_min = min(range(len(total_paths)), key=lambda i: total_paths[i][0])
+    analyse_out = OAnalysePath(outside_graph, total_paths[idx_min][1])
+    analyse_in = BAnalysePath(building_graph, total_paths[idx_min][2])
+
     # return : coordinates of each nodes, instruction inside, images
     return {
-        "path": analyse_out,
+        "path": analyse_out.analyse(),
         "instructions": analyse_in.get_instructions(),
         "images": analyse_in.get_images(),
     }
