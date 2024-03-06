@@ -40,10 +40,6 @@
           "weight": 40
         },
         {
-          "id": "eH_1",
-          "weight": 66
-        },
-        {
           "id": "c72",
           "weight": 48
         }
@@ -186,10 +182,6 @@
       "latitude": 50.8127,
       "longitude": 4.38039,
       "neighbors": [
-        {
-          "id": "c3",
-          "weight": 66
-        },
         {
           "id": "c17",
           "weight": 20
