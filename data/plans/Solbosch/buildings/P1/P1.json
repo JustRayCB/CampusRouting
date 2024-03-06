@@ -760,6 +760,16 @@
             "E214": "straight"
           },
           "weight": 1
+        },
+        {
+          "id": "U19",
+          "direction": {
+            "H8": "straight",
+            "S2": "right",
+            "E214": "right",
+            "E115": "left"
+          },
+          "weight": 1
         }
       ]
     },
@@ -1208,7 +1218,7 @@
     },
     {
       "id": "U23",
-      "name": "P1.3.119",
+      "name": "P1.3.218",
       "neighbors": [
         {
           "id": "H13",
