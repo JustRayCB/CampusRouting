@@ -25,6 +25,9 @@ class OutsideGraph(Graph):
         else:
             raise ValueError(f"Invalid id: {id}")
 
+    def get_lat_long(self, node: str) -> Tuple:
+        return self.nodes[node]["latitude"], self.nodes[node]["longitude"]
+
     @override
     def load_graph(self, path: str) -> None:
         self.name = self.get_graph_name(path)
