@@ -31,10 +31,18 @@ class Dijkstra:
             )
         if not self.graph.is_in_graph(source):
             # If the source node is not in the graph, we find it by the name.
+            if self.graph.name == "solbosch_map_updated":
+                raise ValueError(f"The node {source} is not in the graph {self.graph.name}")
+            tmp = source
             source = self.graph.find_node(source)
+            assert source != tmp, f"The node {target} is not in the graph {self.graph.name}"
         if not self.graph.is_in_graph(target):
             # If the target node is not in the graph, we find it by the name.
+            if self.graph.name == "solbosch_map_updated":
+                raise ValueError(f"The node {target} is not in the graph {self.graph.name}")
+            tmp = target
             target = self.graph.find_node(target)
+            assert target != tmp, f"The node {target} is not in the graph {self.graph.name}"
         dist_to: Dict = {node: float("inf") for node in self.graph.nodes}
         predecessor: Dict = {}
         dist_to[source] = 0
