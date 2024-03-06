@@ -80,6 +80,7 @@ class BAnalysePath:
             direction = self.graph.edges[from_node, to_node]["direction"]
             d = direction if type(direction) == str else direction[predecessor]
             instruction: Tuple[str, str]  # (Instruction, image)
+            node_name = self.graph.nodes[to_node]["name"]
             take_stairs, up = (
                 self.take_stairs(predecessor, from_node, to_node)
                 if predecessor
@@ -104,13 +105,18 @@ class BAnalysePath:
                     self.text_instructions[Instruction.STRAIGHT],
                     self.images_instructions[Instruction.STRAIGHT],
                 )
+                if [from_node, to_node] == pair_rooms[-1]:
+                    instruction = (
+                        f"La salle {node_name} est en face de vous",
+                        self.images_instructions[Instruction.ARRIVED],
+                    )
             else:
                 # d is left or right
                 assert d in ["left", "right"]
                 direction = "droite" if d == "right" else "gauche"
                 if [from_node, to_node] == pair_rooms[-1]:
                     instruction = (
-                        f"La salle {to_node} est sur votre {direction}",
+                        f"La salle {node_name} est sur votre {direction}",
                         self.images_instructions[Instruction.ARRIVED],
                     )
                 else:
