@@ -31,18 +31,28 @@ class Dijkstra:
             )
         if not self.graph.is_in_graph(source):
             # If the source node is not in the graph, we find it by the name.
+            if self.graph.name == "solbosch_map_updated":
+                raise ValueError(f"The node {source} is not in the graph {self.graph.name}")
+            tmp = source
             source = self.graph.find_node(source)
+            assert source != tmp, f"The node {target} is not in the graph {self.graph.name}"
         if not self.graph.is_in_graph(target):
             # If the target node is not in the graph, we find it by the name.
+            if self.graph.name == "solbosch_map_updated":
+                raise ValueError(f"The node {target} is not in the graph {self.graph.name}")
+            tmp = target
             target = self.graph.find_node(target)
+            assert target != tmp, f"The node {target} is not in the graph {self.graph.name}"
         dist_to: Dict = {node: float("inf") for node in self.graph.nodes}
         predecessor: Dict = {}
         dist_to[source] = 0
         pq = pqdict()  # It use a min heap to store the nodes and their distances to the source node.
         pq.additem(source, 0)
+        found = False
 
         for node, _ in pq.popitems():
             if node == target:
+                found = True
                 break  # We stop the algorithm when we reach the target node.
             for neighbor in self.graph.neighbors(node):
                 new_distance_neighbor = dist_to[node] + self.graph.edges[node, neighbor]["weight"]
@@ -54,7 +64,11 @@ class Dijkstra:
                         if neighbor in pq
                         else pq.additem(neighbor, new_distance_neighbor)
                     )
-        return dist_to[target], self.recover_path(predecessor, source, target)
+        return (
+            (dist_to[target], self.recover_path(predecessor, source, target))
+            if found
+            else (float("inf"), [])
+        )
 
     def recover_path(self, predecessors, source, target):
         """

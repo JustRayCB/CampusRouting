@@ -383,6 +383,7 @@
           "id": "H4",
           "direction": {
             "S2": "left",
+            "null": "straight",
             "U13": "right"
           },
           "weight": 1
@@ -391,6 +392,7 @@
           "id": "S2",
           "direction": {
             "H4": "right",
+            "null": "left",
             "U13": "straight"
           },
           "weight": 1
@@ -399,6 +401,7 @@
           "id": "U13",
           "direction": {
             "H4": "left",
+            "null": "right",
             "S2": "straight"
           },
           "weight": 1
@@ -755,6 +758,16 @@
             "S2": "right",
             "U19": "right",
             "E214": "straight"
+          },
+          "weight": 1
+        },
+        {
+          "id": "U19",
+          "direction": {
+            "H8": "straight",
+            "S2": "right",
+            "E214": "right",
+            "E115": "left"
           },
           "weight": 1
         }
@@ -1205,7 +1218,7 @@
     },
     {
       "id": "U23",
-      "name": "P1.3.119",
+      "name": "P1.3.218",
       "neighbors": [
         {
           "id": "H13",
