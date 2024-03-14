@@ -1,4 +1,17 @@
 
+class PathRequestInside {
+  constructor(start, arrival) {
+    this.start = start;
+    this.arrival = arrival;
+  }
+}
+
+class PathRequestOutside {
+  constructor(start, arrival) {
+    this.start = start;
+    this.arrival = arrival;
+  }
+}
 
 document.addEventListener("DOMContentLoaded", function () {
     const items = document.querySelectorAll(".clickable-item");
@@ -52,26 +65,28 @@ function toggleForm(formId) {
         currentFormId = formId;
     }
 }
+const axios = require('axios');
+
 // The code below is for the form submission when clicking on the submit button
 function submitInput(formId) {
     if (formId === "building") {
         // Should also store user actual position from localisation.js somehow
         const input = document.getElementById("building").value;
-        let coords = null;
         navigator.geolocation.getCurrentPosition(function(position) {
-            coords = [position.coords.latitude, position.coords.longitude];
+            const coords = [position.coords.latitude, position.coords.longitude];
+
+            sendPathRequestOutside(new PathRequestOutside(input, coords))
+                .then(r => {
+                    if (r.status === 200) {
+                        console.log("Success");
+                    } else {
+                        console.log("Failure");
+                    }
+                })
+                .catch(error => {
+                    console.error("Error:", error);
+                });
         });
-        sendPathRequestOutside(new PathRequestOutside(input, coords))
-          .then(r => {
-            if (r.status === 200) {
-              console.log("Success");
-            } else {
-              console.log("Failure");
-            }
-          })
-          .catch(error => {
-            console.error("Error:", error);
-          });
 
 
     } else if (formId === "class") {
@@ -109,21 +124,6 @@ function getUserPosition() {
             reject("Geolocation is not supported by this browser.");
         }
     });
-}
-
-const axios = require('axios');
-class PathRequestInside {
-  constructor(start, arrival) {
-    this.start = start;
-    this.arrival = arrival;
-  }
-}
-
-class PathRequestOutside {
-  constructor(start, arrival) {
-    this.start = start;
-    this.arrival = arrival;
-  }
 }
 
 async function sendPathRequestInside(request) {
