@@ -1,3 +1,5 @@
+import {path} from "./welcome";
+
 if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(function(position) {
         let userLat = position.coords.latitude;
@@ -11,7 +13,7 @@ if (navigator.geolocation) {
             minZoom: 17,
         }).addTo(map);
 
-        var campusBounds = L.latLngBounds([
+        const campusBounds = L.latLngBounds([
             [50.8125, 4.3785],
             [50.8145, 4.3823]
         ]);

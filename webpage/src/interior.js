@@ -1,4 +1,6 @@
-const images = [
+import {images} from "./welcome";
+
+const _images = [
     '../../data/images/instructions3D/arrived.png',
     '../../data/images/instructions3D/go_left.png',
     '../../data/images/instructions3D/go_right.png',
