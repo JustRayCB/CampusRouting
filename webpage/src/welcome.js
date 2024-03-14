@@ -1,18 +1,3 @@
-
-class PathRequestInside {
-  constructor(start, arrival) {
-    this.start = start;
-    this.arrival = arrival;
-  }
-}
-
-class PathRequestOutside {
-  constructor(start, arrival) {
-    this.start = start;
-    this.arrival = arrival;
-  }
-}
-
 document.addEventListener("DOMContentLoaded", function () {
     const items = document.querySelectorAll(".clickable-item");
 
@@ -30,7 +15,9 @@ document.addEventListener("DOMContentLoaded", function () {
 // Not sure if the code above is even necesarry
 // The code below is for the form toggling
 let currentFormId = null;
-
+let path = null
+let images = null
+export {path, images}
 
 function toggleForm(formId) {
     const buildingForm = document.getElementById("buildingForm");
@@ -65,44 +52,20 @@ function toggleForm(formId) {
         currentFormId = formId;
     }
 }
-const axios = require('axios');
-
 // The code below is for the form submission when clicking on the submit button
 function submitInput(formId) {
     if (formId === "building") {
-        // Should also store user actual position from localisation.js somehow
+
         const input = document.getElementById("building").value;
         navigator.geolocation.getCurrentPosition(function(position) {
             const coords = [position.coords.latitude, position.coords.longitude];
-
-            sendPathRequestOutside(new PathRequestOutside(input, coords))
-                .then(r => {
-                    if (r.status === 200) {
-                        console.log("Success");
-                    } else {
-                        console.log("Failure");
-                    }
-                })
-                .catch(error => {
-                    console.error("Error:", error);
-                });
+            sendBuildingRequest(coords, input);
         });
-
 
     } else if (formId === "class") {
         const inputSrc = document.getElementById("classSrc").value;
         const inputDst = document.getElementById("classDst").value;
-        sendPathRequestFromClassroom(new PathRequestInside(inputSrc, inputDst))
-          .then(r => {
-            if (r.status === 200) {
-              console.log("Success");
-            } else {
-              console.log("Failure");
-            }
-          })
-          .catch(error => {
-            console.error("Error:", error);
-          });
+        sendClassroomRequest(inputSrc, inputDst);
     }
 }
 
@@ -126,38 +89,54 @@ function getUserPosition() {
     });
 }
 
-async function sendPathRequestInside(request) {
-  try {
-    const response = await axios.post('http://127.0.0.1:8000/api/ask_inside', request);
-    console.log('Réponse de la requête Inside:', response.data);
-    if (response.status === 200) {
-      window.location.href = 'interior.html';
+
+
+function sendBuildingRequest(_start, _arrival) {
+    const data = {
+        start: _start,
+        arrival: _arrival
+    };
+    fetch("http://127.0.0.1:8000/api/ask_outside", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+    })
+    .then(response => {
+    if (response.ok) {
+        return response.json();
     }
-  } catch (error) {
-    console.error('Erreur lors de la requête Inside:', error);
-  }
+    throw new Error('Network response was not ok.');
+    })
+    .then(data => {
+        // Handle the response from the FastAPI server
+        console.log("The data received from the fastapi server " + data);
+    })
+    .catch(error => {
+        console.error('Error:', error);
+    });
 }
 
-// Fonction pour envoyer une requête correspondant à PathRequestOutside
-async function sendPathRequestOutside(request) {
-  try {
-    const response = await axios.post('http://127.0.0.1:8000/api/ask_outside', request);
-    console.log('Réponse de la requête Outside:', response.data);
-    if (response.status === 200) {
-      window.location.href = 'localisation.html';
-    }
-  } catch (error) {
-    console.error('Erreur lors de la requête Outside:', error);
-  }
-}
+function sendClassroomRequest(inputSrc, inputDst) {
+    const data = {
+        start: inputSrc,
+        arrival: inputDst
+    };
 
-async function sendPathRequestFromClassroom(request) {
-  try {
-    const response = await axios.post('http://127.0.0.1:8000/api/ask_from_inside', request);
-    console.log('Réponse de la requête Classroom:', response.data);
-    return response;
-
-    } catch (error) {
-      console.error('Erreur lors de la requête Classroom:', error);
-    }
+    fetch("http://127.0.0.1:8000/api/ask_from_inside", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+    })
+    .then(response => response.json())
+    .then(data => {
+        // Handle the response from the api server
+        console.log(data);
+    })
+    .catch(error => {
+        console.error('Error:', error);
+    });
 }
