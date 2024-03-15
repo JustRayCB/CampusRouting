@@ -4121,6 +4121,995 @@
       ]
     }
   ],
+  "08": [
+    {
+      "id": "H801",
+      "name": "Couloir 801",
+      "neighbors": [
+        {
+          "id": "H802",
+          "direction": {
+            "E8133": "left",
+            "E8233": "right"
+          },
+          "weight": 1
+        },
+        {
+          "id": "E8133",
+          "direction": {
+            "H802": "right",
+            "E8233": "straight"
+          },
+          "weight": 1
+        },
+        {
+          "id": "E8233",
+          "direction": {
+            "H802": "left",
+            "E8133": "straight"
+          },
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "H802",
+      "name": "Couloir 802",
+      "neighbors": [
+        {
+          "id": "H803",
+          "direction": {
+            "E8131": "left",
+            "E8232": "right",
+            "H801": "straight"
+          },
+          "weight": 1
+        },
+        {
+          "id": "H801",
+          "direction": {
+            "E8232": "left",
+            "E8131": "right",
+            "H803": "straight"
+          },
+          "weight": 1
+        },
+        {
+          "id": "E8131",
+          "direction": {
+            "H801": "left",
+            "H803": "right",
+            "E8232": "straight"
+          },
+          "weight": 1
+        },
+        {
+          "id": "E8232",
+          "direction": {
+            "H803": "left",
+            "H801": "right",
+            "E8131": "straight"
+          },
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "H803",
+      "name": "Couloir 803",
+      "neighbors": [
+        {
+          "id": "H804",
+          "direction": {
+            "E8129": "left",
+            "E8230": "right",
+            "H802": "straight"
+          },
+          "weight": 1
+        },
+        {
+          "id": "H802",
+          "direction": {
+            "E8230": "left",
+            "E8129": "right",
+            "H804": "straight"
+          },
+          "weight": 1
+        },
+        {
+          "id": "E8129",
+          "direction": {
+            "H802": "left",
+            "H804": "right",
+            "E8230": "straight"
+          },
+          "weight": 1
+        },
+        {
+          "id": "E8230",
+          "direction": {
+            "H804": "left",
+            "H802": "right",
+            "E8129": "straight"
+          },
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "H804",
+      "name": "Couloir 804",
+      "neighbors": [
+        {
+          "id": "H805",
+          "direction": {
+            "E8127": "left",
+            "E8228": "right",
+            "H803": "straight"
+          },
+          "weight": 1
+        },
+        {
+          "id": "H803",
+          "direction": {
+            "E8228": "left",
+            "E8127": "right",
+            "H805": "straight"
+          },
+          "weight": 1
+        },
+        {
+          "id": "E8127",
+          "direction": {
+            "H803": "left",
+            "H805": "right",
+            "E8228": "straight"
+          },
+          "weight": 1
+        },
+        {
+          "id": "E8228",
+          "direction": {
+            "H805": "left",
+            "H803": "right",
+            "E8127": "straight"
+          },
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "H805",
+      "name": "Couloir 805",
+      "neighbors": [
+        {
+          "id": "H806",
+          "direction": {
+            "H804": "straight"
+          },
+          "weight": 1
+        },
+        {
+          "id": "H804",
+          "direction": {
+            "H806": "straight"
+          },
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "H806",
+      "name": "Couloir 806",
+      "neighbors": [
+        {
+          "id": "H807",
+          "direction": {
+            "E8123": "left",
+            "E8224": "right",
+            "H805": "straight"
+          },
+          "weight": 1
+        },
+        {
+          "id": "H805",
+          "direction": {
+            "E8224": "left",
+            "E8123": "right",
+            "H807": "straight"
+          },
+          "weight": 1
+        },
+        {
+          "id": "E8123",
+          "direction": {
+            "H805": "left",
+            "H807": "right",
+            "E8224": "straight"
+          },
+          "weight": 1
+        },
+        {
+          "id": "E8224",
+          "direction": {
+            "H807": "left",
+            "H805": "right",
+            "E8123": "straight"
+          },
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "H807",
+      "name": "Couloir 807",
+      "neighbors": [
+        {
+          "id": "H809",
+          "direction": {
+            "H808": "right",
+            "H806": "straight"
+          },
+          "weight": 1
+        },
+        {
+          "id": "H806",
+          "direction": {
+            "H808": "left",
+            "H809": "straight"
+          },
+          "weight": 1
+        },
+        {
+          "id": "H808",
+          "direction": {
+            "H809": "left",
+            "H806": "right"
+          },
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "H808",
+      "name": "Couloir 808",
+      "neighbors": [
+        {
+          "id": "H807",
+          "direction": {
+            "S2": "straight"
+          },
+          "weight": 1
+        },
+        {
+          "id": "S2",
+          "direction": {
+            "H807": "straight"
+          },
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "H809",
+      "name": "Couloir 809",
+      "neighbors": [
+        {
+          "id": "H810",
+          "direction": {
+            "E8120": "left",
+            "H807": "straight"
+          },
+          "weight": 1
+        },
+        {
+          "id": "H807",
+          "direction": {
+            "E8120": "right",
+            "H810": "straight"
+          },
+          "weight": 1
+        },
+        {
+          "id": "E8120",
+          "direction": {
+            "H807": "left",
+            "H810": "right"
+          },
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "H810",
+      "name": "Couloir 810",
+      "neighbors": [
+        {
+          "id": "H811",
+          "direction": {
+            "E8117": "left",
+            "H809": "straight"
+          },
+          "weight": 1
+        },
+        {
+          "id": "H809",
+          "direction": {
+            "E8117": "right",
+            "H811": "straight"
+          },
+          "weight": 1
+        },
+        {
+          "id": "E8117",
+          "direction": {
+            "H809": "left",
+            "H811": "right"
+          },
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "H811",
+      "name": "Couloir 811",
+      "neighbors": [
+        {
+          "id": "H812",
+          "direction": {
+            "E8215": "right",
+            "E8216": "right",
+            "H810": "straight"
+          },
+          "weight": 1
+        },
+        {
+          "id": "H810",
+          "direction": {
+            "E8215": "left",
+            "E8216": "left",
+            "H812": "straight"
+          },
+          "weight": 1
+        },
+        {
+          "id": "E8215",
+          "direction": {
+            "H812": "left",
+            "H810": "right"
+          },
+          "weight": 1
+        },
+        {
+          "id": "E8216",
+          "direction": {
+            "H812": "left",
+            "H810": "right"
+          },
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "H812",
+      "name": "Couloir 812",
+      "neighbors": [
+        {
+          "id": "H813",
+          "direction": {
+            "E8114": "left",
+            "E8213": "right",
+            "H811": "straight"
+          },
+          "weight": 1
+        },
+        {
+          "id": "H811",
+          "direction": {
+            "E8213": "left",
+            "E8114": "right",
+            "H813": "straight"
+          },
+          "weight": 1
+        },
+        {
+          "id": "E8114",
+          "direction": {
+            "H811": "left",
+            "H813": "right",
+            "E8213": "straight"
+          },
+          "weight": 1
+        },
+        {
+          "id": "E8213",
+          "direction": {
+            "H813": "left",
+            "H811": "right",
+            "E8114": "straight"
+          },
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "H813",
+      "name": "Couloir 813",
+      "neighbors": [
+        {
+          "id": "H814",
+          "direction": {
+            "E8112": "left",
+            "E8211": "right",
+            "H812": "straight"
+          },
+          "weight": 1
+        },
+        {
+          "id": "H812",
+          "direction": {
+            "E8211": "left",
+            "E8112": "right",
+            "H814": "straight"
+          },
+          "weight": 1
+        },
+        {
+          "id": "E8112",
+          "direction": {
+            "H812": "left",
+            "H814": "right",
+            "E8211": "straight"
+          },
+          "weight": 1
+        },
+        {
+          "id": "E8211",
+          "direction": {
+            "H814": "left",
+            "H812": "right",
+            "E8112": "straight"
+          },
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "H814",
+      "name": "Couloir 814",
+      "neighbors": [
+        {
+          "id": "H815",
+          "direction": {
+            "E8110": "left",
+            "H813": "straight"
+          },
+          "weight": 1
+        },
+        {
+          "id": "H813",
+          "direction": {
+            "E8110": "right",
+            "H815": "straight"
+          },
+          "weight": 1
+        },
+        {
+          "id": "E8110",
+          "direction": {
+            "H813": "left",
+            "H815": "right"
+          },
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "H815",
+      "name": "Couloir 815",
+      "neighbors": [
+        {
+          "id": "H816",
+          "direction": {
+            "E8107": "left",
+            "E8108": "left",
+            "E8208": "right",
+            "H814": "straight"
+          },
+          "weight": 1
+        },
+        {
+          "id": "H814",
+          "direction": {
+            "E8208": "left",
+            "E8107": "right",
+            "E8108": "right",
+            "H816": "straight"
+          },
+          "weight": 1
+        },
+        {
+          "id": "E8107",
+          "direction": {
+            "H814": "left",
+            "H816": "right",
+            "E8208": "straight"
+          },
+          "weight": 1
+        },
+        {
+          "id": "E8108",
+          "direction": {
+            "H814": "left",
+            "H816": "right",
+            "E8208": "straight"
+          },
+          "weight": 1
+        },
+        {
+          "id": "E8208",
+          "direction": {
+            "H816": "left",
+            "H814": "right",
+            "E8107": "straight",
+            "E8108": "straight"
+          },
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "H816",
+      "name": "Couloir 816",
+      "neighbors": [
+        {
+          "id": "H817",
+          "direction": {
+            "E8205": "right",
+            "H815": "straight"
+          },
+          "weight": 1
+        },
+        {
+          "id": "H815",
+          "direction": {
+            "E8205": "left",
+            "H817": "straight"
+          },
+          "weight": 1
+        },
+        {
+          "id": "E8205",
+          "direction": {
+            "H817": "left",
+            "H815": "right"
+          },
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "H817",
+      "name": "Couloir 817",
+      "neighbors": [
+        {
+          "id": "H818",
+          "direction": {
+            "E8204": "right",
+            "H816": "straight"
+          },
+          "weight": 1
+        },
+        {
+          "id": "H816",
+          "direction": {
+            "E8204": "left",
+            "H818": "straight"
+          },
+          "weight": 1
+        },
+        {
+          "id": "E8204",
+          "direction": {
+            "H818": "left",
+            "H816": "right"
+          },
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "H818",
+      "name": "Couloir 818",
+      "neighbors": [
+        {
+          "id": "E8301",
+          "direction": {
+            "E8102": "left",
+            "H819": "right",
+            "H817": "straight"
+          },
+          "weight": 1
+        },
+        {
+          "id": "H817",
+          "direction": {
+            "H819": "left",
+            "E8102": "right",
+            "E8301": "straight"
+          },
+          "weight": 1
+        },
+        {
+          "id": "E8102",
+          "direction": {
+            "H817": "left",
+            "E8301": "right",
+            "H819": "straight"
+          },
+          "weight": 1
+        },
+        {
+          "id": "H819",
+          "direction": {
+            "E8301": "left",
+            "H817": "right",
+            "E8102": "straight"
+          },
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "H819",
+      "name": "Couloir 819",
+      "neighbors": [
+        {
+          "id": "S1",
+          "direction": {
+            "H818": "left",
+            "E8202": "right"
+          },
+          "weight": 1
+        },
+        {
+          "id": "H818",
+          "direction": {
+            "S1": "right",
+            "E8202": "straight"
+          },
+          "weight": 1
+        },
+        {
+          "id": "E8202",
+          "direction": {
+            "S1": "left",
+            "H818": "straight"
+          },
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "S1",
+      "name": "Escalier 1",
+      "neighbors": [
+        {
+          "id": "H819",
+          "direction": "straight",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "S2",
+      "name": "Escalier 2",
+      "neighbors": [
+        {
+          "id": "H808",
+          "direction": "straight",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "E8202",
+      "name": "E.8.202",
+      "neighbors": [
+        {
+          "id": "H819",
+          "direction": "straight",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "E8102",
+      "name": "E.8.102",
+      "neighbors": [
+        {
+          "id": "H818",
+          "direction": "straight",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "E8301",
+      "name": "E.8.301",
+      "neighbors": [
+        {
+          "id": "H818",
+          "direction": "straight",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "E8204",
+      "name": "E.8.204",
+      "neighbors": [
+        {
+          "id": "H817",
+          "direction": "straight",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "E8205",
+      "name": "E.8.205",
+      "neighbors": [
+        {
+          "id": "H816",
+          "direction": "straight",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "E8107",
+      "name": "E.8.107",
+      "neighbors": [
+        {
+          "id": "H815",
+          "direction": "straight",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "E8108",
+      "name": "E.8.108",
+      "neighbors": [
+        {
+          "id": "H815",
+          "direction": "straight",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "E8208",
+      "name": "E.8.208",
+      "neighbors": [
+        {
+          "id": "H815",
+          "direction": "straight",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "E8110",
+      "name": "E.8.110",
+      "neighbors": [
+        {
+          "id": "H814",
+          "direction": "straight",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "E8112",
+      "name": "E.8.112",
+      "neighbors": [
+        {
+          "id": "H813",
+          "direction": "straight",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "E8211",
+      "name": "E.8.211",
+      "neighbors": [
+        {
+          "id": "H813",
+          "direction": "straight",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "E8114",
+      "name": "E.8.114",
+      "neighbors": [
+        {
+          "id": "H812",
+          "direction": "straight",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "E8213",
+      "name": "E.8.213",
+      "neighbors": [
+        {
+          "id": "H812",
+          "direction": "straight",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "E8215",
+      "name": "E.8.215",
+      "neighbors": [
+        {
+          "id": "H811",
+          "direction": "straight",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "E8216",
+      "name": "E.8.216",
+      "neighbors": [
+        {
+          "id": "H811",
+          "direction": "straight",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "E8117",
+      "name": "E.8.117",
+      "neighbors": [
+        {
+          "id": "H810",
+          "direction": "straight",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "E8120",
+      "name": "E.8.120",
+      "neighbors": [
+        {
+          "id": "H810",
+          "direction": "straight",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "E8123",
+      "name": "E.8.123",
+      "neighbors": [
+        {
+          "id": "H806",
+          "direction": "straight",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "E8224",
+      "name": "E.8.224",
+      "neighbors": [
+        {
+          "id": "H806",
+          "direction": "straight",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "E8127",
+      "name": "E.8.127",
+      "neighbors": [
+        {
+          "id": "H804",
+          "direction": "straight",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "E8228",
+      "name": "E.8.228",
+      "neighbors": [
+        {
+          "id": "H804",
+          "direction": "straight",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "E8129",
+      "name": "E.8.129",
+      "neighbors": [
+        {
+          "id": "H803",
+          "direction": "straight",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "E8230",
+      "name": "E.8.230",
+      "neighbors": [
+        {
+          "id": "H803",
+          "direction": "straight",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "E8131",
+      "name": "E.8.131",
+      "neighbors": [
+        {
+          "id": "H802",
+          "direction": "straight",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "E8232",
+      "name": "E.8.232",
+      "neighbors": [
+        {
+          "id": "H802",
+          "direction": "straight",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "E8133",
+      "name": "E.8.133",
+      "neighbors": [
+        {
+          "id": "H801",
+          "direction": "straight",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "E8233",
+      "name": "E.8.233",
+      "neighbors": [
+        {
+          "id": "H801",
+          "direction": "straight",
+          "weight": 1
+        }
+      ]
+    }
+  ],
   "09": [
     {
       "id": "H901",
