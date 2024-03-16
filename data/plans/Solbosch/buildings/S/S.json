@@ -1,4 +1,377 @@
 {
+  "01": [
+    {
+      "id": "eS_1",
+      "name": "Entrée 1 batiment S",
+      "neighbors": [
+        {
+          "id": "H1",
+          "direction": "straight",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "H1",
+      "name": "Grand Hall 1",
+      "neighbors": [
+        {
+          "id": "eS_1",
+          "direction": {
+            "H2": "straight",
+            "H3": "left"
+          },
+          "weight": 1
+        },
+        {
+          "id": "H2", 
+          "direction": {
+            "eS_1": "straight",
+            "H3": "right"
+          },
+          "weight": 1
+        },
+        {
+          "id": "H3", 
+          "direction": {
+            "eS_1": "right",
+            "H2": "left"
+          },
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "H2",
+      "name": "Grand Hall 1",
+      "neighbors": [
+        {
+          "id": "H1",
+          "direction": {
+            "H4": "right",
+            "S3": "left"
+          },
+          "weight": 1
+        },
+        {
+          "id": "H4", 
+          "direction": {
+            "H1": "left",
+            "S3": "straight"
+          },
+          "weight": 1
+        },
+        {
+          "id": "S3",
+          "direction": {
+            "H1": "right",
+            "H4": "straight"
+          },
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "H3",
+      "name": "Grand Hall 1",
+      "neighbors": [
+        {
+          "id": "H1", 
+          "direction": {
+            "S2": "right",
+            "H6": "straight"
+          }, 
+          "weight": 1
+        },
+        {
+          "id": "S2", 
+          "direction": {
+            "H1": "left",
+            "H6": "right"
+          },
+          "weight": 1
+        },
+        {
+          "id": "H6", 
+          "direction": {
+            "H1": "straight",
+            "S2": "left"
+          },
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "H4",
+      "name": "Grand Hall 1",
+      "neighbors": [
+        {
+          "id": "H2", 
+          "direction": {
+            "H5": "straight"
+          },
+          "weight": 1
+        },
+        {
+          "id": "H5",
+          "direction": {
+            "H2": "straight"
+          }, 
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "S3",
+      "name": "Escalier 3", 
+      "neighbors": [
+        {
+          "id": "H2", 
+          "direction": "straight",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "S2", 
+      "name": "Escalier 2", 
+      "neighbors": [
+        {
+          "id": "H3", 
+          "direction": "straight",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "H5",
+      "name": "Couloir 105", 
+      "neighbors": [
+        {
+          "id": "H4", 
+          "direction": {
+            "S1": "left"
+          },
+          "weight": 1
+        },
+        {
+          "id": "S1", 
+          "direction": {
+            "H4": "right"
+          },
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "H6",
+      "name": "Hall 1",
+      "neighbors": [
+        {
+          "id": "H3", 
+          "direction": "straight",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "S1", 
+      "name": "Escalier 1",
+      "neighbors": [
+        {
+          "id": "H5", 
+          "direction": "right",
+          "weight": 1
+        }
+      ]
+    }
+  ],
+  "02": [
+    {
+      "id": "S3",
+      "name": "Escalier 3", 
+      "neighbors": [
+        {
+          "id": "H201", 
+          "direction": "straight",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "H201", 
+      "name": "Grand Hall 2", 
+      "neighbors": [
+        {
+          "id": "H202", 
+          "direction": {
+            "S3": "left",
+            "H205": "right"
+          },
+          "weight": 1
+        },
+        {
+          "id": "S3", 
+          "direction": {
+            "H202": "right",
+            "H205": "straight"
+          },
+          "weight": 1
+        },
+        {
+          "id": "H205", 
+          "direction": {
+            "S3": "straight",
+            "H202": "left"
+          }, 
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "H202", 
+      "name": "Grand Hall 2", 
+      "neighbors": [
+        {
+          "id": "H201", 
+          "direction": {
+            "H203": "right"
+          },
+          "weight": 1
+        },
+        {
+          "id": "H203", 
+          "direction": {
+            "H201": "left"
+          },
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "H203", 
+      "name": "Grand Hall 2", 
+      "neighbors": [
+        {
+          "id": "H202", 
+          "direction": {
+            "H204": "straight",
+            "S2": "right"
+          },
+          "weight": 1
+        },
+        {
+          "id": "H204", 
+          "direction": {
+            "H202": "straight",
+            "S2": "left"
+          },
+          "weight": 1
+        },
+        {
+          "id": "S2", 
+          "direction": {
+            "H202": "left",
+            "H204": "right"
+          },
+          "weight": 1
+        }
+      ] 
+    },
+    {
+      "id": "H204", 
+      "name": "Hall 2", 
+      "neighbors": [
+        {
+          "id": "H203", 
+          "direction": "straight",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "S2", 
+      "name": "Escalier 2", 
+      "neighbors": [
+        {
+          "id": "H203", 
+          "direction": "straight",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "H205",
+      "name": "Grand Hall 2", 
+      "neighbors": [
+        {
+          "id": "H201", 
+          "direction": {
+            "H206": "left"
+          },
+          "weight": 1
+        },
+        {
+          "id": "H206", 
+          "direction": {
+            "H201": "right"
+          }, 
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "H206", 
+      "name": "Grand Hall 2", 
+      "neighbors": [
+        {
+          "id": "H205", 
+          "direction": {
+            "H207": "right"
+          },
+          "weight": 1
+        },
+        {
+          "id": "H207", 
+          "direction": {
+            "H205": "left"
+          }, 
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "H207", 
+      "name": "Couloir 207", 
+      "neighbors": [
+        {
+          "id": "H206", 
+          "direction": {
+            "S1": "right"
+          },
+          "weight": 1
+        },
+        {
+          "id": "S1", 
+          "direction": {
+            "H206": "left"
+          },
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "S1", 
+      "name": "Escalier 1", 
+      "neighbors": [
+        {
+          "id": "H207", 
+          "direction": "left",
+          "weight": 1
+        }
+      ]
+    }
+  ],
   "04": [
     {
       "id": "H401",
@@ -387,7 +760,7 @@
       ]
     },
     {
-    "id": "H410",
+      "id": "H410",
       "name": "Couloir 410",
       "neighbors": [
         {
@@ -553,7 +926,7 @@
       ]
     },
     {
-    "id": "H414",
+      "id": "H414",
       "name": "Couloir 414",
       "neighbors": [
         {
@@ -595,7 +968,7 @@
       ]
     },
     {
-    "id": "E4111",
+      "id": "E4111",
       "name": "S.4.111",
       "neighbors": [
         {
@@ -617,7 +990,7 @@
       ]
     },
     {
-    "id": "H415",
+      "id": "H415",
       "name": "Couloir 415",
       "neighbors": [
         {
@@ -1094,7 +1467,7 @@
       ]
     },
     {
-    "id": "H427",
+      "id": "H427",
       "name": "Couloir 427",
       "neighbors": [
         {
@@ -1804,7 +2177,7 @@
       "id": "S1",
       "name": "Escalier 1",
       "neighbors": [
-          {
+        {
           "id": "H519",
           "direction": "straight",
           "weight": 1
