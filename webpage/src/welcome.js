@@ -15,9 +15,10 @@ document.addEventListener("DOMContentLoaded", function () {
 // Not sure if the code above is even necesarry
 // The code below is for the form toggling
 let currentFormId = null;
-let path = null
-let images = null
-export {path, images}
+export let path = null
+export let images = null
+export let arrival_building = true
+export let first_images = null
 
 function toggleForm(formId) {
     const buildingForm = document.getElementById("buildingForm");
@@ -134,10 +135,31 @@ function sendClassroomRequest(inputSrc, inputDst) {
     })
     .then(response => response.json())
     .then(data => {
+        if (data.same_building) {
+            manageSameBuilding(data);
+        }
         // Handle the response from the api server
         console.log(data);
     })
     .catch(error => {
         console.error('Error:', error);
     });
+}
+
+function manageSameBuilding(data){
+    images = data.images;
+    sessionStorage.setItem("images", images);
+    window.location.href = "interior.html";
+}
+
+function manageDifferentBuilding(data){
+    arrival_building = false;
+    first_images = data.first_building_images;
+    images = data.images;
+    path = data.path;
+    sessionStorage.setItem("path", path);
+    sessionStorage.setItem("images", images);
+    sessionStorage.setItem("arrival_building", arrival_building);
+    sessionStorage.setItem("first_images", first_images);
+    window.location.href = "interior.html";
 }

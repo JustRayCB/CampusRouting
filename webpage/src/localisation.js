@@ -1,5 +1,3 @@
-import {path} from "./welcome";
-
 if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(function(position) {
         let userLat = position.coords.latitude;
@@ -18,6 +16,7 @@ if (navigator.geolocation) {
             [50.8145, 4.3823]
         ]);
 
+        // ICI FAUDRA JUSTE METTRE LE PATH
         var testing_latlngs = [
             [50.81377,4.38416], // 158
             [50.81362,4.38368], // 144

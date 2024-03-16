@@ -1,5 +1,4 @@
-import {images} from "./welcome";
-
+import { images } from './welcome.js';
 const _images = [
     '../../data/images/instructions3D/arrived.png',
     '../../data/images/instructions3D/go_left.png',
@@ -27,6 +26,7 @@ let currentIndex = 0;
 const imageContainer = document.getElementById('image-container');
 const prevBtn = document.getElementById('prevBtn');
 const nextBtn = document.getElementById('nextBtn');
+const arrivedBtn = document.getElementById('arrivedBtn');
 
 function showImage(index) {
     imageContainer.innerHTML = `<img src="${images[index]}" class="w-full h-auto">`;
@@ -35,19 +35,32 @@ function showImage(index) {
 // Could remove the modulo so that the user can't go from the last image to the first one
 function showNextImage() {
     currentIndex = (currentIndex + 1) % images.length;
-    //currentIndex = (currentIndex + 1) ;
+    if ( currentIndex === images.length - 1 ){
+        nextBtn.classList.add('hidden');
+        arrivedBtn.style.display = 'inline-block';
+    }
     showImage(currentIndex);
 }
 
 function showPrevImage() {
+    if (currentIndex === images.length - 1){
+        nextBtn.classList.remove('hidden');
+        arrivedBtn.style.display = 'none';
+    }
     currentIndex = (currentIndex - 1 + images.length) % images.length;
-    //currentIndex = (currentIndex - 1 + images.length);
     showImage(currentIndex);
 }
 
+function clickArrived() {
+    // TODO
+    window.location.href = "/welcome";
+}
+
 // Initial image display
+console.log(images);
 showImage(currentIndex);
 
 // Event listeners for navigation buttons
 prevBtn.addEventListener('click', showPrevImage);
 nextBtn.addEventListener('click', showNextImage);
+arrivedBtn.addEventListener('click', clickArrived);
