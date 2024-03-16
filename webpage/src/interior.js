@@ -1,17 +1,4 @@
-import { images } from './welcome.js';
-const _images = [
-    '../../data/images/instructions3D/arrived.png',
-    '../../data/images/instructions3D/go_left.png',
-    '../../data/images/instructions3D/go_right.png',
-];
-
-var left = "../../data/images/instructions3D/go_left.png";
-var right = "../../data/images/instructions3D/go_right.png";
-var arrived = "../../data/images/instructions3D/arrived.png";
-var lift = "../../data/images/instructions3D/take_lift.png";
-var stairs = "../../data/images/instructions3D/take_stairs.png";
-var straight = "../../data/images/instructions3D/go_straight.png";
-
+import store from "./store";
 
 // Here we would listen to the api response and depending on the strings we have we would create a
 // the vector of images by appending the values of the previously defined variables.
@@ -22,13 +9,20 @@ var straight = "../../data/images/instructions3D/go_straight.png";
 // and the user can navigate through them with the buttons.
 
 let currentIndex = 0;
-
+let images = store.getState().images;
 const imageContainer = document.getElementById('image-container');
 const prevBtn = document.getElementById('prevBtn');
 const nextBtn = document.getElementById('nextBtn');
 const arrivedBtn = document.getElementById('arrivedBtn');
 
 function showImage(index) {
+    store.getState();
+    if (store.arrival_building) {
+        images = store.images;
+    }
+    else {
+        images = store.first_images;
+    }
     imageContainer.innerHTML = `<img src="${images[index]}" class="w-full h-auto">`;
 }
 
