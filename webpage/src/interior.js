@@ -1,6 +1,6 @@
 // const images =
 let images = JSON.parse(sessionStorage.getItem("images")) || [];
-console.log(images);
+let instructions = JSON.parse(sessionStorage.getItem("instructions")) || [];
 
 // Here we would listen to the api response and depending on the strings we have we would create a
 // the vector of images by appending the values of the previously defined variables.
@@ -15,9 +15,11 @@ let currentIndex = 0;
 const imageContainer = document.getElementById("image-container");
 const prevBtn = document.getElementById("prevBtn");
 const nextBtn = document.getElementById("nextBtn");
+const imageLabel = document.getElementById("image-label");
 
 function showImage(index) {
 	imageContainer.innerHTML = `<img src="${images[index]}" class="w-full h-auto">`;
+    imageLabel.textContent = instructions[index];
 }
 
 function showNextImage() {

@@ -9,7 +9,7 @@ from dijkstra import Dijkstra
 from Graph import BuildingGraph, OutsideGraph
 from utils.constants import BUILDINGS_DATA_DIR, OUTSIDE_DATA_DIR
 
-BUILDINGS = ["P1"]
+BUILDINGS = ["P1", "S"]
 
 app = FastAPI()
 origins = [

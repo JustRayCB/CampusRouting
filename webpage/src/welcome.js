@@ -145,6 +145,7 @@ function sendBuildingRequest(_start, _arrival) {
         // Store the path in the session storage
         sessionStorage.setItem('path', JSON.stringify(data.path));
         sessionStorage.setItem('images', JSON.stringify(data.images));
+        sessionStorage.setItem('instructions', JSON.stringify(data.instructions));
         window.location.href = "localisation.html";
     })
     .catch(error => {
