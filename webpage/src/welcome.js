@@ -125,7 +125,7 @@ function sendBuildingRequest(_start, _arrival) {
         start: _start,
         arrival: _arrival
     };
-    fetch("http://127.0.0.1:8000/api/ask_outside", {
+    fetch("http://127.0.0.1:8000/api/ask", {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
