@@ -42,7 +42,6 @@ class Graph(nx.DiGraph):
         :returns: The node of the graph.
         """
         for node in self.nodes:
-            print(f"Keys in {node}: {self.nodes[node].keys()}")
             if self.nodes[node][NodeAttributes.NAME] == name:
                 return node
         raise ValueError(f"Invalid name: {name} for node in", self.__class__.__name__)
