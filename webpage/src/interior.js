@@ -20,16 +20,17 @@ function showImage(index) {
 	imageContainer.innerHTML = `<img src="${images[index]}" class="w-full h-auto">`;
 }
 
-// Could remove the modulo so that the user can't go from the last image to the first one
 function showNextImage() {
-	currentIndex = (currentIndex + 1) % images.length;
-	//currentIndex = (currentIndex + 1) ;
+    if (currentIndex < images.length - 1) {
+        currentIndex = (currentIndex + 1);
+    }
 	showImage(currentIndex);
 }
 
 function showPrevImage() {
-	currentIndex = (currentIndex - 1 + images.length) % images.length;
-	//currentIndex = (currentIndex - 1 + images.length);
+    if (currentIndex > 0) {
+        currentIndex = (currentIndex - 1);
+    }
 	showImage(currentIndex);
 }
 
