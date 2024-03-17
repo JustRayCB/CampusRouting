@@ -144,7 +144,7 @@ function sendBuildingRequest(_start, _arrival) {
         // Handle the response from the FastAPI server
         // Store the path in the session storage
         sessionStorage.setItem('path', JSON.stringify(data.path));
-        console.log("The data received from the fastapi server " + data);
+        sessionStorage.setItem('images', JSON.stringify(data.images));
         window.location.href = "localisation.html";
     })
     .catch(error => {
