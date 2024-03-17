@@ -15,20 +15,14 @@ if (navigator.geolocation) {
             [50.8125, 4.3785],
             [50.8145, 4.3823]
         ]);
+         // Retrieve the path from the session storage
+        const path = JSON.parse(sessionStorage.getItem('path'));
+        console.log(path);
 
         // ICI FAUDRA JUSTE METTRE LE PATH
-        var testing_latlngs = [
-            [50.81377,4.38416], // 158
-            [50.81362,4.38368], // 144
-            [50.81347,4.38314], // 98
-            [50.81329,4.38260], // 58
-            [50.81312,4.38205], // 57
-            [50.81302,4.38168], // 56
-            [50.81286,4.38140], // 69
-            [50.81232,4.38182], // 114
-            [50.81234,4.38188] // eU_5
-        ];
-        var polyline = L.polyline(testing_latlngs, {color: 'red'}).addTo(map);
+        // Create the polyline using the path
+        var polyline = L.polyline(path, {color: 'red'}).addTo(map);
+        // var polyline = L.polyline(testing_latlngs, {color: 'red'}).addTo(map);
 
 
         // // USER POSITION

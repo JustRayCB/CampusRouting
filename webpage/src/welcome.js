@@ -125,6 +125,7 @@ function sendBuildingRequest(_start, _arrival) {
         start: _start,
         arrival: _arrival
     };
+    console.log(data);
     fetch("http://127.0.0.1:8000/api/ask", {
         method: "POST",
         headers: {
@@ -141,6 +142,8 @@ function sendBuildingRequest(_start, _arrival) {
     })
     .then(data => {
         // Handle the response from the FastAPI server
+        // Store the path in the session storage
+        sessionStorage.setItem('path', JSON.stringify(data.path));
         console.log("The data received from the fastapi server " + data);
         window.location.href = "localisation.html";
     })
