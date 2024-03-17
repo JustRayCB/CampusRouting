@@ -85,15 +85,17 @@ function toggleForm(formId) {
 
 // The code below is for the form submission when clicking on the submit button
 function submitInput(formId) {
+    console.log(formId);
+    console.log("here");
     if (formId === "building") {
-
+        console.log("here2");
         const input = document.getElementById("building").value;
         navigator.geolocation.getCurrentPosition(function(position) {
             const coords = [position.coords.latitude, position.coords.longitude];
             sendBuildingRequest(coords, input);
         });
 
-    } else if (formId === "class") {
+    } else if (formId === "classroom") {
         const inputSrc = document.getElementById("classSrc").value;
         const inputDst = document.getElementById("classDst").value;
         sendClassroomRequest(inputSrc, inputDst);
@@ -169,6 +171,8 @@ function sendClassroomRequest(inputSrc, inputDst) {
     .then(response => response.json())
     .then(data => {
         if (data.same_building) {
+            console.log("Same building");
+            console.log(data);
             manageSameBuilding(data);
         }
         // Handle the response from the api server
@@ -186,7 +190,9 @@ function manageSameBuilding(data){
         arrival_building: true,
         first_images: null
     });
-
+    sessionStorage.setItem('path', JSON.stringify(data.path));
+    sessionStorage.setItem('images', JSON.stringify(data.images));
+    sessionStorage.setItem('instructions', JSON.stringify(data.instructions));
     window.location.href = "interior.html";
 }
 
