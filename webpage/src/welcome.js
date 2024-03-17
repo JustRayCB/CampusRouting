@@ -199,11 +199,11 @@ function manageDifferentBuilding(data){
     //     first_images: data.first_building_images
     // });
     sessionStorage.setItem('images', JSON.stringify(data.first_building_images));
+    sessionStorage.setItem('path', JSON.stringify(data.outside_path));
     sessionStorage.setItem('instructions', JSON.stringify(data.first_instructions));
     sessionStorage.setItem('sameBuilding', JSON.stringify(data.same_building));
     window.location.href = "interior.html";
 
-    sessionStorage.setItem('outsidePath', JSON.stringify(data.outside_path));
     sessionStorage.setItem('finalImages', JSON.stringify(data.final_building_images));
     sessionStorage.setItem('finalInstructions', JSON.stringify(data.final_instructions));
 
