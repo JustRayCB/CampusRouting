@@ -1,4 +1,4 @@
-import store from "./store";
+import store from "./store.js";
 
 // Here we would listen to the api response and depending on the strings we have we would create a
 // the vector of images by appending the values of the previously defined variables.

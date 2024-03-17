@@ -1,4 +1,4 @@
-import store from "./store";
+import store from "./store.js";
 document.addEventListener("DOMContentLoaded", function () {
     const items = document.querySelectorAll(".clickable-item");
 
