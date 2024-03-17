@@ -1,7 +1,7 @@
 // const images =
 let images = JSON.parse(sessionStorage.getItem("images")) || [];
 let instructions = JSON.parse(sessionStorage.getItem("instructions")) || [];
-let sameBuilding = JSON.parse(sessionStorage.getItem("sameBuilding")) || true;
+let sameBuilding = JSON.parse(sessionStorage.getItem("sameBuilding"));
 
 // Here we would listen to the api response and depending on the strings we have we would create a
 // the vector of images by appending the values of the previously defined variables.
@@ -27,7 +27,11 @@ function showImage(index) {
 function showNextImage() {
     if (currentIndex < images.length - 1) {
         currentIndex = (currentIndex + 1);
+        console.log("Current index: ", currentIndex);
+        console.log("Images length: ", images.length);
+        console.log(sameBuilding);
         if (currentIndex === images.length - 1 && !sameBuilding) {
+            console.log("here");
             arrivedBtn.style.display = "block";
         }
     }
@@ -41,9 +45,16 @@ function showPrevImage() {
 	showImage(currentIndex);
 }
 
+function arrivedClick() {
+    window.location.href = "localisation.html";
+    images = JSON.parse(sessionStorage.getItem("finalImages")) || [];
+    instructions = JSON.parse(sessionStorage.getItem("finalInstructions")) || [];
+}
+
 // Initial image display
 showImage(currentIndex);
 
 // Event listeners for navigation buttons
 prevBtn.addEventListener("click", showPrevImage);
 nextBtn.addEventListener("click", showNextImage);
+arrivedBtn.addEventListener("click", arrivedClick);
