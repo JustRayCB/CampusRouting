@@ -12,6 +12,17 @@ addObserver(stateObserver);
 
 document.addEventListener("DOMContentLoaded", function () {
     const items = document.querySelectorAll(".clickable-item");
+    const buildingButton = document.getElementById("buildingButton");
+    const classroomButton = document.getElementById("classroomButton");
+
+    buildingButton.addEventListener("click", function () {
+        toggleForm("buildingForm");
+    });
+
+    classroomButton.addEventListener("click", function () {
+        toggleForm("classroomForm");
+    });
+
 
     items.forEach(function (item) {
         item.addEventListener("mouseover", function () {
