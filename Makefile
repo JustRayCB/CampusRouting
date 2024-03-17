@@ -1,3 +1,3 @@
 run:
-	open ./webpage/ask_path.html
+	open ./webpage/src/welcome.html
 	uvicorn  --app-dir ./src/ main:app --reload
