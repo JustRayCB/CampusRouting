@@ -142,6 +142,7 @@ function sendBuildingRequest(_start, _arrival) {
     .then(data => {
         // Handle the response from the FastAPI server
         console.log("The data received from the fastapi server " + data);
+        window.location.href = "localisation.html";
     })
     .catch(error => {
         console.error('Error:', error);
