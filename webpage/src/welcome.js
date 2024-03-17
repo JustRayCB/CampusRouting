@@ -85,10 +85,7 @@ function toggleForm(formId) {
 
 // The code below is for the form submission when clicking on the submit button
 function submitInput(formId) {
-    console.log(formId);
-    console.log("here");
     if (formId === "building") {
-        console.log("here2");
         const input = document.getElementById("building").value;
         navigator.geolocation.getCurrentPosition(function(position) {
             const coords = [position.coords.latitude, position.coords.longitude];
@@ -127,7 +124,6 @@ function sendBuildingRequest(_start, _arrival) {
         start: _start,
         arrival: _arrival
     };
-    console.log(data);
     fetch("http://127.0.0.1:8000/api/ask", {
         method: "POST",
         headers: {
@@ -171,12 +167,9 @@ function sendClassroomRequest(inputSrc, inputDst) {
     .then(response => response.json())
     .then(data => {
         if (data.same_building) {
-            console.log("Same building");
-            console.log(data);
             manageSameBuilding(data);
         }
         // Handle the response from the api server
-        console.log(data);
     })
     .catch(error => {
         console.error('Error:', error);
