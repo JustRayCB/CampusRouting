@@ -14,6 +14,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const items = document.querySelectorAll(".clickable-item");
     const buildingButton = document.getElementById("buildingButton");
     const classroomButton = document.getElementById("classroomButton");
+    const buildingSubmit = document.getElementById("buildingSubmit");
+    const classroomSubmit = document.getElementById("classroomSubmit");
 
     buildingButton.addEventListener("click", function () {
         toggleForm("buildingForm");
@@ -21,6 +23,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
     classroomButton.addEventListener("click", function () {
         toggleForm("classroomForm");
+    });
+
+    buildingSubmit.addEventListener("click", function () {
+        submitInput("building");
+    });
+
+    classroomSubmit.addEventListener("click", function () {
+        submitInput("classroom");
     });
 
 
