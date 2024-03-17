@@ -75,8 +75,8 @@ def ask_from_inside(request: PathRequestFromInside) -> dict:
     """
     starting_room = request.start
     arrival_room = request.arrival
-    starting_building = get_building_name(starting_room)
-    arrival_building = get_building_name(arrival_room)
+    starting_building = get_building_name(starting_room).upper()
+    arrival_building = get_building_name(arrival_room).upper()
     if starting_building == arrival_building:
         # If the user is in the same building, we can use the building graph
         d = Dijkstra(graphs[starting_building])
@@ -89,6 +89,7 @@ def ask_from_inside(request: PathRequestFromInside) -> dict:
         }
     else:
         building_graph = graphs[starting_building]
+        arrival_graph = graphs[arrival_building]
         entrances = building_graph.get_entrances()
         paths_to_entrances = []
         for entrance in entrances:
@@ -100,7 +101,7 @@ def ask_from_inside(request: PathRequestFromInside) -> dict:
         best_paths = []
         for entrance in entrances:
             lat, long = outside_graph.get_lat_long(entrance)
-            all_paths = get_all_paths(building_graph, lat, long, arrival_room)
+            all_paths = get_all_paths(arrival_graph, lat, long, arrival_room)
             idx_min = min(range(len(all_paths)), key=lambda i: all_paths[i][0])
             best_paths.append(all_paths[idx_min])
         total_paths = []  # total distance from the user to the room
@@ -118,7 +119,7 @@ def ask_from_inside(request: PathRequestFromInside) -> dict:
         # analyse outside path
         analyse_out = OAnalysePath(outside_graph, total_paths[idx_min][2][1])
         # second building path analyse
-        sanalyse_in = BAnalysePath(building_graph, total_paths[idx_min][2][2])
+        sanalyse_in = BAnalysePath(arrival_graph, total_paths[idx_min][2][2])
         return {
             "same_building": False,
             "first_instructions": fanalyse_in.get_instructions(),
