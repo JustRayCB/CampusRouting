@@ -1,20 +1,30 @@
-import store from "./store.js";
+import { updateState, addObserver, getState } from './state.js';
+
+// Définir un observateur pour surveiller les changements d'état
+const stateObserver = () => {
+    const newState = getState();
+    console.log('New state:', newState);
+    // Mettez à jour votre interface utilisateur en fonction du nouvel état ici
+};
+
+// Ajouter l'observateur
+addObserver(stateObserver);
+
 document.addEventListener("DOMContentLoaded", function () {
     const items = document.querySelectorAll(".clickable-item");
 
     items.forEach(function (item) {
         item.addEventListener("mouseover", function () {
-        this.style.transform = "scale(1.1)";
+            this.style.transform = "scale(1.1)";
         });
 
         item.addEventListener("mouseout", function () {
-        this.style.transform = "scale(1)";
+            this.style.transform = "scale(1)";
         });
     });
 });
 
-
-// Not sure if the code above is even necesarry
+// Not sure if the code above is even necessary
 // The code below is for the form toggling
 let currentFormId = null;
 
@@ -51,6 +61,7 @@ function toggleForm(formId) {
         currentFormId = formId;
     }
 }
+
 // The code below is for the form submission when clicking on the submit button
 function submitInput(formId) {
     if (formId === "building") {
@@ -87,8 +98,6 @@ function getUserPosition() {
         }
     });
 }
-
-
 
 function sendBuildingRequest(_start, _arrival) {
     const data = {
@@ -145,28 +154,22 @@ function sendClassroomRequest(inputSrc, inputDst) {
 }
 
 function manageSameBuilding(data){
-    store.dispatch({
-        type: 'SET_DATA',
-        payload: {
-            path: data.path,
-            images: data.images,
-            arrival_building: true,
-            first_images: null
-        }
+    updateState({
+        path: data.path,
+        images: data.images,
+        arrival_building: true,
+        first_images: null
     });
 
     window.location.href = "interior.html";
 }
 
 function manageDifferentBuilding(data){
-    store.dispatch({
-        type: 'SET_DATA',
-        payload: {
-            path: data.path,
-            images: data.images,
-            arrival_building: false,
-            first_images: data.first_building_images
-        }
+    updateState({
+        path: data.path,
+        images: data.images,
+        arrival_building: false,
+        first_images: data.first_building_images
     });
 
     window.location.href = "interior.html";

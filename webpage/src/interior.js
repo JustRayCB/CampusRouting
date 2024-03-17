@@ -1,4 +1,4 @@
-import store from "./store.js";
+import { addObserver, getState } from "./state.js";
 
 // Here we would listen to the api response and depending on the strings we have we would create a
 // the vector of images by appending the values of the previously defined variables.
@@ -9,19 +9,18 @@ import store from "./store.js";
 // and the user can navigate through them with the buttons.
 
 let currentIndex = 0;
-let images = store.getState().images;
+let images = getState().images;
 const imageContainer = document.getElementById('image-container');
 const prevBtn = document.getElementById('prevBtn');
 const nextBtn = document.getElementById('nextBtn');
 const arrivedBtn = document.getElementById('arrivedBtn');
 
 function showImage(index) {
-    store.getState();
-    if (store.arrival_building) {
-        images = store.images;
-    }
-    else {
-        images = store.first_images;
+    const state = getState();
+    if (state.arrival_building) {
+        images = state.images;
+    } else {
+        images = state.first_images;
     }
     imageContainer.innerHTML = `<img src="${images[index]}" class="w-full h-auto">`;
 }
@@ -58,3 +57,12 @@ showImage(currentIndex);
 prevBtn.addEventListener('click', showPrevImage);
 nextBtn.addEventListener('click', showNextImage);
 arrivedBtn.addEventListener('click', clickArrived);
+
+// Ajouter un observateur pour mettre à jour les images lorsque l'état change
+const stateObserver = () => {
+    images = getState().images;
+    showImage(currentIndex);
+};
+
+// Ajouter l'observateur
+addObserver(stateObserver);
