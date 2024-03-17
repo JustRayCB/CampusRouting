@@ -170,6 +170,9 @@ function sendClassroomRequest(inputSrc, inputDst) {
             manageSameBuilding(data);
         }
         // Handle the response from the api server
+        else {
+            manageDifferentBuilding(data);
+        }
     })
     .catch(error => {
         console.error('Error:', error);
@@ -183,19 +186,25 @@ function manageSameBuilding(data){
         arrival_building: true,
         first_images: null
     });
-    sessionStorage.setItem('path', JSON.stringify(data.path));
     sessionStorage.setItem('images', JSON.stringify(data.images));
     sessionStorage.setItem('instructions', JSON.stringify(data.instructions));
     window.location.href = "interior.html";
 }
 
 function manageDifferentBuilding(data){
-    updateState({
-        path: data.path,
-        images: data.images,
-        arrival_building: false,
-        first_images: data.first_building_images
-    });
-
+    // updateState({
+    //     path: data.path,
+    //     images: data.images,
+    //     arrival_building: false,
+    //     first_images: data.first_building_images
+    // });
+    sessionStorage.setItem('images', JSON.stringify(data.first_building_images));
+    sessionStorage.setItem('instructions', JSON.stringify(data.first_instructions));
+    sessionStorage.setItem('sameBuilding', JSON.stringify(data.same_building));
     window.location.href = "interior.html";
+
+    sessionStorage.setItem('outsidePath', JSON.stringify(data.outside_path));
+    sessionStorage.setItem('finalImages', JSON.stringify(data.final_building_images));
+    sessionStorage.setItem('finalInstructions', JSON.stringify(data.final_instructions));
+
 }
