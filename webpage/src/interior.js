@@ -27,11 +27,7 @@ function showImage(index) {
 function showNextImage() {
     if (currentIndex < images.length - 1) {
         currentIndex = (currentIndex + 1);
-        console.log("Current index: ", currentIndex);
-        console.log("Images length: ", images.length);
-        console.log(sameBuilding);
         if (currentIndex === images.length - 1 && !sameBuilding) {
-            console.log("here");
             arrivedBtn.style.display = "block";
         }
     }
@@ -46,9 +42,12 @@ function showPrevImage() {
 }
 
 function arrivedClick() {
+    let image1 = JSON.parse(sessionStorage.getItem("finalImages")) || [];
+    sessionStorage.setItem("images", JSON.stringify(image1));
+    let instructions1 = JSON.parse(sessionStorage.getItem("finalInstructions")) || [];
+    sessionStorage.setItem('sameBuilding', JSON.stringify(true));
+    sessionStorage.setItem("instructions", JSON.stringify(instructions1));
     window.location.href = "localisation.html";
-    images = JSON.parse(sessionStorage.getItem("finalImages")) || [];
-    instructions = JSON.parse(sessionStorage.getItem("finalInstructions")) || [];
 }
 
 // Initial image display
