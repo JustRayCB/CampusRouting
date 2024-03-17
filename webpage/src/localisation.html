@@ -1,0 +1,34 @@
+<!-- FILEPATH: /Users/ziyad/Documents/pa3/CampusRouting/webpage/localisation.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map ULB</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <link href="./output.css" rel="stylesheet">
+    <style>
+        @import url('https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css');
+    </style>
+
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="https://unpkg.com/leaflet-routing-machine@3.3.4/dist/leaflet-routing-machine.js"></script>
+</head>
+
+<body class="bg-black">
+    <h1 class="text-center text-gray-800 bg-green-800 py-4 border-b-2">Map</h1>
+    <div id="map" class="h-[800px] w-4/5 m-5 mx-auto border-2 border-gray-300 rounded"></div>
+    <div class="flex justify-center">
+        <form action="interior.html" class="text-center max-w-xs mx-2 my-2 p-1 bg-black rounded">
+            <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Arrived at the building</button>
+        </form>
+        <form action="welcome.html" class="text-center max-w-xs mx-2 my-2 p-1 bg-black rounded">
+            <button type="submit" class="text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800">Try a new class</button>
+        </form>
+    </div>
+    <script src="localisation.js"></script>
+</body>
+
+</html>
