@@ -32,7 +32,14 @@ if (navigator.geolocation) {
           popupAnchor: [1, -34],
           shadowSize: [41, 41]
         });
-        var polyline = L.polyline(path, {color: 'red'}).addTo(map);
+        // var polyline = L.polyline(path, {color: 'red'}).addTo(map);
+        var antPath = L.polyline.antPath(path, {
+            "delay": 400,
+            "dashArray": [10, 20],
+            "weight": 10,
+            "color": "#F000FF",
+            "pulseColor": "#FFFFFF"
+        }).addTo(map);
         var marker = L.marker(path[0], {icon:greenIcon}).addTo(map);
         var marker2 = L.marker(path[path.length - 1], {icon:redIcon}).addTo(map);
 
