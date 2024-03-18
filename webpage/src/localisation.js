@@ -34,9 +34,9 @@ if (navigator.geolocation) {
         });
         // var polyline = L.polyline(path, {color: 'red'}).addTo(map);
         var antPath = L.polyline.antPath(path, {
-            "delay": 400,
+            "delay": 1000,
             "dashArray": [10, 20],
-            "weight": 10,
+            "weight": 5,
             "color": "#F000FF",
             "pulseColor": "#FFFFFF"
         }).addTo(map);
