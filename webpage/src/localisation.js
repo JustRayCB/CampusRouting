@@ -10,19 +10,31 @@ if (navigator.geolocation) {
             maxZoom: 19,
             minZoom: 17,
         }).addTo(map);
-
-        const campusBounds = L.latLngBounds([
-            [50.8125, 4.3785],
-            [50.8145, 4.3823]
-        ]);
          // Retrieve the path from the session storage
         const path = JSON.parse(sessionStorage.getItem('path'));
         console.log(path);
 
         // ICI FAUDRA JUSTE METTRE LE PATH
         // Create the polyline using the path
+        var greenIcon = new L.Icon({
+          iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png',
+          shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+          iconSize: [25, 41],
+          iconAnchor: [12, 41],
+          popupAnchor: [1, -34],
+          shadowSize: [41, 41]
+        });
+        const redIcon = new L.Icon({
+          iconUrl: 'https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png',
+          shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+          iconSize: [25, 41],
+          iconAnchor: [12, 41],
+          popupAnchor: [1, -34],
+          shadowSize: [41, 41]
+        });
         var polyline = L.polyline(path, {color: 'red'}).addTo(map);
-        // var polyline = L.polyline(testing_latlngs, {color: 'red'}).addTo(map);
+        var marker = L.marker(path[0], {icon:greenIcon}).addTo(map);
+        var marker2 = L.marker(path[path.length - 1], {icon:redIcon}).addTo(map);
 
 
         // // USER POSITION
