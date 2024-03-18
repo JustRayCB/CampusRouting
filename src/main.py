@@ -175,7 +175,7 @@ def ask(request: PathRequest) -> dict:
     :param request: User's data given by the frontend.
     :return: The path from the user's location to the arrival room, the instructions and the images when inside the building.
     """
-    lat, long = int(request.start[0]), int(request.start[1])
+    lat, long = float(request.start[0]), float(request.start[1])
     room = request.arrival  # e.g: P1.2.301
     building = get_building_name(room).upper()  # e.g: P1
     building_graph = graphs[building]
