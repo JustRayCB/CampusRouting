@@ -1,24 +1,43 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./output.css" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
     <title>Image Gallery</title>
+  </head>
 
-</head>
-<body class="bg-black">
+  <body class="bg-black">
     <div class="container mx-auto my-8 p-4">
-        <div id="image-label" class="absolute top-0 left-0 w-full text-center text-white bg-black bg-opacity-50 px-2 py-1"></div>
-        <div id="image-container" class="relative p-2">
-            <!-- Images will be dynamically inserted here -->
-        </div>
-        <div class="flex justify-center py-2">
-            <button id="prevBtn" class= "flex justify-center text-white bg-yellow-400 hover:bg-yellow-500 focus:outline-none focus:ring-4 focus:ring-yellow-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:focus:ring-yellow-900">Précédente</button>
-            <button id="arrivedBtn" style="display: none;" class="flex justify-center text-white bg-blue-500 hover:bg-blue-600 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:focus:ring-blue-900">Sortir du batiment</button>
-            <button id="nextBtn" class="text-white bg-red-700 hover:bg-red-800 focus:outline-none focus:ring-4 focus:ring-red-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">Prochaine</button>
-        </div>
+      <div
+        id="image-label"
+        class="absolute top-0 left-0 w-full text-center text-white bg-black bg-opacity-50 px-2 py-1"
+      ></div>
+      <div id="image-container" class="relative p-2">
+        <!-- Images will be dynamically inserted here -->
+      </div>
+      <div class="flex justify-center py-2">
+        <button
+          id="prevBtn"
+          class="flex justify-center text-white bg-yellow-400 hover:bg-yellow-500 focus:outline-none focus:ring-4 focus:ring-yellow-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:focus:ring-yellow-900"
+        >
+          Précédente
+        </button>
+        <button
+          id="arrivedBtn"
+          style="display: none"
+          class="text-white bg-green-700 hover:bg-green-800 focus:outline-none focus:ring-4 focus:ring-green-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"
+        >
+          Sortir du bâtiment
+        </button>
+        <button
+          id="nextBtn"
+          class="text-white bg-red-700 hover:bg-red-800 focus:outline-none focus:ring-4 focus:ring-red-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900"
+        >
+          Prochaine
+        </button>
+      </div>
     </div>
     <script src="interior.js"></script>
-</body>
+  </body>
 </html>
