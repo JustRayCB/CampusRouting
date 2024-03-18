@@ -130,6 +130,7 @@ function sendBuildingRequest(_start, _arrival) {
         // Handle the response from the FastAPI server
         // Store the path in the session storage
         sessionStorage.setItem('path', JSON.stringify(data.path));
+        sessionStorage.setItem('sameBuilding', JSON.stringify(true));
         sessionStorage.setItem('images', JSON.stringify(data.images));
         sessionStorage.setItem('instructions', JSON.stringify(data.instructions));
         window.location.href = "localisation.html";
@@ -155,10 +156,12 @@ function sendClassroomRequest(inputSrc, inputDst) {
     .then(response => response.json())
     .then(data => {
         if (data.same_building) {
+            sessionStorage.setItem('sameBuilding', JSON.stringify(true));
             manageSameBuilding(data);
         }
         // Handle the response from the api server
         else {
+            sessionStorage.setItem('sameBuilding', JSON.stringify(false));
             manageDifferentBuilding(data);
         }
     })
@@ -177,7 +180,6 @@ function manageDifferentBuilding(data){
     sessionStorage.setItem('images', JSON.stringify(data.first_building_images));
     sessionStorage.setItem('path', JSON.stringify(data.outside_path));
     sessionStorage.setItem('instructions', JSON.stringify(data.first_instructions));
-    sessionStorage.setItem('sameBuilding', JSON.stringify(data.same_building));
     window.location.href = "interior.html";
 
     sessionStorage.setItem('finalImages', JSON.stringify(data.final_building_images));
