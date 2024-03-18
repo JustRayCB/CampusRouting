@@ -51,6 +51,10 @@ function showNextImage() {
 
 function showPrevImage() {
     if (currentIndex > 0) {
+        // if we are in the last image and we go back, we hide the arrived button
+        if (currentIndex === images.length - 1 && !sameBuilding) {
+            arrivedBtn.style.display = "none";
+        }
         currentIndex = (currentIndex - 1);
     }
 	showImage(currentIndex);
