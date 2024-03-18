@@ -11,6 +11,7 @@ let sameBuilding = JSON.parse(sessionStorage.getItem("sameBuilding"));
 // and the user can navigate through them with the buttons.
 
 let currentIndex = 0;
+let same_instruction = 0;
 
 const imageContainer = document.getElementById("image-container");
 const arrivedBtn = document.getElementById("arrivedBtn");
@@ -20,7 +21,22 @@ const imageLabel = document.getElementById("image-label");
 
 function showImage(index) {
 	imageContainer.innerHTML = `<img src="${images[index]}" class="w-full h-auto">`;
-    imageLabel.textContent = instructions[index];
+    if (currentIndex > 0) {
+        // if the previous instruction is the same as the current one, we add 1 to the counter 
+        // and change the label to the new counter
+        let prev_instruction = instructions[index - 1];
+        let current_instruction = instructions[index]; 
+        if (prev_instruction === current_instruction) {
+            same_instruction++;
+            imageLabel.textContent = instructions[index] + " " + same_instruction;
+        } else {
+            same_instruction = 0;
+            imageLabel.textContent = instructions[index];
+        } 
+    }
+    else{
+        imageLabel.textContent = instructions[index];
+    }
 }
 
 function showNextImage() {
