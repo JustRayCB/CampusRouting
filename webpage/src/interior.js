@@ -1,4 +1,3 @@
-// const images =
 let images = JSON.parse(sessionStorage.getItem("images")) || [];
 let instructions = JSON.parse(sessionStorage.getItem("instructions")) || [];
 let sameBuilding = JSON.parse(sessionStorage.getItem("sameBuilding"));

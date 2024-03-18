@@ -7,6 +7,7 @@ by using the gps coordinates.
 
 
 import json
+
 import geopy.distance
 
 

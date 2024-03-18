@@ -64,7 +64,6 @@ def get_building_name(room: str) -> str:
     return room.split(".")[0]
 
 
-# TODO: Ask from inside
 @app.post("/api/ask_from_inside")
 def ask_from_inside(request: PathRequestFromInside) -> dict:
     """Compute the path from the user's room to the arrival room.

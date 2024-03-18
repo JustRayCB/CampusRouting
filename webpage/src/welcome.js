@@ -1,15 +1,3 @@
-import { updateState, addObserver, getState } from './state.js';
-
-// Définir un observateur pour surveiller les changements d'état
-const stateObserver = () => {
-    const newState = getState();
-    console.log('New state:', newState);
-    // Mettez à jour votre interface utilisateur en fonction du nouvel état ici
-};
-
-// Ajouter l'observateur
-addObserver(stateObserver);
-
 document.addEventListener("DOMContentLoaded", function () {
     const items = document.querySelectorAll(".clickable-item");
     const buildingButton = document.getElementById("buildingButton");
@@ -180,24 +168,12 @@ function sendClassroomRequest(inputSrc, inputDst) {
 }
 
 function manageSameBuilding(data){
-    updateState({
-        path: data.path,
-        images: data.images,
-        arrival_building: true,
-        first_images: null
-    });
     sessionStorage.setItem('images', JSON.stringify(data.images));
     sessionStorage.setItem('instructions', JSON.stringify(data.instructions));
     window.location.href = "interior.html";
 }
 
 function manageDifferentBuilding(data){
-    // updateState({
-    //     path: data.path,
-    //     images: data.images,
-    //     arrival_building: false,
-    //     first_images: data.first_building_images
-    // });
     sessionStorage.setItem('images', JSON.stringify(data.first_building_images));
     sessionStorage.setItem('path', JSON.stringify(data.outside_path));
     sessionStorage.setItem('instructions', JSON.stringify(data.first_instructions));
