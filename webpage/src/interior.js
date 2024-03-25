@@ -19,24 +19,30 @@ const prevBtn = document.getElementById("prevBtn");
 const nextBtn = document.getElementById("nextBtn");
 const imageLabel = document.getElementById("image-label");
 
+function modifyInstructions() {
+    /** Add counters to instructions if the same instruction follows the current */
+    console.log(instructions);
+    let newInstructions = [];
+    let currentInstruction = instructions[0];
+    newInstructions.push(currentInstruction);
+    let count = 1;
+    for (let i = 1; i < instructions.length; i++) {
+        if (instructions[i] === currentInstruction) {
+            newInstructions.push(currentInstruction + " " + count);
+            count++;
+        } else {
+            count = 1
+            currentInstruction = instructions[i];
+            newInstructions.push(currentInstruction);
+        }
+    }
+    console.log(newInstructions);
+    return newInstructions;
+}
+
 function showImage(index) {
 	imageContainer.innerHTML = `<img src="${images[index]}" class="w-full h-auto">`;
-    if (currentIndex > 0) {
-        // if the previous instruction is the same as the current one, we add 1 to the counter 
-        // and change the label to the new counter
-        let prev_instruction = instructions[index - 1];
-        let current_instruction = instructions[index]; 
-        if (prev_instruction === current_instruction) {
-            same_instruction++;
-            imageLabel.textContent = instructions[index] + " " + same_instruction;
-        } else {
-            same_instruction = 0;
-            imageLabel.textContent = instructions[index];
-        } 
-    }
-    else{
-        imageLabel.textContent = instructions[index];
-    }
+    imageLabel.textContent = instructions[index];
 }
 
 function showNextImage() {
@@ -70,6 +76,7 @@ function arrivedClick() {
 }
 
 // Initial image display
+instructions = modifyInstructions();
 showImage(currentIndex);
 
 // Event listeners for navigation buttons
