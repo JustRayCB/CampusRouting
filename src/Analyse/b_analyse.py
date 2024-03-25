@@ -100,6 +100,11 @@ class BAnalysePath:
                 else:
                     tmp = f"{tmp[1]} {self.graph.nodes[to_node]['floor']}"
                 instruction = (tmp, self.images_instructions[Instruction.STAIRS])
+                if [from_node, to_node] == pair_rooms[-1]:
+                    instruction = (
+                        f"La salle {node_name} est en face de vous",
+                        self.images_instructions[Instruction.ARRIVED],
+                    )
             elif d == "straight":
                 instruction = (
                     self.text_instructions[Instruction.STRAIGHT],
