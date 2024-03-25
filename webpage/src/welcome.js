@@ -73,6 +73,7 @@ function toggleForm(formId) {
 
 // The code below is for the form submission when clicking on the submit button
 function submitInput(formId) {
+    sessionStorage.clear(); // Clear the session storage
     if (formId === "building") {
         const input = document.getElementById("building").value;
         navigator.geolocation.getCurrentPosition(function(position) {
