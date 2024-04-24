@@ -6,11 +6,8 @@
 """
 
 import json
-from enum import Enum
 from typing import Any, Dict, List
 
-import matplotlib.pyplot as plt
-import networkx as nx
 from typing_extensions import override
 
 from .graph import EdgeAttributes, Graph, NodeAttributes
