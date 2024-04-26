@@ -100,6 +100,15 @@ def compute_path_inside_same_building(
     }
 
 
+def getShortestPathIdx(paths: List[Tuple[float, List, List]]) -> int:
+    """According to the total distance of each path, return the index of the shortest path.
+
+    :param all_paths: List of paths with the total distance, the outside path and the inside path.
+    :return: The index of the shortest path.
+    """
+    return min(range(len(paths)), key=lambda i: paths[i][0])
+
+
 def compute_path_inside_different_building(
     starting_room: str, arrival_room: str, starting_building: str, arrival_building: str
 ):
@@ -124,14 +133,14 @@ def compute_path_inside_different_building(
         lat, long = outside_graph.get_lat_long(entrance)
         all_paths = get_all_paths(arrival_graph, lat, long, arrival_room)
         # Get the index of the shortest path
-        idx_min = min(range(len(all_paths)), key=lambda i: all_paths[i][0])
+        idx_min = getShortestPathIdx(all_paths)
         paths_to_rooms.append(all_paths[idx_min])
     # (total distance, path to entrance, path from entrance to arrival room)
     complete_paths = [
         (p1[0] + p2[0], p1[1], p2) for p1, p2 in zip(paths_to_entrances, paths_to_rooms)
     ]
     # Get the index of the shortest path
-    idx_min = min(range(len(complete_paths)), key=lambda i: complete_paths[i][0])
+    idx_min = getShortestPathIdx(complete_paths)
     # first building path analyse
     fanalyse_in = BPathAnalyzer(building_graph, complete_paths[idx_min][1])
     # analyse outside path
@@ -194,7 +203,7 @@ def ask(request: PathRequest) -> dict:
     building = get_building_name(room).upper()  # e.g: P1
     building_graph = graphs[building]
     total_paths = get_all_paths(building_graph, lat, long, room)
-    idx_min = min(range(len(total_paths)), key=lambda i: total_paths[i][0])
+    idx_min = getShortestPathIdx(total_paths)
     analyse_out = OPathAnalyzer(outside_graph, total_paths[idx_min][1])
     analyse_in = BPathAnalyzer(building_graph, total_paths[idx_min][2])
 
