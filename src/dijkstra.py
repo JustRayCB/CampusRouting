@@ -5,17 +5,48 @@
 shortest path between two nodes in a building graph.
 """
 
-from typing import Dict
+from typing import Dict, List
 
 from pqdict import pqdict
 
 from Graph import Graph
+from Graph.graph import GraphTypes
 
 
 class Dijkstra:
-    def __init__(self, graph: Graph, source: str = "", target: str = "") -> None:
+    def __init__(self, graph: Graph) -> None:
         self.graph = graph
-        self.path = [] if "" in [source, target] else self.dijkstra(source, target)[1]
+
+    def nodesNotNull(self, source: str, target: str):
+        """Check if the nodes are not null
+
+        :param source: source node
+        :param target: target node
+        :raises ValueError: If the source or the target node is null.
+        """
+        if "" in [source, target]:
+            raise ValueError(
+                f"The source and the target nodes must be specified. src: {source}, trg: {target}"
+            )
+
+    def existingNodes(self, source: str, target: str) -> List:
+        """Check if the nodes are in the graph.
+
+        :param source: The source node.
+        :param target: The target node.
+        :raises ValueError: If the node is not in the graph.
+        :return: The source and the target node.
+        """
+        my_nodes: List = [source, target]
+        for idx in range(len(my_nodes)):
+            if not self.graph.is_in_graph(my_nodes[idx]):
+                if self.graph.type == GraphTypes.OUTSIDE:
+                    raise ValueError(
+                        f"The node {my_nodes[idx]} is not in the outside graph {self.graph.name}"
+                    )
+                # If the node is not in the graph, we find it by the name.
+                my_nodes[idx] = self.graph.find_node(my_nodes[idx])
+        return my_nodes
 
     def dijkstra(self, source: str, target: str):
         """Implement the Dijkstra algorithm for finding the shortest path.
@@ -25,50 +56,30 @@ class Dijkstra:
         :param target: The target node's id.
         :return: The shortest path between the source and the target node.
         """
-        if "" in [source, target]:
-            raise ValueError(
-                f"The source and the target nodes must be specified. src: {source}, trg: {target}"
-            )
-        if not self.graph.is_in_graph(source):
-            # If the source node is not in the graph, we find it by the name.
-            if self.graph.name == "solbosch_map_updated":
-                raise ValueError(f"The node {source} is not in the graph {self.graph.name}")
-            tmp = source
-            source = self.graph.find_node(source)
-            assert source != tmp, f"The node {target} is not in the graph {self.graph.name}"
-        if not self.graph.is_in_graph(target):
-            # If the target node is not in the graph, we find it by the name.
-            if self.graph.name == "solbosch_map_updated":
-                raise ValueError(f"The node {target} is not in the graph {self.graph.name}")
-            tmp = target
-            target = self.graph.find_node(target)
-            assert target != tmp, f"The node {target} is not in the graph {self.graph.name}"
+        self.nodesNotNull(source, target)
+        source, target = self.existingNodes(source, target)
         dist_to: Dict = {node: float("inf") for node in self.graph.nodes}
         predecessor: Dict = {}
         dist_to[source] = 0
         pq = pqdict()  # It use a min heap to store the nodes and their distances to the source node.
         pq.additem(source, 0)
-        found = False
 
-        for node, _ in pq.popitems():
-            if node == target:
-                found = True
+        for idx, _ in pq.popitems():
+            if idx == target:
                 break  # We stop the algorithm when we reach the target node.
-            for neighbor in self.graph.neighbors(node):
-                new_distance_neighbor = dist_to[node] + self.graph.edges[node, neighbor]["weight"]
+            for neighbor in self.graph.neighbors(idx):
+                new_distance_neighbor = dist_to[idx] + self.graph.edges[idx, neighbor]["weight"]
                 if dist_to[neighbor] > new_distance_neighbor:
                     dist_to[neighbor] = new_distance_neighbor
-                    predecessor[neighbor] = node
+                    predecessor[neighbor] = idx
                     (
                         pq.updateitem(neighbor, new_distance_neighbor)
                         if neighbor in pq
                         else pq.additem(neighbor, new_distance_neighbor)
                     )
-        return (
-            (dist_to[target], self.recover_path(predecessor, source, target))
-            if found
-            else (float("inf"), [])
-        )
+        if dist_to[target] == float("inf"):
+            return (float("inf"), [])
+        return (dist_to[target], self.recover_path(predecessor, source, target))
 
     def recover_path(self, predecessors, source, target):
         """
@@ -83,10 +94,8 @@ class Dijkstra:
         while target != source:
             target = predecessors[target]
             path.append(target)
-        path.reverse()
-        self.path = path
-        return path
+        return path[::-1]
 
-    def show_shortest_path(self):
-        assert self.path != [], "The path has not been calculated yet."
-        self.graph.show_path(self.path)
+    def show_shortest_path(self, source, target):
+        _, path = self.dijkstra(source, target)
+        self.graph.show_path(path)
