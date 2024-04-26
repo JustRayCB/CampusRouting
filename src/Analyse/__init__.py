@@ -1,2 +1,2 @@
-from .b_analyse import BAnalysePath
-from .o_analyse import OAnalysePath
+from .b_analyse import BPathAnalyzer
+from .o_analyse import OPathAnalyzer
