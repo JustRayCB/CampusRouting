@@ -47,13 +47,13 @@ def get_building_name(room: str) -> str:
 def get_all_paths(
     building_graph: BuildingGraph, lat: float, long: float, room: str
 ) -> List[Tuple[float, List, List]]:
-    """Compute all the possible path from the user to a room inside a building.
+    """Compute all the possible path from the user location to a room inside a building.
 
     :param building_graph: The graph of the building where the use wants to go.
     :param lat: Latitude of the user.
     :param long: Longitude of the user.
     :param room: Room the user wants to go to.
-    :raises ValueError: If the length of the outside and inside path are not the same which could
+    :raises AssertionError: If the length of the outside and inside path are not the same which could
         not happen normaly the number of entrances we can reach from the outside
         and the number of entrances we can reach from the inside should be the same.
     :return: a tuple which include the length of the path, the coordinates of the nodes of the outside path and the nodes of the inside path.
@@ -82,7 +82,14 @@ def get_all_paths(
 
 def compute_path_inside_same_building(
     starting_room: str, arrival_room: str, building_graph: BuildingGraph
-):
+) -> dict:
+    """Compute the path from the starting room to the arrival room inside the same building.
+
+    :param starting_room: name of the starting room
+    :param arrival_room: name of the arrival room
+    :param building_graph: graph of the building
+    :return: The path from the starting room to the arrival room, the instructions to get there and the images.
+    """
     d = Dijkstra(building_graph)
     path = d.dijkstra(starting_room, arrival_room)[1]
     a = BPathAnalyzer(building_graph, path)
@@ -96,6 +103,15 @@ def compute_path_inside_same_building(
 def compute_path_inside_different_building(
     starting_room: str, arrival_room: str, starting_building: str, arrival_building: str
 ):
+    """Compute the path from the starting room to the arrival room inside different buildings.
+
+    :param starting_room: Name of the starting room.
+    :param arrival_room: Name of the arrival room.
+    :param starting_building: Name of the starting building.
+    :param arrival_building: Name of the arrival building.
+    :return: The path to exit the first building , the path to get to the arrival building,
+        the path to get to the arrival room and the corresponding instructions and images.
+    """
     building_graph = graphs[starting_building]
     arrival_graph = graphs[arrival_building]
     entrances = building_graph.get_entrances()
