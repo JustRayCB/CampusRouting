@@ -4,7 +4,7 @@ from fastapi import FastAPI, Request, Response
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
-from Analyse import BAnalysePath, OAnalysePath
+from Analyse import BPathAnalyzer, OPathAnalyzer
 from dijkstra import Dijkstra
 from Graph import BuildingGraph, OutsideGraph
 from utils.constants import BUILDINGS_DATA_DIR, OUTSIDE_DATA_DIR
@@ -40,83 +40,8 @@ class PathRequestFromInside(BaseModel):
     arrival: str = ""  # Room name
 
 
-@app.get("/")
-async def root():
-    return {"message": "Hello World"}
-
-
-@app.get("/api/available_buildings")
-def get_available_buildings():
-    return {"buildings": list(graphs.keys())}
-
-
 def get_building_name(room: str) -> str:
     return room.split(".")[0]
-
-
-@app.post("/api/ask_from_inside")
-def ask_from_inside(request: PathRequestFromInside) -> dict:
-    """Compute the path from the user's room to the arrival room.
-
-    :param request: User's data given by the frontend.
-    :return: The path if the user wants to go to a room in the same building.
-    :return: The path if the user wants to go to a room in another  building.
-    """
-    starting_room = request.start
-    arrival_room = request.arrival
-    starting_building = get_building_name(starting_room).upper()
-    arrival_building = get_building_name(arrival_room).upper()
-    if starting_building == arrival_building:
-        # If the user is in the same building, we can use the building graph
-        d = Dijkstra(graphs[starting_building])
-        a = BAnalysePath(graphs[starting_building], d.dijkstra(starting_room, arrival_room)[1])
-        return {
-            "same_building": True,
-            "path": [],
-            "instructions": a.get_instructions(),
-            "images": a.get_images(),
-        }
-    else:
-        building_graph = graphs[starting_building]
-        arrival_graph = graphs[arrival_building]
-        entrances = building_graph.get_entrances()
-        paths_to_entrances = []
-        for entrance in entrances:
-            d = Dijkstra(building_graph)
-            paths_to_entrances.append(
-                d.dijkstra(starting_room, entrance)
-            )  # paths from the starting room to each entrance of starting building
-        # best path from each entrances from the starting building to the arrival room
-        best_paths = []
-        for entrance in entrances:
-            lat, long = outside_graph.get_lat_long(entrance)
-            all_paths = get_all_paths(arrival_graph, lat, long, arrival_room)
-            idx_min = min(range(len(all_paths)), key=lambda i: all_paths[i][0])
-            best_paths.append(all_paths[idx_min])
-        total_paths = []  # total distance from the user to the room
-        for idx in range(len(paths_to_entrances)):
-            total_paths.append(
-                (
-                    paths_to_entrances[idx][0] + best_paths[idx][0],
-                    paths_to_entrances[idx][1],
-                    best_paths[idx],
-                )
-            )
-        idx_min = min(range(len(total_paths)), key=lambda i: total_paths[i][0])
-        # first building path analyse
-        fanalyse_in = BAnalysePath(building_graph, total_paths[idx_min][1])
-        # analyse outside path
-        analyse_out = OAnalysePath(outside_graph, total_paths[idx_min][2][1])
-        # second building path analyse
-        sanalyse_in = BAnalysePath(arrival_graph, total_paths[idx_min][2][2])
-        return {
-            "same_building": False,
-            "first_instructions": fanalyse_in.get_instructions(),
-            "first_building_images": fanalyse_in.get_images(),
-            "outside_path": analyse_out.analyse(),
-            "final_instructions": sanalyse_in.get_instructions(),
-            "final_building_images": sanalyse_in.get_images(),
-        }
 
 
 def get_all_paths(
@@ -134,28 +59,111 @@ def get_all_paths(
     :return: a tuple which include the length of the path, the coordinates of the nodes of the outside path and the nodes of the inside path.
     """
     entrances = building_graph.get_entrances()  # exits/entrances
-    node = outside_graph.find_closest_node((lat, long))  # find the closest node to the user
-    outside_paths: List[Tuple[float, List]] = []
-    inside_paths: List[Tuple[float, List]] = []
-    for entrance in entrances:  # compute the path from the user to each building entrance
-        d = Dijkstra(outside_graph)
-        outside_paths.append(d.dijkstra(node, entrance))
-    for entrance in entrances:  # compute the path from each entrance to the room
-        d = Dijkstra(building_graph)
-        inside_paths.append(d.dijkstra(entrance, room))
-    total_paths = []
+    closest_node = outside_graph.find_closest_node((lat, long))  # find the closest node to the user
+    d = Dijkstra(outside_graph)
+    # compute the path from the user to each building entrance
+    outside_paths: List[Tuple[float, List]] = [
+        d.dijkstra(closest_node, entrance) for entrance in entrances
+    ]
+    d = Dijkstra(building_graph)
+    # compute the path from each entrance to the room
+    inside_paths: List[Tuple[float, List]] = [d.dijkstra(entrance, room) for entrance in entrances]
+    # (total distance, outside path, inside path)
+    total_paths = [
+        (opath[0] + ipath[0], opath[1], ipath[1])
+        for opath, ipath in zip(outside_paths, inside_paths)
+    ]
     # Compute the total distance from the user to the room and choose the shortest path
-    if len(outside_paths) != len(inside_paths):
-        raise ValueError("The number of entrances and inside paths should be the same")
-    for idx in range(len(outside_paths)):
-        total_paths.append(
-            (
-                outside_paths[idx][0] + inside_paths[idx][0],
-                outside_paths[idx][1],
-                inside_paths[idx][1],
-            )
-        )
+    assert len(outside_paths) == len(
+        inside_paths
+    ), "The number of entrances and inside paths should be the same"
     return total_paths
+
+
+def compute_path_inside_same_building(
+    starting_room: str, arrival_room: str, building_graph: BuildingGraph
+):
+    d = Dijkstra(building_graph)
+    path = d.dijkstra(starting_room, arrival_room)[1]
+    a = BPathAnalyzer(building_graph, path)
+    return {
+        "path": [],
+        "instructions": a.get_instructions(),
+        "images": a.get_images(),
+    }
+
+
+def compute_path_inside_different_building(
+    starting_room: str, arrival_room: str, starting_building: str, arrival_building: str
+):
+    building_graph = graphs[starting_building]
+    arrival_graph = graphs[arrival_building]
+    entrances = building_graph.get_entrances()
+    d = Dijkstra(building_graph)
+    # paths from the starting room to each entrance of starting building
+    paths_to_entrances = [d.dijkstra(starting_room, entrance) for entrance in entrances]
+    # best path from each entrances from the starting building to the arrival room
+    paths_to_rooms = []
+    for entrance in entrances:
+        lat, long = outside_graph.get_lat_long(entrance)
+        all_paths = get_all_paths(arrival_graph, lat, long, arrival_room)
+        # Get the index of the shortest path
+        idx_min = min(range(len(all_paths)), key=lambda i: all_paths[i][0])
+        paths_to_rooms.append(all_paths[idx_min])
+    # (total distance, path to entrance, path from entrance to arrival room)
+    complete_paths = [
+        (p1[0] + p2[0], p1[1], p2) for p1, p2 in zip(paths_to_entrances, paths_to_rooms)
+    ]
+    # Get the index of the shortest path
+    idx_min = min(range(len(complete_paths)), key=lambda i: complete_paths[i][0])
+    # first building path analyse
+    fanalyse_in = BPathAnalyzer(building_graph, complete_paths[idx_min][1])
+    # analyse outside path
+    analyse_out = OPathAnalyzer(outside_graph, complete_paths[idx_min][2][1])
+    # second building path analyse
+    sanalyse_in = BPathAnalyzer(arrival_graph, complete_paths[idx_min][2][2])
+    return {
+        "first_instructions": fanalyse_in.get_instructions(),
+        "first_building_images": fanalyse_in.get_images(),
+        "outside_path": analyse_out.analyse(),
+        "final_instructions": sanalyse_in.get_instructions(),
+        "final_building_images": sanalyse_in.get_images(),
+    }
+
+
+@app.get("/")
+async def root():
+    return {"message": "Hello World"}
+
+
+@app.get("/api/available_buildings")
+def get_available_buildings_endpoint():
+    return {"buildings": list(graphs.keys())}
+
+
+@app.post("/api/ask_from_inside")
+def ask_from_inside(request: PathRequestFromInside) -> dict:
+    """Compute the path from the user's room to the arrival room.
+
+    :param request: User's data given by the frontend.
+    :return: The path if the user wants to go to a room in the same building.
+    :return: The path if the user wants to go to a room in another  building.
+    """
+    starting_room = request.start
+    arrival_room = request.arrival
+    starting_building = get_building_name(starting_room).upper()
+    arrival_building = get_building_name(arrival_room).upper()
+    if starting_building == arrival_building:
+        # If the user is in the same building, we can use the building graph
+        result = compute_path_inside_same_building(
+            starting_room, arrival_room, graphs[starting_building]
+        )
+        return {"same_building": True, **result}
+    else:
+        result = compute_path_inside_different_building(
+            starting_room, arrival_room, starting_building, arrival_building
+        )
+        return {"same_building": False, **result}
 
 
 @app.post("/api/ask")
@@ -171,8 +179,8 @@ def ask(request: PathRequest) -> dict:
     building_graph = graphs[building]
     total_paths = get_all_paths(building_graph, lat, long, room)
     idx_min = min(range(len(total_paths)), key=lambda i: total_paths[i][0])
-    analyse_out = OAnalysePath(outside_graph, total_paths[idx_min][1])
-    analyse_in = BAnalysePath(building_graph, total_paths[idx_min][2])
+    analyse_out = OPathAnalyzer(outside_graph, total_paths[idx_min][1])
+    analyse_in = BPathAnalyzer(building_graph, total_paths[idx_min][2])
 
     # return : coordinates of each nodes, instruction inside, images
     return {
