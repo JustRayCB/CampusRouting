@@ -28,17 +28,29 @@ class EdgeAttributes:
     WEIGHT = "weight"
 
 
+class GraphTypes:
+    GRAPH = "Graph"
+    OUTSIDE = "OutsideGraph"
+    BUILDING = "BuildingGraph"
+
+
 class Graph(nx.DiGraph):
     def init(self, path=None):
         super(Graph, self).__init__()
         self.COLORS: Dict[str, str] = {}
         self.PREFIXES: Dict[str, str] = {}
+        self.graph_type = GraphTypes.GRAPH
         self.load_graph(path) if path else None
+
+    @property
+    def type(self) -> str:
+        return self.graph_type
 
     def find_node(self, name: str) -> str:
         """Find a node by its name.
 
         :param name: The name of the node.
+        :raises ValueError: If the name is not in the graph.
         :returns: The node of the graph.
         """
         for node in self.nodes:

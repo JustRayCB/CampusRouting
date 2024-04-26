@@ -4,7 +4,12 @@ from typing import Any, Dict, List, Tuple
 import geopy.distance
 from typing_extensions import override
 
-from .graph import EdgeAttributes, Graph, NodeAttributes
+from .graph import EdgeAttributes, Graph, GraphTypes, NodeAttributes
+
+
+class ONodeAttributes(NodeAttributes):
+    LONGITUDE = "longitude"
+    LATITUDE = "latitude"
 
 
 class OutsideGraph(Graph):
@@ -13,6 +18,7 @@ class OutsideGraph(Graph):
 
         self.COLORS = {"road": "#84DCC6", "exit": "#FF686B"}
         self.PREFIXES = {"c": "road", "e": "exit"}
+        self.graph_type = GraphTypes.OUTSIDE
         self.load_graph(path) if path else None
 
     @override
@@ -26,7 +32,10 @@ class OutsideGraph(Graph):
             raise ValueError(f"Invalid id: {id}")
 
     def get_lat_long(self, node: str) -> Tuple:
-        return self.nodes[node]["latitude"], self.nodes[node]["longitude"]
+        return (
+            self.nodes[node][ONodeAttributes.LATITUDE],
+            self.nodes[node][ONodeAttributes.LONGITUDE],
+        )
 
     @override
     def load_graph(self, path: str) -> None:
@@ -59,7 +68,7 @@ class OutsideGraph(Graph):
         edges = []
         for neighbor in neighbors:
             edge_data = {}
-            target_name = neighbor["id"]
+            target_name = neighbor[NodeAttributes.ID]
             edge_data[EdgeAttributes.WEIGHT] = neighbor[EdgeAttributes.WEIGHT]
             edge = (source, target_name, edge_data)
             edges.append(edge)
@@ -77,8 +86,8 @@ class OutsideGraph(Graph):
             # compute the distance between the node and the position
             # if distance is less than 5m then return the node else return
             # the closest node
-            lat_n = self.nodes[node]["latitude"]
-            long_n = self.nodes[node]["longitude"]
+            lat_n = self.nodes[node][ONodeAttributes.LATITUDE]
+            long_n = self.nodes[node][ONodeAttributes.LONGITUDE]
             distance = round(geopy.distance.geodesic((lat_s, long_s), (lat_n, long_n)).m)
             if distance <= 5:
                 return node

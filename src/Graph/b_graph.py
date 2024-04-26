@@ -10,7 +10,7 @@ from typing import Any, Dict, List
 
 from typing_extensions import override
 
-from .graph import EdgeAttributes, Graph, NodeAttributes
+from .graph import EdgeAttributes, Graph, GraphTypes, NodeAttributes
 
 
 class BNodeAttributes(NodeAttributes):
@@ -49,6 +49,7 @@ class BuildingGraph(Graph):
         }
         self.n_floors = -1
         self.current_floor = -1
+        self.graph_type = GraphTypes.BUILDING
         self.load_graph(path) if path else None
 
     def is_elevator_or_stair(self, id: str) -> bool:
@@ -123,7 +124,7 @@ class BuildingGraph(Graph):
         weight, direction = BEdgeAttributes.WEIGHT, BEdgeAttributes.DIRECTION
         for neighbor in neighbors:
             edge_attributes: Dict[str, Any] = {}
-            target_name = self.get_name_from_id(neighbor["id"])
+            target_name = self.get_name_from_id(neighbor[BNodeAttributes.ID])
             edge_attributes[weight] = neighbor[weight]
             directions = {}
             data_direction = neighbor[direction]
