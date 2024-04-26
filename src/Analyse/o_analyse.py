@@ -5,10 +5,12 @@
 :Description: This class is used to analyse the path of the graph by traducting it into coordinates.
 """
 
-from Graph import OutsideGraph
+from typing import List
+
+from Graph import ONodeAttributes, OutsideGraph
 
 
-class OAnalysePath:
+class OPathAnalyzer:
     """Class to analyse the path of in the outside graph."""
 
     def __init__(self, graph: OutsideGraph, path: list = []):
@@ -25,7 +27,11 @@ class OAnalysePath:
         """Get the instructions."""
         return self.instructions
 
-    def analyse(self):
-        long = [self.graph.nodes[i]["longitude"] for i in self.path]
-        lat = [self.graph.nodes[i]["latitude"] for i in self.path]
+    def analyse(self) -> List:
+        """Analyse the path inside an OutsideGraph
+
+        :return: A list of coordinates for each nodes of the path.
+        """
+        long = [self.graph.nodes[i][ONodeAttributes.LONGITUDE] for i in self.path]
+        lat = [self.graph.nodes[i][ONodeAttributes.LATITUDE] for i in self.path]
         return list(zip(lat, long))
