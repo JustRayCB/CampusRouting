@@ -33,7 +33,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-// Not sure if the code above is even necessary
 // The code below is for the form toggling
 let currentFormId = null;
 

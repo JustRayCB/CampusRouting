@@ -13,7 +13,6 @@ if (navigator.geolocation) {
          // Retrieve the path from the session storage
         const path = JSON.parse(sessionStorage.getItem('path'));
 
-        // ICI FAUDRA JUSTE METTRE LE PATH
         // Create the polyline using the path
         var greenIcon = new L.Icon({
           iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png',
@@ -31,7 +30,6 @@ if (navigator.geolocation) {
           popupAnchor: [1, -34],
           shadowSize: [41, 41]
         });
-        // var polyline = L.polyline(path, {color: 'red'}).addTo(map);
         var antPath = L.polyline.antPath(path, {
             "delay": 1000,
             "dashArray": [10, 20],
