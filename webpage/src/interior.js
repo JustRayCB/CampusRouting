@@ -21,7 +21,6 @@ const imageLabel = document.getElementById("image-label");
 
 function modifyInstructions() {
     /** Add counters to instructions if the same instruction follows the current */
-    console.log(instructions);
     let newInstructions = [];
     let currentInstruction = instructions[0];
     newInstructions.push(currentInstruction);
@@ -36,7 +35,6 @@ function modifyInstructions() {
             newInstructions.push(currentInstruction);
         }
     }
-    console.log(newInstructions);
     return newInstructions;
 }
 
