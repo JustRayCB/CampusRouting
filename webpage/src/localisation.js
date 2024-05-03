@@ -12,7 +12,6 @@ if (navigator.geolocation) {
         }).addTo(map);
          // Retrieve the path from the session storage
         const path = JSON.parse(sessionStorage.getItem('path'));
-        console.log(path);
 
         // ICI FAUDRA JUSTE METTRE LE PATH
         // Create the polyline using the path
